@@ -67,11 +67,23 @@
   font-size: 16px;
   padding: 0; }
 
+.pic:hover {
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.09);
+  transform: translateY(-7px); }
+
 .pic {
-  padding: 20px; }
+  padding: 20px;
+  transition: all 1s;
+  position: relative; }
 
 .pic > img {
   width: 100%; }
+
+.pic > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1); }
 
 .pic > p:nth-child(2) {
   font-size: 18px;
@@ -84,3 +96,199 @@
 
 .danger {
   margin-top: 40px; }
+
+.jump {
+  width: 650px;
+  margin: 90px auto;
+  height: 30px;
+  position: relative; }
+
+.jump > div {
+  float: left; }
+
+.jump > div:nth-child(1) {
+  width: 77px;
+  height: 28px;
+  margin-right: 40px;
+  background: #34f7f9;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px 0 rgba(55, 247, 249, 0.8); }
+
+.jump > div:nth-child(6) {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  margin-left: 10px; }
+
+.num {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 14px;
+  margin-left: 10px; }
+
+.jump > div:nth-child(8) {
+  width: 77px;
+  height: 28px;
+  margin-left: 40px;
+  background: #34f7f9;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px 0 rgba(55, 247, 249, 0.8); }
+
+.num.color {
+  background: #34f7f9; }
+
+.jump input {
+  width: 106px;
+  height: 28px;
+  border-radius: 14px;
+  margin-left: 40px;
+  border: 1px solid #CCCCCC; }
+
+.jump p {
+  width: 66px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 14px;
+  background: #FFFFFF; }
+
+@media screen and (max-width: 770px) {
+  .large {
+    display: none; }
+  .banner-m {
+    width: 100%;
+    height: 1106px;
+    background-image: url(../img/x-sem_02.png);
+    background-size: cover;
+    background-position: center center; }
+  article {
+    padding: 26px 30px;
+    width: 100%; }
+  article > img {
+    display: block;
+    width: 50%;
+    margin: 50px auto 50px auto; }
+  section:first-of-type {
+    color: #646464;
+    font-size: 24px; }
+  section:nth-of-type(2) {
+    width: 100%; }
+  .tit {
+    color: #37B9F7;
+    font-size: 24px;
+    float: left; }
+  .tit span {
+    color: #BCBABA;
+    font-size: 24px; }
+  .tit > p:nth-child(2) {
+    color: #737373; }
+  .tit + div {
+    float: right; }
+  .tit + div p {
+    font-size: 20px;
+    color: #E5E5E5;
+    text-align: right; }
+  .tit + div p:nth-child(2) {
+    line-height: 10px; }
+  .line {
+    width: 100%; }
+  .line > img {
+    width: 75%;
+    height: 7px; }
+  .line > p {
+    width: 25%;
+    height: 27px;
+    float: right;
+    font-size: 20px;
+    color: #BABABA;
+    text-align: right;
+    overflow: hidden; }
+  .photo {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+    float: left;
+    padding-left: 20px; }
+  .photo > img {
+    width: 100%; }
+  .photo > p:first-of-type {
+    font-size: 24px;
+    color: #4B4B4B;
+    margin: 24px 0 14px 0; }
+  .photo p:nth-of-type(2) {
+    font-size: 20px;
+    color: #4B4B4B;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .photo > p:nth-of-type(3) {
+    font-size: 18px;
+    color: #B5B5B5; }
+  .no {
+    width: 100%;
+    height: 10px; }
+  .banner-m_c {
+    width: 100%;
+    height: 775px;
+    background-image: url(../img/x-se_052_02.png);
+    background-size: cover;
+    background-position: center center;
+    float: left;
+    margin-top: 40px;
+    z-index: 10; }
+  .over {
+    margin-top: -60px; }
+  .look {
+    width: 100%;
+    text-align: center;
+    color: #C3C3C3;
+    font-size: 18px;
+    float: left;
+    margin-top: 56px; }
+  .look > p:first-child {
+    font-size: 24px;
+    color: #BABABA; }
+  .look > p:first-child > span {
+    color: #A5A5A5;
+    font-weight: bold; }
+  footer {
+    width: 100%;
+    height: 334px;
+    background: #283A86;
+    margin-top: 53px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #8A8EA7;
+    font-size: 18px;
+    float: left; }
+  footer > p:nth-child(1) span {
+    color: #76e0ed; }
+  footer > p:nth-child(1) {
+    color: #c9c9c9;
+    font-size: 30px;
+    margin-top: 40px; }
+  footer > p:nth-of-type(2) {
+    font-size: 24px;
+    margin-bottom: 14px; }
+  footer > div {
+    margin-top: 40px; }
+  footer > div > img:nth-child(2) {
+    margin: 0 20px 0 20px; } }
+
+@media screen and (min-width: 770px) {
+  .super {
+    display: none; } }
