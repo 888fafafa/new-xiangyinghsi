@@ -1,0 +1,71 @@
+
+@mixin square($size){
+	width: $size;
+	height:$size;
+}
+@mixin cube($w,$h){
+	width:$w;
+	height:$h;
+}
+
+@mixin circle($size){
+	@include square($size);
+	border-radius: 50%;
+}
+
+@mixin center{
+	position: absolute;
+	left:0;top:0;right:0;bottom:0;
+	margin:auto; 
+}
+
+@mixin lr{
+	position: absolute;
+	left:0;right:0;
+	margin:auto; 
+}
+
+@mixin tb{
+	position: absolute;
+	top:0;bottom:0;
+	margin:auto; 
+}
+
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@mixin bg(){
+	$r:floor(random()*256);
+	$g:floor(random()*256);
+	$b:floor(random()*256);
+	$a:floor(random()*2+3)/10;
+	$color:rgba($r,$g,$b,$a);
+	background: $color;
+}
+
+@mixin font($size,$color,$weight){
+	font-size:$size;
+	color:$color;
+	font-weight: $weight;
+}
+
+$device-list:320px,360px,365px,375px,384px,412px,414px,600px,750px,933px;
+
+html{
+	@each $device in $device-list{
+		@media screen and (min-width:$device){
+			font-size:100 * ($device/750);
+		}
+	}
+}
+body{
+	font-size: 16px;
+}
+
+$Img: '/Static/default/images/';
