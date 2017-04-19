@@ -77,10 +77,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .D-nav {
-    width: 100%;
-    height: 100px;
-    background: rgba(201, 177, 228, 0.3);
+  .W-shouye-top {
+    display: none;
   }
   .D-banner {
     width: 100%;
@@ -267,10 +265,45 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .D-nav {
+  .W-shouye-top {
     width: 100%;
     height: 100px;
-    background: rgba(44, 121, 125, 0.3);
+    background: #283A86;
+  }
+  .W-shouye-neitop {
+    width: 80%;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .W-shouye-neitop div {
+    width: 12.5%;
+    height: 100px;
+    float: left;
+  }
+  .W-shouye-neitop div a {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #F6F6F9;
+  }
+  .W-shouye-logo img {
+    width: 50px;
+    height: 100px;
+    display: block;
+    float: left;
+  }
+  .W-shouye-logo span {
+    line-height: 100px;
+    display: block;
+    float: left;
+    color: #F6F6F9;
+  }
+  .W-shouye-neitop > div > a:hover {
+    color: #34D9E6;
   }
   .D-banner {
     width: 100%;
@@ -584,6 +617,7 @@ body {
     height: 100%;
     background-image: url(../img/h-footer.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
   }
   .h-dibu {
@@ -592,10 +626,45 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .D-nav {
+  .W-shouye-top {
     width: 100%;
     height: 100px;
-    background: rgba(15, 84, 33, 0.4);
+    background: #283A86;
+  }
+  .W-shouye-neitop {
+    width: 80%;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .W-shouye-neitop div {
+    width: 12.5%;
+    height: 100px;
+    float: left;
+  }
+  .W-shouye-neitop div a {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #F6F6F9;
+  }
+  .W-shouye-logo img {
+    width: 50px;
+    height: 100px;
+    display: block;
+    float: left;
+  }
+  .W-shouye-logo span {
+    line-height: 100px;
+    display: block;
+    float: left;
+    color: #F6F6F9;
+  }
+  .W-shouye-neitop > div > a:hover {
+    color: #34D9E6;
   }
   .D-banner {
     width: 100%;
