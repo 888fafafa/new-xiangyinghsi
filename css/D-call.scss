@@ -1,0 +1,22 @@
+body{
+    font-family: "微软雅黑";
+}
+@import "D-mixin";
+@media screen and (max-width:768px){
+    
+}
+@media screen and (min-width:1170px){
+    .D-call-banner{
+        @include cube(100%,620px);
+        background-image: url(../img/D-img/D-call-banner.png);
+        background-size:cover;
+        background-position:center;
+    }
+    .D-lujin{
+        .D-lujin{
+            @include cube()
+            @include font(14px,#393939,400);
+            margin-left:5px;
+        }
+    }
+}
