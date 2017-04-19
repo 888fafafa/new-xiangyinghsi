@@ -1,0 +1,52 @@
+
+@mixin square($size){
+	width: $size;
+	height:$size;
+}
+@mixin cube($w,$h){
+	width:$w;
+	height:$h;
+}
+
+@mixin circle($size){
+	@include square($size);
+	border-radius: 50%;
+}
+
+@mixin center{
+	position: absolute;
+	left:0;top:0;right:0;bottom:0;
+	margin:auto; 
+}
+
+@mixin lr{
+	position: absolute;
+	left:0;right:0;
+	margin:auto; 
+}
+
+@mixin tb{
+	position: absolute;
+	top:0;bottom:0;
+	margin:auto; 
+}
+
+
+@mixin bg(){
+	$r:floor(random()*256);
+	$g:floor(random()*256);
+	$b:floor(random()*256);
+	$a:floor(random()*2+3)/10;
+	$color:rgba($r,$g,$b,$a);
+	background: $color;
+}
+
+@mixin font($size,$color,$weight){
+	font-size:$size;
+	color:$color;
+	font-weight: $weight;
+}
+
+
+
+$Img: '/Static/default/images/';

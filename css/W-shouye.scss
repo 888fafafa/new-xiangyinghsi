@@ -1,0 +1,133 @@
+@import "W-mixin";
+*{
+    padding:0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+//@media screen (max-width:768px){
+//  
+//}
+
+//大屏
+@media screen and(min-width:768px) {
+    .W-shouye-top {
+        @include cube(100%,100px);
+        background: #283A86;
+    }
+    
+    
+    .W-shouye-neitop {
+        @include cube(1200px,100px);
+        margin: 0 auto;
+//      text-align:justify;
+        
+        div{
+            
+            @include cube(12.5%,100px);
+            float: left;
+            
+            a{
+                display: block;
+                float: left;
+                @include cube(150px,100px);
+                text-align:center;
+                line-height: 100px;
+               color: #F6F6F9;
+            }
+            
+        }
+        
+    }   
+     
+    .W-shouye-logo{
+        
+        img{
+           @include cube(50px,100px);
+           display: block;
+           float: left; 
+        }
+        
+        span{
+            line-height:100px; 
+            display: block;
+           float: left; 
+            color: #F6F6F9;
+        }
+    }
+    
+    .W-shouye-neitop>div>a{
+     &:hover{
+         color:#34D9E6;
+     }   
+    }
+    .W-shouye-banner{
+        @include cube(100%,620px);
+
+    }
+    .W-shouye-bannerbox{
+        @include cube(100%,620px);
+        overflow: hidden;
+        
+        position: relative;
+        top:0;
+        left:0;
+        .W-shouye-bannerli{
+            @include cube(100%,620px);
+            position:absolute;
+            top:0;
+            left:0;
+            background-image: url(../img/W-shouye-banner2.png);
+            background-size: cover;
+            background-position: center center; 
+           
+           
+        }
+    }
+    .W-shouye-we{
+        margin: 0 auto;
+        margin-top:140px;
+        margin-bottom: 60px;
+//      margin:  auto;
+        height:109px;
+        display: block;
+        
+    }
+    .W-shouye-wexia{
+        height:320px;
+//      margin-left:40%;
+    margin: 0 auto;
+    display: block;
+    }
+    .W-shouye-font{
+        text-align: center;
+        h4{
+            font-size: 24px;
+            color: #F77676;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 23px;
+        }
+        .W-shouye-font1zhong{
+            @include cube(555px,auto);
+            margin: 0 auto;
+            margin-bottom: 28px;
+            line-height: 28px;
+            color: #ACABAB;
+        }
+        .W-shouye-font1ying{
+            @include cube(555px,auto);
+            margin: 0 auto;
+            line-height: 28px;
+            color: #979696;
+            
+        }
+    }
+    
+}
