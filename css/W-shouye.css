@@ -1,9 +1,204 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  list-style: none; }
 
 a {
   text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .W-shouye-top {
+    width: 100%;
+    height: 100px;
+    background: #283A86; }
+  .W-shouye-neitop {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: none; }
+    .W-shouye-neitop div {
+      width: 12.5%;
+      height: 100px;
+      float: left; }
+      .W-shouye-neitop div a {
+        display: block;
+        float: left;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #F6F6F9; }
+  .W-shouye-logo img {
+    width: 50px;
+    height: 100px;
+    display: block;
+    float: left; }
+  .W-shouye-logo span {
+    line-height: 100px;
+    display: block;
+    float: left;
+    color: #F6F6F9; }
+  .W-shouye-neitop > div > a:hover {
+    color: #34D9E6; }
+  .W-shouye-banner {
+    width: 100%;
+    height: 620px; }
+  .W-shouye-bannerbox {
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0; }
+    .W-shouye-bannerbox .W-shouye-bannerli {
+      width: 100%;
+      height: 620px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../img/W-shouye-banner2.png");
+      background-size: cover;
+      background-position: center center; }
+  .W-shouye-we {
+    margin: 70px auto;
+    height: 109px;
+    display: block; }
+  .W-shouye-wexia {
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .W-shouye-font {
+    text-align: center; }
+    .W-shouye-font h4 {
+      font-size: 24px;
+      color: #F77676;
+      margin-top: 32px;
+      margin-bottom: 12px; }
+    .W-shouye-font img {
+      display: block;
+      margin: 0 auto 23px; }
+    .W-shouye-font .W-shouye-font1zhong {
+      width: 80%;
+      height: auto;
+      margin: 0 auto 28px;
+      line-height: 28px;
+      color: #ACABAB; }
+    .W-shouye-font .W-shouye-font1ying {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      line-height: 28px;
+      color: #979696; }
+  .W-shouye-more {
+    margin: 35px auto;
+    display: block; }
+  .W-shouye-xitiao {
+    display: none; }
+  .W-shouye-meunbox {
+    width: 100%;
+    height: 20px;
+    padding-left: 25%;
+    padding-right: 22%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none; }
+  .W-shouye-meun {
+    width: 20%;
+    height: 20px;
+    float: left; }
+  .W-shouye-fuwu {
+    margin: 70px auto 20px;
+    display: block; }
+  .W-shouye-changtiao {
+    width: 100%; }
+  .W-shouye-tuandui {
+    margin: 70px auto;
+    display: block; }
+  .W-shouye-shejibox {
+    width: 90%;
+    height: 250px;
+    margin: 93px auto; }
+    .W-shouye-shejibox li {
+      float: left;
+      display: block;
+      width: 40%;
+      height: 100%;
+      margin: 10px auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .W-shouye-shejibox li a {
+        width: 100%;
+        height: 250px; }
+  .W-shouye-sheji1 {
+    background-image: url("../img/W-shouye-ren1.png"); }
+  .W-shouye-sheji2 {
+    background-image: url("../img/W-shouye-ren2.png"); }
+  .W-shouye-sheji3 {
+    background-image: url("../img/W-shouye-ren3.png"); }
+  .W-shouye-sheji4 {
+    background-image: url("../img/W-shouye-ren4.png"); }
+  .W-shouye-shejibox > li > a > p {
+    color: #373838;
+    margin-left: 20px;
+    font-size: 12px; }
+  .W-shouye-mingzi1 {
+    margin-top: 150%; }
+  .W-shouye-mingzi3 {
+    margin-top: 3%; }
+  .W-shouye-changtiao3 {
+    width: 100%; }
+  .W-shouye-siren {
+    margin: 95px auto;
+    display: block; }
+  .W-shouye-lianxi {
+    margin: 105px auto;
+    display: block; }
+  .W-shouye-dahao {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 75px; }
+    .W-shouye-dahao h4 {
+      font-size: 24px;
+      color: #343535;
+      font-weight: 500; }
+    .W-shouye-dahao h5 {
+      font-size: 18px;
+      color: #212121;
+      font-weight: 200;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .W-shouye-dahao p {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      color: #808080;
+      font-size: 14px;
+      margin-top: 28px;
+      line-height: 25px; }
+  .W-shouye-lianxixia {
+    margin: 0 auto;
+    display: block; }
+  .W-shouye-bottom {
+    width: 70%;
+    height: 217px;
+    margin: 0 auto;
+    margin-bottom: 195px; }
+    .W-shouye-bottom li {
+      width: 100%;
+      height: auto;
+      margin-top: 20px; }
+      .W-shouye-bottom li a {
+        display: block;
+        width: 100%;
+        height: auto; }
+        .W-shouye-bottom li a img {
+          width: 100%;
+          height: auto; } }
 
 @media screen and (min-width: 768px) {
   .W-shouye-top {
@@ -11,8 +206,9 @@ a {
     height: 100px;
     background: #283A86; }
   .W-shouye-neitop {
-    width: 1200px;
+    width: 80%;
     height: 100px;
+    overflow: hidden;
     margin: 0 auto; }
     .W-shouye-neitop div {
       width: 12.5%;
@@ -54,17 +250,15 @@ a {
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../img/W-shouye-banner2.png);
+      background-image: url("../img/W-shouye-banner2.png");
       background-size: cover;
       background-position: center center; }
   .W-shouye-we {
-    margin: 0 auto;
-    margin-top: 140px;
-    margin-bottom: 60px;
+    margin: 140px auto;
     height: 109px;
     display: block; }
   .W-shouye-wexia {
-    height: 320px;
+    width: 90%;
     margin: 0 auto;
     display: block; }
   .W-shouye-font {
@@ -76,13 +270,11 @@ a {
       margin-bottom: 12px; }
     .W-shouye-font img {
       display: block;
-      margin: 0 auto;
-      margin-bottom: 23px; }
+      margin: 0 auto 23px; }
     .W-shouye-font .W-shouye-font1zhong {
       width: 555px;
       height: auto;
-      margin: 0 auto;
-      margin-bottom: 28px;
+      margin: 0 auto 28px;
       line-height: 28px;
       color: #ACABAB; }
     .W-shouye-font .W-shouye-font1ying {
@@ -90,4 +282,124 @@ a {
       height: auto;
       margin: 0 auto;
       line-height: 28px;
-      color: #979696; } }
+      color: #979696; }
+  .W-shouye-more {
+    margin: 35px auto;
+    display: block; }
+  .W-shouye-xitiao {
+    margin: 0 auto;
+    display: block;
+    width: 90%; }
+  .W-shouye-meunbox {
+    width: 100%;
+    height: 20px;
+    padding-left: 20%;
+    padding-right: 21%;
+    box-sizing: border-box;
+    margin-top: 10px; }
+  .W-shouye-meun {
+    width: 20%;
+    height: 20px;
+    float: left;
+    text-align: center; }
+  .W-shouye-fuwu {
+    margin: 70px auto 20px;
+    display: block; }
+  .W-shouye-changtiao {
+    width: 100%;
+    height: 532px;
+    background-image: url("../img/W-shouye-changtiao.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .W-shouye-tuandui {
+    margin: 95px auto;
+    display: block; }
+  .W-shouye-shejibox {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto 93px;
+    overflow: hidden; }
+    .W-shouye-shejibox li {
+      float: left;
+      display: block;
+      width: 23%;
+      height: 450px;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .W-shouye-shejibox li a {
+        width: 100%;
+        height: 450px; }
+  .W-shouye-sheji1 {
+    background-image: url("../img/W-shouye-ren1.png"); }
+  .W-shouye-sheji2 {
+    background-image: url("../img/W-shouye-ren2.png"); }
+  .W-shouye-sheji3 {
+    background-image: url("../img/W-shouye-ren3.png"); }
+  .W-shouye-sheji4 {
+    background-image: url("../img/W-shouye-ren4.png"); }
+  .W-shouye-shejibox > li > a > p {
+    color: #373838;
+    margin-left: 20px;
+    font-size: 12px; }
+  .W-shouye-mingzi1 {
+    margin-top: 150%; }
+  .W-shouye-mingzi3 {
+    margin-top: 3%; }
+  .W-shouye-changtiao3 {
+    width: 100%; }
+  .W-shouye-siren {
+    margin: 0 auto 95px;
+    display: block; }
+  .W-shouye-lianxi {
+    margin: 105px auto;
+    display: block; }
+  .W-shouye-dahao {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 75px; }
+    .W-shouye-dahao h4 {
+      font-size: 24px;
+      color: #343535;
+      font-weight: 500; }
+    .W-shouye-dahao h5 {
+      font-size: 18px;
+      color: #212121;
+      font-weight: 200;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .W-shouye-dahao p {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      color: #808080;
+      font-size: 14px;
+      margin-top: 28px;
+      line-height: 25px; }
+  .W-shouye-lianxixia {
+    margin: 0 auto;
+    display: block; }
+  .W-shouye-bottom {
+    width: 70%;
+    height: 217px;
+    margin: 0 auto;
+    margin-bottom: 195px; }
+    .W-shouye-bottom li {
+      width: 33.33%;
+      height: auto;
+      float: left;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-sizing: border-box; }
+      .W-shouye-bottom li a {
+        display: block;
+        width: 100%;
+        height: auto; }
+        .W-shouye-bottom li a img {
+          width: 100%;
+          height: auto; } }
