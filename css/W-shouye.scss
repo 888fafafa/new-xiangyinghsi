@@ -169,41 +169,43 @@ a {
     }
 
     .W-shouye-shejibox {
-        @include cube(90%,250px);
+        @include cube(90%,auto);
         margin:93px auto;
         li {
-            float: left;
+//          float: left;
             display: block;
-            @include cube(40%,100%);
+            
+//          @include cube(45%,300px);
             margin:10px auto;
             padding-left: 15px;
             padding-right: 15px;
             box-sizing: border-box;
             background-repeat: no-repeat;
-            background-size:100%;
-//          background-position: center;
+            background-size:80%;
+            background-position: center;
             a {
 //              display: block;
-                @include cube(100%,250px);
+                @include cube(100%,auto);
             }
         }
 
     }
     .W-shouye-sheji1 {
         background-image: url("../img/W-shouye-ren1.png");
-
+        float: left;
     }
     .W-shouye-sheji2 {
         background-image: url("../img/W-shouye-ren2.png");
-
+        float: right;
     }
     .W-shouye-sheji3 {
         background-image: url("../img/W-shouye-ren3.png");
-
+        float: left;
+        
     }
     .W-shouye-sheji4 {
         background-image: url("../img/W-shouye-ren4.png");
-
+        float: right;
     }
     .W-shouye-shejibox > li > a > p {
         color: #373838;
@@ -216,7 +218,7 @@ a {
     }
 
     .W-shouye-mingzi3 {
-        margin-top:3%;
+//      margin-top:3%;
     }
     .W-shouye-changtiao3 {
         width: 100%;
