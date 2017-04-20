@@ -16,7 +16,11 @@ a {
   url('../fonts/w-font/iconfont.svg#iconfont') format('svg');
 }
 @media screen and(max-width:768px) {
-
+* {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
 
 .h-header{
     width:100%;
@@ -85,21 +89,34 @@ a {
     text-align: center;
 }
 .h-yingc{
+    z-index: 40;
     position: absolute;
-    width:150px;
-    height:auto;
+    width: 150px;
+    height: 366px;
     right: 0px;
-    top:84px;
-    background: #fff;
+    top: 83px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
     cursor: pointer;
     display: none;
-    z-index: 40;
 }
 .h-yingc h3{
-    line-height: 60px;
+     color: #fff;
+    width: 150px;
+    height:61px;
+    line-height: 61px;
     text-align: center;
     box-sizing: border-box;
     border-bottom: 1px solid #0085D0;
+    margin: 0;
+    padding: 0;
+   
+}
+.h-yingc a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    
 }
 .h-hrights i{
     font-size: 40px;
@@ -107,9 +124,6 @@ a {
     color: #fff;
     cursor: pointer;
 }
-
-
-
 
 
 
@@ -297,28 +311,7 @@ a {
         animation-fill-mode: forwards;
         opacity:0;    
     } 
-    //  .W-shouye-banner {
-    //      @include cube(100%,620px);
-    //
-    //  }
-    //  .W-shouye-bannerbox {
-    //      @include cube(100%,620px);
-    //      overflow: hidden;
-    //
-    //      position: relative;
-    //      top: 0;
-    //      left: 0;
-    //      .W-shouye-bannerli {
-    //          @include cube(100%,620px);
-    //          position: absolute;
-    //          top: 0;
-    //          left: 0;
-    //          background-image: url("../img/W-shouye-banner2.png");
-    //          background-size: cover;
-    //          background-position: center center;
-    //
-    //      }
-    //  }
+
     .W-shouye-we {
         margin: 70px auto;
         height: 109px;
@@ -359,6 +352,11 @@ a {
         }
 
     }
+        .W-shouye-morea{
+            width:30%;
+            margin: 0 auto;
+         display: block;
+        }
     .W-shouye-more {
         margin: 35px auto;
         display: block;
