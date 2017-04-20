@@ -63,10 +63,26 @@ a {
     right: 20px;
     top: 12px;
     text-align: center; }
+  .h-yingc {
+    position: absolute;
+    width: 150px;
+    height: 360px;
+    right: 0;
+    top: 83px;
+    background: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 40; }
+  .h-yingc h3 {
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0085D0; }
   .h-hrights i {
     font-size: 40px;
     line-height: 60px;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
   .W-shouye-top {
     width: 100%;
     height: 100px;
@@ -125,16 +141,16 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url("../img/W-shouye-banner2.png"); }
+    background-image: url("../img/W-shouye-bannerd.jpg"); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url(../img/D-img/D-call-banner.png); }
+    background-image: url("../img/W-shouye-bannerc.jpg"); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url(../img/h-new3.png); }
+    background-image: url("../img/W-shouye-bannere.jpg"); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
     position: absolute;
-    left: 40%;
+    left: 44%;
     bottom: -55px; }
     .W-shouye-circlebox .W-shouye-circle {
       width: 10px;
@@ -152,7 +168,7 @@ a {
     font-size: 50px;
     font-weight: 600;
     position: absolute;
-    left: 0;
+    left: 5;
     top: 50%;
     color: #ccc; }
   .W-shouye-right {
@@ -162,7 +178,7 @@ a {
     font-size: 50px;
     font-weight: 600;
     position: absolute;
-    right: 3px;
+    right: 15px;
     top: 50%;
     color: #ccc; }
   .W-shouye-we {
@@ -213,10 +229,12 @@ a {
     height: 20px;
     float: left; }
   .W-shouye-fuwu {
-    margin: 70px auto 20px;
+    margin: 70px auto;
     display: block; }
   .W-shouye-changtiao {
-    width: 100%; }
+    display: none; }
+  .W-shouye-xiaoping-a {
+    margin-bottom: 70px; }
   .W-shouye-tuandui {
     margin: 70px auto;
     display: block; }
@@ -239,7 +257,13 @@ a {
         box-sizing: border-box;
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center; }
+        background-position: center;
+        text-decoration: none;
+        transition: all 0.2s linear; }
+  .W-shouye-shejibox2 > li > a:hover p {
+    color: #2859F8; }
+  .W-shouye-shejibox2 > li > a:hover {
+    transform: translate3d(0, -5px, 0); }
   .W-shouye-sheji1 {
     background-image: url("../img/W-shouye-ren1.png");
     float: left; }
@@ -253,14 +277,22 @@ a {
     background-image: url("../img/W-shouye-ren4.png");
     float: right; }
   .W-shouye-shejibox2 > li > a > p {
-    color: #373838;
     margin-left: 15%;
     font-size: 6px;
-    line-height: 20px; }
+    line-height: 20px;
+    margin-bottom: 0; }
   .W-shouye-mingzi1 {
-    margin-top: 140%; }
+    margin-top: 140%;
+    color: #A3928D; }
+  .W-shouye-mingzi2 {
+    color: #ccc; }
+  .W-shouye-mingzi3 {
+    color: #ccc; }
   .W-shouye-changtiao3 {
-    width: 100%; }
+    width: 100%;
+    display: none; }
+  .W-shouye-xiaoping-b {
+    margin-bottom: 40px; }
   .W-shouye-siren {
     margin: 95px auto;
     display: block; }
@@ -297,12 +329,15 @@ a {
   .W-shouye-bottom {
     width: 70%;
     height: auto;
-    margin: 0 auto;
-    margin-bottom: 95px; }
+    margin: 95px auto; }
     .W-shouye-bottom li {
       width: 100%;
       height: auto;
-      margin-top: 20px; }
+      margin-top: 20px;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      left: 0; }
       .W-shouye-bottom li a {
         display: block;
         width: 100%;
@@ -310,6 +345,55 @@ a {
         .W-shouye-bottom li a img {
           width: 100%;
           height: auto; }
+  .W-shouye-zhezhao {
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2D2A27;
+    opacity: 0.8;
+    transition: all 0.2s linear; }
+  .W-shouye-zhezhao > h2 {
+    color: #fff;
+    text-align: center;
+    background: #000;
+    opacity: 0;
+    font-size: 20px;
+    margin-top: 24%;
+    margin-right: -160%;
+    line-height: 350%; }
+  .W-shouye-zhezhao > p {
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    margin-left: -160%; }
+  .W-shouye-bottombox:hover .W-shouye-zhezhao {
+    opacity: 0.5; }
+  @keyframes one {
+    0% {
+      margin-right: -100%; }
+    100% {
+      margin-right: 0; } }
+  @keyframes two {
+    0% {
+      margin-left: -100%; }
+    100% {
+      margin-left: 0; } }
+  .W-shouye-bottombox:hover .W-shouye-h2 {
+    animation-name: one;
+    animation-duration: 0.2s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 1; }
+  .W-shouye-bottombox:hover .W-shouye-p {
+    animation-name: two;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 1; }
   .h-dibu {
     width: 100%;
     height: 330px;
@@ -338,6 +422,8 @@ a {
     display: none; } }
 
 @media screen and (min-width: 768px) {
+  .h-smallping {
+    display: none; }
   .W-shouye-top {
     width: 100%;
     height: 100px;
@@ -358,7 +444,8 @@ a {
         height: 100px;
         text-align: center;
         line-height: 100px;
-        color: #F6F6F9; }
+        color: #F6F6F9;
+        text-decoration: none; }
   .W-shouye-logo img {
     width: 50px;
     height: 100px;
@@ -395,11 +482,11 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url("../img/W-shouye-banner2.png"); }
+    background-image: url("../img/W-shouye-bannerd.jpg"); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url(../img/D-img/D-call-banner.png); }
+    background-image: url("../img/W-shouye-bannerc.jpg"); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url(../img/h-new3.png); }
+    background-image: url("../img/W-shouye-bannere.jpg"); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
@@ -422,7 +509,7 @@ a {
     font-size: 50px;
     font-weight: 600;
     position: absolute;
-    left: 0;
+    left: 5px;
     top: 50%;
     color: #ccc; }
   .W-shouye-right {
@@ -432,7 +519,7 @@ a {
     font-size: 50px;
     font-weight: 600;
     position: absolute;
-    right: 3px;
+    right: 15px;
     top: 50%;
     color: #ccc; }
   .W-shouye-we {
@@ -493,6 +580,8 @@ a {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
+  .W-shouye-xiaoping-a {
+    display: none; }
   .W-shouye-tuandui {
     margin: 95px auto;
     display: block; }
@@ -501,7 +590,7 @@ a {
   .W-shouye-shejibox {
     width: 80%;
     height: 450px;
-    margin: 0 auto 93px;
+    margin: 93px auto;
     overflow: hidden; }
     .W-shouye-shejibox li {
       float: left;
@@ -511,10 +600,16 @@ a {
       border: 10px solid #fff;
       box-sizing: border-box;
       background-repeat: no-repeat;
-      background-size: contain; }
+      background-size: contain;
+      transition: all 0.2s linear; }
       .W-shouye-shejibox li a {
         width: 100%;
-        height: 450px; }
+        height: 450px;
+        text-decoration: none; }
+  .W-shouye-shejibox > li > a:hover p {
+    color: #2859F8; }
+  .W-shouye-shejibox > li:hover {
+    transform: translate3d(0, -5px, 0); }
   .W-shouye-sheji1 {
     background-image: url("../img/W-shouye-ren1.png"); }
   .W-shouye-sheji2 {
@@ -526,13 +621,23 @@ a {
   .W-shouye-shejibox > li > a > p {
     color: #373838;
     margin-left: 10%;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 0; }
   .W-shouye-mingzi1 {
-    margin-top: 150%; }
+    margin-top: 143%;
+    color: #A3928D; }
+  .W-shouye-mingzi2 {
+    color: #ccc; }
+  .W-shouye-mingzi3 {
+    color: #ccc; }
+  .W-shouye-shejibox > li > a > .W-shouye-mingzi3 {
+    font-size: 6px; }
   .W-shouye-changtiao3 {
     width: 100%; }
+  .W-shouye-xiaoping-b {
+    display: none; }
   .W-shouye-siren {
-    margin: 0 auto 95px;
+    margin: 95px auto;
     display: block; }
   .W-shouye-lianxi {
     margin: 105px auto;
@@ -567,15 +672,17 @@ a {
   .W-shouye-bottom {
     width: 70%;
     height: 217px;
-    margin: 0 auto;
-    margin-bottom: 65px; }
+    margin: 0 auto 65px; }
     .W-shouye-bottom li {
       width: 33.33%;
       height: auto;
       float: left;
-      padding-left: 5px;
-      padding-right: 5px;
-      box-sizing: border-box; }
+      border: 10px solid #fff;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      left: 0; }
       .W-shouye-bottom li a {
         display: block;
         width: 100%;
@@ -583,6 +690,56 @@ a {
         .W-shouye-bottom li a img {
           width: 100%;
           height: auto; }
+  .W-shouye-zhezhao {
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2D2A27;
+    opacity: 0.8;
+    transition: all 0.2s linear; }
+  .W-shouye-zhezhao > h2 {
+    color: #fff;
+    text-align: center;
+    background: #000;
+    opacity: 0;
+    font-size: 20px;
+    margin-top: 34%;
+    margin-bottom: 0;
+    margin-right: -160%;
+    line-height: 150%; }
+  .W-shouye-zhezhao > p {
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    margin-left: -160%; }
+  .W-shouye-bottombox:hover .W-shouye-zhezhao {
+    opacity: 0.5; }
+  @keyframes one {
+    0% {
+      margin-right: -100%; }
+    100% {
+      margin-right: 0; } }
+  @keyframes two {
+    0% {
+      margin-left: -100%; }
+    100% {
+      margin-left: 0; } }
+  .W-shouye-bottombox:hover .W-shouye-h2 {
+    animation-name: one;
+    animation-duration: 0.2s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 1; }
+  .W-shouye-bottombox:hover .W-shouye-p {
+    animation-name: two;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 1; }
   .h-dibu {
     display: none; }
   .h-footer {
@@ -593,7 +750,7 @@ a {
   .h-footers {
     width: 90%;
     height: 100%;
-    background-image: url(../img/h-footer.png);
+    background-image: url("../img/h-footer.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
