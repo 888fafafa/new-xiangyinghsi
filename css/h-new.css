@@ -25,13 +25,13 @@
 	position: absolute;
 	left:40px;
 	top:1px;
-	width:80%;
+	width:60%;
 	height:56px;
 	margin-left: 15px;
 	background:#273786;
 	border:none;
 	color: #fff;
-//	border-right:1px solid #ccc;
+	border:none;
 }
 .h-hright{
 	width:60px;
