@@ -66,9 +66,9 @@ a {
   .h-yingc {
     position: absolute;
     width: 150px;
-    height: 360px;
-    right: 0;
-    top: 83px;
+    height: auto;
+    right: 0px;
+    top: 84px;
     background: #fff;
     cursor: pointer;
     display: none;

@@ -8,93 +8,104 @@ a {
     text-decoration: none;
 }
 @media screen and(max-width:768px) {
-    .h-header {
-        width: 100%;
-        height: 84px;
-        background: #273786;
-        padding-top: 12px;
-        position: relative;
-    }
-    .h-hleft {
-        width: 50%;
-        height: 60px;
-        margin-left: 10px;
-        position: relative;
-    }
-    @font-face {
-        font-family: 'iconfont';
-        src: url("../fonts/iconfont.eot");
-        src: url("../fonts/iconfont.eot?#iefix") format('embedded-opentype'), url("../fonts/iconfont.woff") format('woff'), url("../fonts/iconfont.ttf") format('truetype'), url("../fonts/iconfont.svg#iconfont") format('svg');
-    }
-    .iconfont {
-        font-family: "iconfont" !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .h-hleft i {
-        font-size: 20px;
-        line-height: 60px;
-        color: #fff;
-        margin-left: 10px;
-        position: absolute;
-        left: 20px;
-        top: 1px;
-    }
-    .h-hleft input {
-        width: 100%;
-        height: 60px;
-        margin-left: 15px;
-        background: #273786;
-        border: 1px solid #ccc;
-    }
-    .h-hright {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        right: 115px;
-        top: 12px;
-        border: 1px solid #fff;
-        text-align: center;
-    }
-    .h-hright i {
-        font-size: 40px;
-        line-height: 60px;
-        color: #fff;
-    }
-    .h-hrights {
-        width: 80px;
-        height: 60px;
-        position: absolute;
-        right: 20px;
-        top: 12px;
-        text-align: center;
-    }
-    .h-yingc {
-        position: absolute;
-        width: 150px;
-        height: 360px;
-        right: 0;
-        top: 83px;
-        background: #fff;
-        cursor: pointer;
-        display: none;
-        z-index: 40;
-    }
-    .h-yingc h3 {
-        line-height: 60px;
-        text-align: center;
-        box-sizing: border-box;
-        border-bottom: 1px solid #0085D0;
-    }
-    .h-hrights i {
-        font-size: 40px;
-        line-height: 60px;
-        color: #fff;
-        cursor: pointer;
-    }
+
+
+.h-header{
+    width:100%;
+    height:84px;
+    background:#273786;
+    padding-top: 12px;
+    position: relative;
+}
+.h-hleft{
+    width:50%;
+    height:60px;
+    margin-left: 10px;
+    position: relative;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.h-hleft i{
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    left:20px;
+    top:1px;
+}
+.h-hleft input{
+    width:100%;
+    height:60px;
+    margin-left: 15px;
+    background:#273786;
+    border:1px solid #ccc;
+}
+.h-hright{
+    width:60px;
+    height:60px;
+    position: absolute;
+    right:115px;
+    top:12px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.h-hright i{
+    font-size: 40px;
+    line-height: 60px;  
+    color: #fff;
+}
+.h-hrights{
+    width:80px;
+    height:60px;
+    position: absolute;
+    right:20px;
+    top:12px;
+    text-align: center;
+}
+.h-yingc{
+    position: absolute;
+    width:150px;
+    height:auto;
+    right: 0px;
+    top:84px;
+    background: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 40;
+}
+.h-yingc h3{
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0085D0;
+}
+.h-hrights i{
+    font-size: 40px;
+    line-height: 60px;  
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
     .W-shouye-top {
         @include cube(100%,100px);
