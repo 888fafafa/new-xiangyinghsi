@@ -101,6 +101,7 @@ body{
     color: #fff;
     cursor: pointer;
 }
+
     
     
     
@@ -108,22 +109,44 @@ body{
     
     .D-banner{
         @include cube(100%,620px);
-        background-image: url(../img/D-img/W-shouye-bannerc.jpg);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
         background-size:cover;
         background-position:center;    
     }
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
+        }
+         100%{
+            top:25%;
+            opacity: 1;
+        }
+    }
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
+    
     .D-main,.h-footer{
         display: none;      
     }
     .D-smallbox{
         padding:0 15px;
         box-sizing: border-box;
-        margin-bottom: 125px;
+        margin-bottom: 65px;
     }
     .D-s-title{
-        @include cube(100%,211px);
+        @include cube(100%,200px);
         background-image: url(../img/D-img/D-siren11.png);
         background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
         margin-top:30px;
         background-position: center;      
     }
@@ -208,13 +231,13 @@ body{
         margin-left:10px;
     }
     .D-s-2{
-        @include font(17px,#999,300);
+        @include font(14px,#666,300);
         margin-top:20px;
         padding-left:20px;
     }
     .D-siren-center{
         width:100%;
-        height:458px;
+        height:510px;
         background-image:url(../img/D-img/D-siren-center.png);
         background-size:cover;
         background-repeat: no-repeat; 
@@ -239,7 +262,7 @@ body{
         @include cube(85%,100%);
         padding-top: 25px;
         padding:0 10px;
-        padding-top:10px;
+        padding-top:25px;
         box-sizing: border-box;
         margin:0 auto;
         position:relative;
@@ -449,10 +472,30 @@ body{
     }
     .D-banner{
         @include cube(100%,620px);
-        background-image: url(../img/D-img/W-shouye-bannerc.jpg);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
         background-size:cover;
         background-position:center;    
     }
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
+        }
+         100%{
+            top:25%;
+            opacity: 1;
+        }
+    }
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
+    
     .D-smallbox{
         display: none;
     }
@@ -721,6 +764,8 @@ body{
     .W-shouye-top {
         @include cube(100%,100px);
         background: #283A86;
+        position:relative;
+        z-index:100;
     }
 
     .W-shouye-neitop {
@@ -770,11 +815,30 @@ body{
     }
     .D-banner{
         @include cube(100%,620px);
-        background-image: url(../img/D-img/W-shouye-bannerc.jpg);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
         background-size:cover;
-        background-position:center;    
+        background-position:center;
+        position:relative;    
     }
-    
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
+        }
+         100%{
+            top:25%;
+            opacity: 1;
+        }
+    }
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
     .D-main{
         @include cube(1200px,950px);
         margin:0 auto;

@@ -164,7 +164,7 @@ body {
   .h-yingc {
     position: absolute;
     width: 150px;
-    height: 360px;
+    height: auto;
     right: -20px;
     top: 72px;
     background: #fff;
@@ -186,11 +186,12 @@ body {
   .banner-m {
     width: 100%;
     height: 1098px;
-    background-image: url(../img/x-add1_02.png);
+    background-image: url(../img/D-img/D-tu1.jpg);
     background-size: cover;
     background-position: center center;
   }
   .center {
+    width: 60%;
     margin: 47px auto 0 auto;
     display: block;
   }
@@ -201,13 +202,16 @@ body {
         text-align: center;
         text-transform: uppercase;
     }*/
+  .D-active > p {
+    color: #12BEF0;
+  }
   .tit-tu {
     font-family: font;
     text-align: center;
     margin-bottom: -20px;
     margin-top: 30px;
     font-size: 36px;
-    color: #999;
+    color: #333;
     font-weight: 400;
   }
   .tit-tu1 {
@@ -215,17 +219,17 @@ body {
   }
   .tit {
     width: 80%;
-    margin: 26px auto 0 auto;
-    font-size: 25px;
-    color: #817E7E;
+    margin: 40px auto 0 auto;
+    font-size: 22px;
+    color: #333;
     text-align: center;
     text-transform: uppercase;
   }
   .tit-one {
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 10px auto 0 auto;
     color: #959393;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -234,9 +238,9 @@ body {
     display: block;
   }
   .map {
-    background-image: url(../img/x-add_18.png);
+    background-image: url(../img/D-img/D-ditu1.png);
     width: 100%;
-    height: 647px;
+    height: 470px;
     background-size: cover;
     background-position: center center;
     margin-top: 130px;
@@ -259,17 +263,18 @@ body {
     text-align: center;
     color: #C3C3C3;
     font-size: 16px;
-    margin-top: 33px;
+    margin-top: 50px;
   }
   .look-j > p:first-child {
-    font-size: 20px;
-    color: #BABABA;
-    margin-bottom: 8px;
+    font-size: 24px;
+    color: #333;
+    margin: 8px 0;
   }
   .look-j > p:nth-child(2), .look-j > p:nth-child(3) {
     width: 95%;
     height: auto;
     padding: 0 10px;
+    color: #333;
     box-sizing: border-box;
   }
   .look-j > p:first-child > span {
@@ -316,6 +321,7 @@ body {
     width: 100%;
     height: auto;
     padding: 0 24px;
+    box-sizing: border-box;
   }
   .before {
     width: 20%;
@@ -412,10 +418,11 @@ body {
   }
   .look > p:first-child {
     font-size: 24px;
-    color: #BABABA;
+    color: #333;
   }
   .look > p:nth-child(2), .look > p:nth-child(3) {
     width: 90%;
+    color: #333;
     height: auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -451,7 +458,7 @@ body {
     width: 95%;
   }
   footer > div {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   footer > div > img:nth-child(2) {
     margin: 0 20px 0 20px;
@@ -505,8 +512,9 @@ body {
   .D-call-banner {
     width: 100%;
     height: 620px;
-    background-image: url(../img/D-img/D-call-banner.png);
+    background-image: url(../img/D-img/W-shouye-bannerc.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
   }
   .D-lujin {
@@ -545,8 +553,8 @@ body {
     color: #36F6F8;
   }
   .D-ditu {
-    height: 388px;
-    background-image: url(../img/D-img/D-call-tu.png);
+    height: 470px;
+    background-image: url(../img/D-img/D-ditu1.png);
     background-size: cover;
     margin-top: 60px;
   }
@@ -659,10 +667,11 @@ body {
     display: block;
   }
   .h-footers {
-    width: 1200px;
+    width: 100%;
     height: 100%;
     background-image: url(../img/h-footer.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
   }
 }

@@ -143,30 +143,39 @@
 			<div class="banner-m super"></div>
 			<section>
 			<img  class="center" src="../img/x-add_03.png"/>
-			<p class="tit-tu">&#xe600;</p>
-			<p class="tit">
-				大好时光国际旅行社
-			</p>
-			<p class="tit-one">
-				In my mind, everyone shall have his own dream
-		that having a dream
-			</p>
-			<p class="tit-tu tit-tu1">&#xe620;</p>
-			<p class="tit">
-				大好时光国际旅行社
-			</p>
-			<p class="tit-one">
-				In my mind, everyone shall have his own dream
-		that having a dream
-			</p>
-			<p class="tit-tu tit-tu1">&#xe697;</p>
-			<p class="tit">
-				大好时光国际旅行社
-			</p>
-			<p class="tit-one">
-				In my mind, everyone shall have his own dream
-		that having a dream
-			</p>
+			<div class="D-fashi D-active">
+				<p class="tit-tu">&#xe600;</p>
+				<p class="tit">
+					大好时光国际旅行社
+				</p>
+				<p class="tit-one">
+					In my mind, everyone shall have his own dream
+			that having a dream
+				</p>
+			</div>
+			<div class="D-fashi">
+				<p class="tit-tu tit-tu1">&#xe620;</p>
+				<p class="tit">
+					大好时光国际旅行社
+				</p>
+				<p class="tit-one">
+					In my mind, everyone shall have his own dream
+			that having a dream
+				</p>
+			</div>
+			<div class="D-fashi">
+				<p class="tit-tu tit-tu1">&#xe697;</p>
+				<p class="tit">
+					大好时光国际旅行社
+				</p>
+				<p class="tit-one">
+					In my mind, everyone shall have his own dream
+			that having a dream
+				</p>
+			</div>
+			
+			
+			
 			<div class="map">
 				<div>400-2819-900</div>
 			</div>
@@ -228,6 +237,11 @@
 	</body>
 </html>
 <script>
+	console.log($(".D-fashi"))
+	$(".D-fashi").click(function(){
+		$(".D-fashi").removeClass("D-active");
+		$(this).addClass("D-active")
+	})
 	console.log($("form"))
 	$(document).ready(function(){
 		$("form").each(function(){
