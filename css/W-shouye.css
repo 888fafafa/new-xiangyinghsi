@@ -7,6 +7,11 @@
 a {
   text-decoration: none; }
 
+@font-face {
+  font-family: 'W-iconfont';
+  src: url("../fonts/w-font/iconfont.eot");
+  src: url("../fonts/w-font/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/w-font/iconfont.woff") format("woff"), url("../fonts/w-font/iconfont.ttf") format("truetype"), url("../fonts/w-font/iconfont.svg#iconfont") format("svg"); }
+
 @media screen and (max-width: 768px) {
   .h-header {
     width: 100%;
@@ -141,17 +146,17 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url("../img/W-shouye-bannerd.jpg"); }
+    background-image: url(../img/W-banner-xiao1.jpg); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url("../img/W-shouye-bannerc.jpg"); }
+    background-image: url(../img/W-banner-xiao2.jpg); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url("../img/W-shouye-bannere.jpg"); }
+    background-image: url(../img/W-banner-xiao4.jpg); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
     position: absolute;
     left: 44%;
-    bottom: -55px; }
+    bottom: -37px; }
     .W-shouye-circlebox .W-shouye-circle {
       width: 10px;
       height: 10px;
@@ -181,6 +186,38 @@ a {
     right: 15px;
     top: 50%;
     color: #ccc; }
+  @keyframes zi1 {
+    0% {
+      top: 40px;
+      opacity: 0; }
+    100% {
+      top: 70px;
+      opacity: 1; } }
+  .first > .W-zhui1 {
+    position: absolute;
+    left: 15%;
+    animation-name: zi1;
+    animation-duration: 1.9s;
+    animation-delay: 0.1s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+  @keyframes zi2 {
+    0% {
+      top: 40px;
+      opacity: 0; }
+    100% {
+      top: 110px;
+      opacity: 1; } }
+  .first > .W-zhui2 {
+    position: absolute;
+    left: 60%;
+    animation-name: zi1;
+    animation-duration: 0.9s;
+    animation-delay: 0.1s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 0; }
   .W-shouye-we {
     margin: 70px auto;
     height: 109px;
@@ -231,6 +268,39 @@ a {
   .W-shouye-fuwu {
     margin: 70px auto;
     display: block; }
+  .W-sigebox {
+    margin-bottom: 100px;
+    position: relative;
+    top: 0;
+    left: 0; }
+    .W-sigebox li {
+      text-align: center; }
+      .W-sigebox li:hover a {
+        color: #00B7EE; }
+      .W-sigebox li a {
+        font-family: "W-iconfont";
+        color: #000;
+        font-size: 40px;
+        text-decoration: none; }
+      .W-sigebox li .W-xiala {
+        height: 50px;
+        width: auto;
+        text-align: left;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+        top: 0px;
+        left: 63%;
+        display: none; }
+        .W-sigebox li .W-xiala .W-xiala-p1 {
+          color: #FC8484;
+          float: left; }
+        .W-sigebox li .W-xiala .W-xiala-p2 {
+          float: left; }
+        .W-sigebox li .W-xiala .W-xiala-p3 {
+          display: none; }
+  .W-sigebox > li:hover .W-xiala {
+    display: block; }
   .W-shouye-changtiao {
     display: none; }
   .W-shouye-xiaoping-a {
@@ -238,56 +308,45 @@ a {
   .W-shouye-tuandui {
     margin: 70px auto;
     display: block; }
-  .W-shouye-shejibox {
-    display: none; }
   .W-shouye-shejibox2 {
+    display: none; }
+  .W-shouye-shejibox {
     width: 100%;
-    height: 800px;
-    margin: 93px auto; }
-    .W-shouye-shejibox2 li {
-      width: 100%;
-      height: 300px;
-      margin: 40px auto; }
-      .W-shouye-shejibox2 li a {
+    height: auto;
+    margin: 93px auto;
+    overflow: hidden; }
+    .W-shouye-shejibox li {
+      float: left;
+      margin-top: 20px;
+      box-sizing: border-box;
+      transition: all 0.2s linear; }
+      .W-shouye-shejibox li a {
         display: block;
-        width: 50%;
-        height: auto;
-        overflow: hidden;
-        border: 10px solid #fff;
-        box-sizing: border-box;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        text-decoration: none;
-        transition: all 0.2s linear; }
-  .W-shouye-shejibox2 > li > a:hover p {
+        position: relative;
+        top: 0;
+        left: 0; }
+        .W-shouye-shejibox li a img {
+          width: 80%;
+          display: block; }
+  .W-shouye-shejibox > li > a:hover p {
     color: #2859F8; }
-  .W-shouye-shejibox2 > li > a:hover {
+  .W-shouye-shejibox > li:hover {
     transform: translate3d(0, -5px, 0); }
-  .W-shouye-sheji1 {
-    background-image: url("../img/W-shouye-ren1.png");
-    float: left; }
-  .W-shouye-sheji2 {
-    background-image: url("../img/W-shouye-ren2.png");
-    float: right; }
-  .W-shouye-sheji3 {
-    background-image: url("../img/W-shouye-ren3.png");
-    float: left; }
-  .W-shouye-sheji4 {
-    background-image: url("../img/W-shouye-ren4.png");
-    float: right; }
-  .W-shouye-shejibox2 > li > a > p {
-    margin-left: 15%;
-    font-size: 6px;
-    line-height: 20px;
-    margin-bottom: 0; }
+  .W-shouye-shejibox > li > a > p {
+    position: absolute;
+    left: 12px; }
   .W-shouye-mingzi1 {
-    margin-top: 140%;
-    color: #A3928D; }
+    color: #A3928D;
+    bottom: 14px;
+    margin-top: -60px; }
   .W-shouye-mingzi2 {
-    color: #ccc; }
+    color: #ccc;
+    bottom: -4px; }
   .W-shouye-mingzi3 {
-    color: #ccc; }
+    color: #ccc;
+    bottom: -11px;
+    font-size: 5px;
+    display: none; }
   .W-shouye-changtiao3 {
     width: 100%;
     display: none; }
@@ -426,33 +485,33 @@ a {
     display: none; }
   .W-shouye-top {
     width: 100%;
-    height: 100px;
+    height: 88px;
     background: #283A86; }
   .W-shouye-neitop {
     width: 80%;
-    height: 100px;
+    height: 88px;
     overflow: hidden;
     margin: 0 auto; }
     .W-shouye-neitop div {
       width: 12.5%;
-      height: 100px;
+      height: 88px;
       float: left; }
       .W-shouye-neitop div a {
         display: block;
         float: left;
         width: 100%;
-        height: 100px;
+        height: 88px;
         text-align: center;
         line-height: 100px;
         color: #F6F6F9;
         text-decoration: none; }
   .W-shouye-logo img {
     width: 50px;
-    height: 100px;
+    height: 88px;
     display: block;
     float: left; }
   .W-shouye-logo span {
-    line-height: 100px;
+    line-height: 88px;
     display: block;
     float: left;
     color: #F6F6F9; }
@@ -482,17 +541,17 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url("../img/W-shouye-bannerd.jpg"); }
+    background-image: url(../img/W-banner-xinde1.jpg); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url("../img/W-shouye-bannerc.jpg"); }
+    background-image: url(../img/W-banner-xinde2.jpg); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url("../img/W-shouye-bannere.jpg"); }
+    background-image: url(../img/W-banner-xinde4.jpg); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
     position: absolute;
     left: 50%;
-    bottom: -55px; }
+    top: 640px; }
     .W-shouye-circlebox .W-shouye-circle {
       width: 10px;
       height: 10px;
@@ -522,14 +581,50 @@ a {
     right: 15px;
     top: 50%;
     color: #ccc; }
+  @keyframes zi1 {
+    0% {
+      top: 00px;
+      opacity: 0; }
+    100% {
+      top: 70px;
+      opacity: 1; } }
+  .first > .W-zhui1 {
+    position: absolute;
+    left: 35%;
+    animation-name: zi1;
+    animation-duration: 1.9s;
+    animation-delay: 0.1s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+  @keyframes zi2 {
+    0% {
+      top: 40px;
+      opacity: 0; }
+    100% {
+      top: 110px;
+      opacity: 1; } }
+  .first > .W-zhui2 {
+    position: absolute;
+    left: 60%;
+    animation-name: zi1;
+    animation-duration: 0.9s;
+    animation-delay: 0.1s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards;
+    opacity: 0; }
   .W-shouye-we {
     margin: 140px auto;
     height: 109px;
     display: block; }
   .W-shouye-wexia {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    transition: all 0.2s linear; }
+    .W-shouye-wexia:hover {
+      transform: translate3d(0, -5px, 0);
+      box-shadow: 0 4px 7px 0px #ccc; }
   .W-shouye-font {
     text-align: center; }
     .W-shouye-font h4 {
@@ -572,7 +667,37 @@ a {
     float: left;
     text-align: center; }
   .W-shouye-fuwu {
-    margin: 70px auto 20px;
+    margin: 70px auto;
+    display: block; }
+  .W-sigebox {
+    margin-bottom: 100px;
+    position: relative;
+    top: 0;
+    left: 0; }
+    .W-sigebox li {
+      text-align: center; }
+      .W-sigebox li:hover a {
+        color: #00B7EE; }
+      .W-sigebox li a {
+        font-family: "W-iconfont";
+        color: #000;
+        font-size: 40px;
+        text-decoration: none; }
+      .W-sigebox li .W-xiala {
+        width: 100px;
+        text-align: left;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+        top: 50px;
+        left: 40%;
+        display: none; }
+        .W-sigebox li .W-xiala .W-xiala-p1 {
+          color: #FC8484;
+          float: left; }
+        .W-sigebox li .W-xiala .W-xiala-p2 {
+          float: left; }
+  .W-sigebox > li:hover .W-xiala {
     display: block; }
   .W-shouye-changtiao {
     width: 100%;
@@ -588,50 +713,40 @@ a {
   .W-shouye-shejibox2 {
     display: none; }
   .W-shouye-shejibox {
-    width: 80%;
-    height: 450px;
+    width: 100%;
+    height: auto;
     margin: 93px auto;
     overflow: hidden; }
     .W-shouye-shejibox li {
       float: left;
-      display: block;
-      width: 23%;
-      height: 450px;
-      border: 10px solid #fff;
       box-sizing: border-box;
-      background-repeat: no-repeat;
-      background-size: contain;
       transition: all 0.2s linear; }
       .W-shouye-shejibox li a {
-        width: 100%;
-        height: 450px;
-        text-decoration: none; }
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0; }
+        .W-shouye-shejibox li a img {
+          width: 80%;
+          display: block; }
   .W-shouye-shejibox > li > a:hover p {
     color: #2859F8; }
   .W-shouye-shejibox > li:hover {
     transform: translate3d(0, -5px, 0); }
-  .W-shouye-sheji1 {
-    background-image: url("../img/W-shouye-ren1.png"); }
-  .W-shouye-sheji2 {
-    background-image: url("../img/W-shouye-ren2.png"); }
-  .W-shouye-sheji3 {
-    background-image: url("../img/W-shouye-ren3.png"); }
-  .W-shouye-sheji4 {
-    background-image: url("../img/W-shouye-ren4.png"); }
   .W-shouye-shejibox > li > a > p {
-    color: #373838;
-    margin-left: 10%;
-    font-size: 12px;
-    margin-bottom: 0; }
+    position: absolute;
+    left: 10px; }
   .W-shouye-mingzi1 {
-    margin-top: 143%;
-    color: #A3928D; }
+    color: #A3928D;
+    bottom: 25px;
+    margin-top: -60px; }
   .W-shouye-mingzi2 {
-    color: #ccc; }
+    color: #ccc;
+    bottom: 7px; }
   .W-shouye-mingzi3 {
-    color: #ccc; }
-  .W-shouye-shejibox > li > a > .W-shouye-mingzi3 {
-    font-size: 6px; }
+    color: #ccc;
+    bottom: -11px;
+    font-size: 5px; }
   .W-shouye-changtiao3 {
     width: 100%; }
   .W-shouye-xiaoping-b {
@@ -703,7 +818,6 @@ a {
   .W-shouye-zhezhao > h2 {
     color: #fff;
     text-align: center;
-    background: #000;
     opacity: 0;
     font-size: 20px;
     margin-top: 34%;
@@ -730,6 +844,7 @@ a {
   .W-shouye-bottombox:hover .W-shouye-h2 {
     animation-name: one;
     animation-duration: 0.2s;
+    animation-delay: 0.2s;
     animation-iteration: 1;
     animation-fill-mode: forwards;
     opacity: 1; }

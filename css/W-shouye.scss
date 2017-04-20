@@ -7,6 +7,14 @@
 a {
     text-decoration: none;
 }
+@font-face {
+  font-family: 'W-iconfont';
+  src: url('../fonts/w-font/iconfont.eot');
+  src: url('../fonts/w-font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/w-font/iconfont.woff') format('woff'),
+  url('../fonts/w-font/iconfont.ttf') format('truetype'),
+  url('../fonts/w-font/iconfont.svg#iconfont') format('svg');
+}
 @media screen and(max-width:768px) {
 
 
@@ -189,20 +197,20 @@ a {
         }
     }
     .W-shouye-bannerbox > li:nth-child(1) {
-        background-image: url("../img/W-shouye-bannerd.jpg");
+        background-image: url(../img/W-banner-xiao1.jpg);
     }
     .W-shouye-bannerbox > li:nth-child(2) {
-        background-image: url("../img/W-shouye-bannerc.jpg");
+        background-image: url(../img/W-banner-xiao2.jpg);
     }
     .W-shouye-bannerbox > li:nth-child(3) {
-        background-image: url("../img/W-shouye-bannere.jpg");
+        background-image: url(../img/W-banner-xiao4.jpg);
     }
     .W-shouye-circlebox {
         @include cube(60px,10px);
         //      background: red;
         position: absolute;
         left: 44%;
-        bottom: -55px;
+        bottom: -37px;
         .W-shouye-circle {
             @include cube(10px,10px);
 
@@ -214,6 +222,10 @@ a {
         .first {
             background: #6C645A;
         }
+    }
+    
+    .W-shouye-bannerli>img{
+//      width:80%
     }
     .W-shouye-left {
         @include cube(20px,30px);
@@ -235,7 +247,56 @@ a {
         top: 50%;
         color: #ccc;
     }
+//zi
+@keyframes zi1{
+    0%{
+        top:40px;
+        opacity: 0;
+        
+    }
+   
+    100%{
+       top:70px; 
+         opacity:1;
+    }
+    
+}
 
+    .first>.W-zhui1{
+//      margin: 0 auto;
+        position: absolute;
+        left:15%;
+        animation-name:zi1;
+        animation-duration: 1.9s;
+        animation-delay: 0.1s;
+        animation-iteration: 1;
+        animation-fill-mode: forwards;
+        opacity:0;    
+    }
+  @keyframes zi2{
+    0%{
+        top:40px;
+        opacity: 0;
+        
+    }
+   
+    100%{
+       top:110px; 
+         opacity:1;
+    }
+    
+}  
+   
+    .first>.W-zhui2{
+        position: absolute;
+        left: 60%;
+        animation-name:zi1;
+        animation-duration: 0.9s;
+        animation-delay: 0.1s;
+        animation-iteration: 1;
+        animation-fill-mode: forwards;
+        opacity:0;    
+    } 
     //  .W-shouye-banner {
     //      @include cube(100%,620px);
     //
@@ -329,6 +390,61 @@ a {
         display: block;
 
     }
+    
+    
+    .W-sigebox{
+        margin-bottom: 100px;
+        position: relative;
+                top:0;
+                left:0;
+        li{
+            text-align: center;
+//          overflow: hidden;
+//          height:50px;
+            
+            &:hover a{
+                    color: #00B7EE;
+                }
+
+            a{
+                font-family:"W-iconfont";
+                color: #000;
+                font-size: 40px;
+                text-decoration: none;
+                
+            }
+            .W-xiala{
+                height:50px;
+                width: auto;
+                text-align: left;
+                height:auto;
+                margin: 0 auto;
+                position: absolute;
+                top:0px;
+                left:63%;
+                display: none;
+                
+                .W-xiala-p1{
+                color: #FC8484;
+                float:left;
+                }
+                .W-xiala-p2{
+                float:left;
+                }
+                .W-xiala-p3{
+                    display: none;
+                }
+            }
+            
+            
+        }
+    }
+//  效果
+.W-sigebox>li:hover .W-xiala{
+    display: block;
+}
+    
+    
     .W-shouye-changtiao {
         display: none;
     }
@@ -339,85 +455,77 @@ a {
         margin: 70px auto;
         display: block;
     }
-    .W-shouye-shejibox {
+    
+    
+    
+    
+    
+    
+        .W-shouye-shejibox2 {
         display: none;
     }
-
-    .W-shouye-shejibox2 {
-        @include cube(100%,800px);
+    .W-shouye-shejibox {
+        @include cube(100%,auto);
         margin: 93px auto;
+        overflow: hidden;
+//
         li {
-            width: 100%;
-            height: 300px;
-            margin: 40px auto;
+            float: left;
+            margin-top: 20px;
+            box-sizing: border-box;
+            transition: all 0.2s linear;
 
-            a {
+            a{
                 display: block;
-                //              float: left;
-                @include cube(50%,auto);
-                overflow: hidden;
-
-                border: 10px solid #fff;
-                //          margin-right: 10px;
-                box-sizing: border-box;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                text-decoration: none;
-                transition: all 0.2s linear;
+                position:relative;
+                top:0;
+                left:0;
+                img{
+                    width:80%;
+                    display: block;
+                }
             }
         }
-
     }
-    .W-shouye-shejibox2 > li > a {
+    .W-shouye-shejibox > li > a {
         &:hover p {
             color: #2859F8;
         }
+    }
+    .W-shouye-shejibox > li {
         &:hover {
             transform: translate3d(0,-5px,0);
-            //          box-shadow: 0 0px 10px #C6C6C6;
-
         }
-    }
-
-    .W-shouye-sheji1 {
-        background-image: url("../img/W-shouye-ren1.png");
-        float: left;
-
-    }
-    .W-shouye-sheji2 {
-        background-image: url("../img/W-shouye-ren2.png");
-        float: right;
-    }
-    .W-shouye-sheji3 {
-        background-image: url("../img/W-shouye-ren3.png");
-        float: left;
-
-    }
-    .W-shouye-sheji4 {
-        background-image: url("../img/W-shouye-ren4.png");
-        float: right;
-    }
-    .W-shouye-shejibox2 > li > a > p {
-        //      color: #373838;
-        margin-left: 15%;
-        font-size: 6px;
-        line-height: 20px;
-        margin-bottom: 0;
 
     }
 
-    .W-shouye-mingzi1 {
-        margin-top: 140%;
+    .W-shouye-shejibox > li > a > p {
+        position: absolute;
+        left: 12px;
+//      
+    }
+    .W-shouye-mingzi1{
         color: #A3928D;
+        bottom:14px;
+//      left: 0;
+        margin-top:-60px;
     }
     .W-shouye-mingzi2 {
-
         color: #ccc;
+        bottom:-4px;
+//      left: 0;
     }
     .W-shouye-mingzi3 {
         color: #ccc;
+        bottom:-11px;
+        font-size: 5px;
+        display: none;
     }
+    
+    
+    
+    
+
     .W-shouye-changtiao3 {
         width: 100%;
         display: none;
@@ -591,29 +699,29 @@ a {
 //大屏
 @media screen and(min-width:768px) {
     .h-smallping {
-        display: none;
+        display:none;
     }
 
     .W-shouye-top {
-        @include cube(100%,100px);
+        @include cube(100%,88px);
         background: #283A86;
     }
 
     .W-shouye-neitop {
-        @include cube(80%,100px);
+        @include cube(80%,88px);
         overflow: hidden;
         margin: 0 auto;
         //      text-align:justify;
 
         div {
 
-            @include cube(12.5%,100px);
+            @include cube(12.5%,88px);
             float: left;
 
             a {
                 display: block;
                 float: left;
-                @include cube(100%,100px);
+                @include cube(100%,88px);
                 text-align: center;
                 line-height: 100px;
                 color: #F6F6F9;
@@ -628,13 +736,13 @@ a {
     .W-shouye-logo {
 
         img {
-            @include cube(50px,100px);
+            @include cube(50px,88px);
             display: block;
             float: left;
         }
 
         span {
-            line-height: 100px;
+            line-height: 88px;
             display: block;
             float: left;
             color: #F6F6F9;
@@ -675,23 +783,22 @@ a {
         }
     }
     .W-shouye-bannerbox > li:nth-child(1) {
-        background-image: url("../img/W-shouye-bannerd.jpg");
+        background-image: url(../img/W-banner-xinde1.jpg);
     }
     .W-shouye-bannerbox > li:nth-child(2) {
-        background-image: url("../img/W-shouye-bannerc.jpg");
+        background-image: url(../img/W-banner-xinde2.jpg);
     }
     .W-shouye-bannerbox > li:nth-child(3) {
-        background-image: url("../img/W-shouye-bannere.jpg");
+        background-image: url(../img/W-banner-xinde4.jpg);
     }
     .W-shouye-circlebox {
         @include cube(60px,10px);
         //      background: red;
         position: absolute;
         left: 50%;
-        bottom: -55px;
+        top: 640px;
         .W-shouye-circle {
             @include cube(10px,10px);
-
             float: left;
             margin-left: 5px;
             border-radius: 50%;
@@ -701,6 +808,7 @@ a {
             background: #6C645A;
         }
     }
+   
     .W-shouye-left {
         @include cube(20px,30px);
         font-family: "宋体";
@@ -721,7 +829,55 @@ a {
         top: 50%;
         color: #ccc;
     }
+//zi
+@keyframes zi1{
+    0%{
+        top:00px;
+        opacity: 0;
+        
+    }
+   
+    100%{
+       top:70px; 
+         opacity:1;
+    }
+    
+}
 
+    .first>.W-zhui1{
+        position: absolute;
+        left: 35%;
+        animation-name:zi1;
+        animation-duration: 1.9s;
+        animation-delay: 0.1s;
+        animation-iteration: 1;
+        animation-fill-mode: forwards;
+        opacity:0;    
+    }
+  @keyframes zi2{
+    0%{
+        top:40px;
+        opacity: 0;
+        
+    }
+   
+    100%{
+       top:110px; 
+         opacity:1;
+    }
+    
+}  
+   
+    .first>.W-zhui2{
+        position: absolute;
+        left: 60%;
+        animation-name:zi1;
+        animation-duration: 0.9s;
+        animation-delay: 0.1s;
+        animation-iteration: 1;
+        animation-fill-mode: forwards;
+        opacity:0;    
+    } 
     .W-shouye-we {
         margin: 140px auto;
         height: 109px;
@@ -729,10 +885,15 @@ a {
 
     }
     .W-shouye-wexia {
-        width: 90%;
+        width: 70%;
         //      margin-left:40%;
         margin: 0 auto;
         display: block;
+         transition: all 0.2s linear;
+        &:hover{
+            transform: translate3d(0,-5px,0);
+            box-shadow: 0 4px 7px 0px #ccc;
+        }
     }
     .W-shouye-font {
         text-align: center;
@@ -790,12 +951,64 @@ a {
 
     }
     .W-shouye-fuwu {
-        margin: 70px auto 20px;
-        //      margin:  auto;
-        //      height:109px;
+        margin: 70px auto;
         display: block;
 
     }
+//  <!--服务下面-->
+    .W-sigebox{
+        margin-bottom: 100px;
+        position: relative;
+                top:0;
+                left:0;
+        li{
+            text-align: center;
+//          overflow: hidden;
+//          height:50px;
+            
+            &:hover a{
+                    color: #00B7EE;
+                }
+
+            a{
+                font-family:"W-iconfont";
+                color: #000;
+                font-size: 40px;
+                text-decoration: none;
+                
+            }
+            .W-xiala{
+                width:100px;
+                text-align: left;
+                height:auto;
+                margin: 0 auto;
+                position: absolute;
+                top:50px;
+                left:40%;
+                
+                display: none;
+                
+                .W-xiala-p1{
+                color: #FC8484;
+                float:left;
+                }
+                .W-xiala-p2{
+                float:left;
+                }
+                
+            }
+            
+            
+        }
+    }
+//  效果
+.W-sigebox>li:hover .W-xiala{
+    display: block;
+}
+    
+    
+    
+    
     .W-shouye-changtiao {
         width: 100%;
         //      height:532px;
@@ -817,30 +1030,26 @@ a {
         display: none;
     }
     .W-shouye-shejibox {
-        @include cube(80%,450px);
+        @include cube(100%,auto);
         margin: 93px auto;
         overflow: hidden;
-
+//
         li {
             float: left;
-            display: block;
-            @include cube(23%,450px);
-            //          padding-left: 5px;
-            //          padding-right: 5px;
-            border: 10px solid #fff;
-
             box-sizing: border-box;
-            background-repeat: no-repeat;
-            background-size: contain;
             transition: all 0.2s linear;
-            //          background-position: center;
-            a {
-                //              display: block;
-                @include cube(100%,450px);
-                text-decoration: none;
+
+            a{
+                display: block;
+                position:relative;
+                top:0;
+                left:0;
+                img{
+                    width:80%;
+                    display: block;
+                }
             }
         }
-
     }
     .W-shouye-shejibox > li > a {
         &:hover p {
@@ -850,47 +1059,33 @@ a {
     .W-shouye-shejibox > li {
         &:hover {
             transform: translate3d(0,-5px,0);
-            //          box-shadow: 0 0px 10px #C6C6C6;
-
         }
 
     }
-    .W-shouye-sheji1 {
-        background-image: url("../img/W-shouye-ren1.png");
 
-    }
-    .W-shouye-sheji2 {
-        background-image: url("../img/W-shouye-ren2.png");
-
-    }
-    .W-shouye-sheji3 {
-        background-image: url("../img/W-shouye-ren3.png");
-
-    }
-    .W-shouye-sheji4 {
-        background-image: url("../img/W-shouye-ren4.png");
-
-    }
     .W-shouye-shejibox > li > a > p {
-        color: #373838;
-        margin-left: 10%;
-        font-size: 12px;
-        margin-bottom: 0;
+        position: absolute;
+        left: 10px;
+//      
     }
-    .W-shouye-mingzi1 {
-        margin-top: 143%;
+    .W-shouye-mingzi1{
         color: #A3928D;
+        bottom:25px;
+//      left: 0;
+        margin-top:-60px;
     }
     .W-shouye-mingzi2 {
-
         color: #ccc;
+        bottom:7px;
+//      left: 0;
     }
     .W-shouye-mingzi3 {
         color: #ccc;
+        bottom:-11px;
+        font-size: 5px;
+
     }
-    .W-shouye-shejibox > li > a > .W-shouye-mingzi3 {
-        font-size: 6px;
-    }
+
     .W-shouye-changtiao3 {
         width: 100%;
 
@@ -977,7 +1172,7 @@ a {
     .W-shouye-zhezhao > h2 {
         color: #fff;
         text-align: center;
-        background: #000;
+//      background: #000;
         opacity: 0;
         font-size: 20px;
         margin-top: 34%;
@@ -1015,6 +1210,8 @@ a {
     .W-shouye-bottombox:hover .W-shouye-h2 {
         animation-name: one;
         animation-duration: 0.2s;
+        animation-delay: 0.2s;
+        
         animation-iteration: 1;
         animation-fill-mode: forwards;
         opacity: 1;
