@@ -9,6 +9,12 @@ body {
   src: url("../fonts/D-font/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/D-font/iconfont.woff") format("woff"), url("../fonts/D-font/iconfont.ttf") format("truetype"), url("../fonts/D-font/iconfont.svg#iconfont") format("svg");
 }
 
+.error {
+  color: red;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
 /*函数*/
 /*@function bg(){
 	$r:floor(random()*56+200);
@@ -82,7 +88,380 @@ body {
   font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .D-big {
+    display: none;
+  }
+  @font-face {
+    font-family: 'iconfont';
+    src: url("../fonts/iconfont.eot");
+    src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .h-header {
+    width: 100%;
+    height: 84px;
+    background: #273786;
+    padding-top: 12px;
+    position: relative;
+  }
+  .h-hleft {
+    width: 50%;
+    height: 60px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  .h-hleft i {
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+  }
+  .h-hleft input {
+    position: absolute;
+    left: 40px;
+    top: 1px;
+    width: 80%;
+    height: 56px;
+    margin-left: 15px;
+    background: #273786;
+    border: none;
+    color: #fff;
+  }
+  .h-hright {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 115px;
+    top: 12px;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+  .h-hright i {
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+  }
+  .h-hrights {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    text-align: center;
+  }
+  .h-yingc {
+    position: absolute;
+    width: 150px;
+    height: 360px;
+    right: -20px;
+    top: 72px;
+    background: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  .h-yingc h3 {
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0085D0;
+  }
+  .h-hrights i {
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .banner-m {
+    width: 100%;
+    height: 1098px;
+    background-image: url(../img/x-add1_02.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .center {
+    margin: 47px auto 0 auto;
+    display: block;
+  }
+  /*p{
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+    }*/
+  .tit-tu {
+    font-family: font;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #999;
+    font-weight: 400;
+  }
+  .tit-tu1 {
+    margin-top: 65px;
+  }
+  .tit {
+    width: 80%;
+    margin: 26px auto 0 auto;
+    font-size: 25px;
+    color: #817E7E;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .tit-one {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    color: #959393;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .small {
+    margin: 50px auto 0 auto;
+    display: block;
+  }
+  .map {
+    background-image: url(../img/x-add_18.png);
+    width: 100%;
+    height: 647px;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 130px;
+    padding-top: 20px;
+    /*overflow: hidden;*/
+  }
+  .map > div {
+    width: 236px;
+    height: 44px;
+    border-radius: 22px;
+    border: 4px solid #6b9cb4;
+    color: #6B9CB4;
+    font-size: 30px;
+    margin: -30px auto 0 auto;
+    text-align: center;
+    line-height: 44px;
+  }
+  .look-j {
+    width: 100%;
+    text-align: center;
+    color: #C3C3C3;
+    font-size: 16px;
+    margin-top: 33px;
+  }
+  .look-j > p:first-child {
+    font-size: 20px;
+    color: #BABABA;
+    margin-bottom: 8px;
+  }
+  .look-j > p:nth-child(2), .look-j > p:nth-child(3) {
+    width: 95%;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .look-j > p:first-child > span {
+    color: #6DDCE6;
+    font-weight: bold;
+  }
+  .word {
+    width: 100%;
+    color: #51F8FA;
+    font-size: 30px;
+    margin: 88px auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .word span {
+    color: #797979;
+  }
+  .line {
+    width: 100%;
+  }
+  .line > img {
+    width: 75%;
+    height: 7px;
+  }
+  .line > p {
+    width: 25%;
+    float: right;
+    font-size: 20px;
+    color: #BABABA;
+    text-align: right;
+  }
+  .word + p {
+    color: #646363;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 55px;
+  }
+  .word + p > span {
+    letter-spacing: 0px;
+  }
+  .talk {
+    width: 100%;
+    height: auto;
+    padding: 0 24px;
+  }
+  .before {
+    width: 20%;
+    height: 70px;
+    font-size: 24px;
+    color: #20b1f6;
+    text-align: right;
+    display: inline-block;
+  }
+  .talk > input {
+    width: 77%;
+    height: 70px;
+    border: 1 solid #EAEAEA;
+  }
+  .before-o {
+    width: 20%;
+    height: 70px;
+    font-size: 24px;
+    color: #20b1f6;
+    text-align: right;
+    display: block;
+    float: left;
+    line-height: 70px;
+    margin-right: 5px;
+  }
+  .D-liuyan1 {
+    height: auto;
+    margin-top: 50px;
+  }
+  .D-liuyan1 > div {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #666;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .D-liuyan1 > div > input {
+    margin-left: 5px;
+    width: 79%;
+    height: 35px;
+    outline: none;
+    border: 0;
+  }
+  .D-liuyan2 {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 77%;
+    height: 180px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+  }
+  .D-liuyan2 > textarea {
+    display: block;
+    margin-left: 20px;
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: 0;
+  }
+  .D-2 {
+    text-align: center;
+  }
+  .D-ti {
+    margin: 40px 0;
+    width: 250px;
+    height: 45px;
+    background: #65D7DC;
+    color: #fff;
+  }
+  textarea {
+    width: 77%;
+    height: 200px;
+    border: 1 solid #EAEAEA;
+  }
+  input[type=submit] {
+    width: 80%;
+    height: 54px;
+    background: #20B1F6;
+    text-align: center;
+    line-height: 54px;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 10px auto;
+    display: block;
+  }
+  .look {
+    width: 100%;
+    text-align: center;
+    color: #C3C3C3;
+    font-size: 18px;
+    margin-top: 90px;
+  }
+  .look > p:first-child {
+    font-size: 24px;
+    color: #BABABA;
+  }
+  .look > p:nth-child(2), .look > p:nth-child(3) {
+    width: 90%;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .look > p:first-child > span {
+    color: #A5A5A5;
+    font-weight: bold;
+  }
+  footer {
+    width: 100%;
+    height: 334px;
+    background: #283A86;
+    margin-top: 53px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #8A8EA7;
+    font-size: 18px;
+  }
+  footer > p:nth-child(1) span {
+    color: #76e0ed;
+  }
+  footer > p:nth-child(1) {
+    color: #c9c9c9;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  footer > p:nth-of-type(2) {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  footer > p:nth-of-type(3) {
+    width: 95%;
+  }
+  footer > div {
+    margin-top: 40px;
+  }
+  footer > div > img:nth-child(2) {
+    margin: 0 20px 0 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .D-small {
+    display: none;
+  }
   .W-shouye-top {
     width: 100%;
     height: 100px;
@@ -141,6 +520,7 @@ body {
     height: 146px;
     background-image: url(../img/D-img/D-call-title.png);
     background-size: cover;
+    background-position: center;
   }
   .D-fashi {
     height: auto;
@@ -237,6 +617,7 @@ body {
     border: 1px solid #666;
     padding-left: 10px;
     box-sizing: border-box;
+    margin: 0 auto;
     margin-top: 30px;
   }
   .D-liuyan1 > div > input {
@@ -247,6 +628,7 @@ body {
     border: 0;
   }
   .D-liuyan2 {
+    margin: 0 auto;
     margin-top: 80px;
     width: 80%;
     height: 180px;
