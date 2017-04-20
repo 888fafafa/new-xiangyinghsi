@@ -1,11 +1,69 @@
 body{
     font-family: "微软雅黑";
 }
+@font-face {
+  font-family: 'font';
+  src: url('../fonts/D-font/iconfont.eot');
+  src: url('../fonts/D-font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/D-font/iconfont.woff') format('woff'),
+  url('../fonts/D-font/iconfont.ttf') format('truetype'),
+  url('../fonts/D-font/iconfont.svg#iconfont') format('svg');
+}
 @import "D-mixin";
 @media screen and (max-width:768px){
     
 }
-@media screen and (min-width:1170px){
+@media screen and (min-width:768px){
+    .W-shouye-top {
+        @include cube(100%,100px);
+        background: #283A86;
+    }
+
+    .W-shouye-neitop {
+        @include cube(80%,100px);
+        overflow: hidden;
+        margin: 0 auto;
+        //      text-align:justify;
+
+        div {
+
+            @include cube(12.5%,100px);
+            float: left;
+
+            a {
+                display: block;
+                float: left;
+                @include cube(150px,100px);
+                text-align: center;
+                line-height: 100px;
+                color: #F6F6F9;
+            }
+
+        }
+
+    }
+
+    .W-shouye-logo {
+
+        img {
+            @include cube(50px,100px);
+            display: block;
+            float: left;
+        }
+
+        span {
+            line-height: 100px;
+            display: block;
+            float: left;
+            color: #F6F6F9;
+        }
+    }
+
+    .W-shouye-neitop > div > a {
+        &:hover {
+            color: #34D9E6;
+        }
+    }
     .D-call-banner{
         @include cube(100%,620px);
         background-image: url(../img/D-img/D-call-banner.png);
@@ -13,10 +71,140 @@ body{
         background-position:center;
     }
     .D-lujin{
-        .D-lujin{
-            @include cube()
-            @include font(14px,#393939,400);
-            margin-left:5px;
-        }
+        @include font(14px,#393939,400);
+        margin-left:5px;
+        line-height:100px;       
     }
+    .D-title1{
+        height:146px;
+        background-image: url(../img/D-img/D-call-title.png);
+        background-size:cover;     
+    }
+    .D-fashi{
+        height:auto;
+        padding-top:70px;
+    }
+    
+    .D-fashi > p{
+        text-align: center;
+        @include font(12px,#333,400);
+    }
+    .D-fashi > p:first-child{
+        font-family: font;
+        @include font(36px,#333,400);
+    }
+    .D-active  > p:first-child{
+        color:#36F6F8;
+    }
+    .D-active  > p{
+        color:#36F6F8;
+    }
+    .D-ditu{
+        height:388px;
+        background-image: url(../img/D-img/D-call-tu.png);
+        background-size:cover; 
+        margin-top:60px;
+    }
+    .D-bottom{
+        margin:50px 0;
+    }
+    .D-bottom > div:first-child{
+        @include cube(580px,30px);
+        margin:0 auto;
+    }
+    .D-bottom > div:last-child{
+        @include cube(580px,60px);
+        margin:0 auto;
+    }
+    .D-bottom  > div:first-child > p:first-child{
+        @include font(16px,#a5a5a5,600);
+        margin-left:215px;
+        float:left;
+    }
+    .D-bottom  > div:first-child > p:nth-child(2){
+        @include font(16px,#a5a5a5,400);
+        float:left;
+    }
+    .D-bottom  > div:last-child{
+        margin-top:10px;
+        @include font(16px,#a5a5a5,400);
+        text-align: center;
+    }
+    .D-title2{
+        text-align: center;
+        line-height: 100px;
+        @include font(26px,#4BF7F9,300);
+    }
+    .D-title2 > span:nth-child(2){
+        color:#6D6D6D;
+    }
+    .D-title3{
+        margin-top:-25px;
+        text-align: center;
+        @include font(18px,#6D6D6D,300);
+    }
+    .D-title3 > span.D-1{
+        display: inline-block;
+        width:90px;
+        height:1px;
+        background:#6D6D6D;
+        margin-bottom: 6px;
+    }
+    .D-liuyan1{
+        height:auto;
+        margin-top:50px;
+    }
+    .D-liuyan1 > div{
+        @include cube(80%,40px);
+        border:1px solid #666;
+        padding-left:10px;
+        box-sizing: border-box;
+        margin-top:30px;
+    }
+    .D-liuyan1 > div > input{
+        margin-left:5px;
+        @include cube(80%,35px);
+        outline:none;
+        border:0;
+    }
+    .D-liuyan2{
+        margin-top:80px;
+        @include cube(80%,180px);
+        border:1px solid #666;
+        box-sizing: border-box;
+    }
+    .D-liuyan2 > textarea{
+        margin-left:20px;
+        @include cube(80%,100%);
+        outline:none;
+        border:0;
+    }
+    .D-2{
+        text-align: center;
+    }
+    .D-ti{
+        margin:40px 0;
+        @include cube(250px,45px);
+        background:#65D7DC;
+        color:#fff;
+    }
+    
+    .h-footer {
+        width: 100%;
+        height: 63px;
+        background: #273786;
+        display: block;
+    }
+    .h-footers {
+        width: 1200px;
+        height: 100%;
+        background-image: url(../img/h-footer.png);
+        background-size: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    
 }

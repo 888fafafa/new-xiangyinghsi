@@ -3,9 +3,8 @@ body{
 }
 @import "D-mixin";
 @media screen and (max-width:768px){
-    .D-nav{
-        @include cube(100%,100px);
-        @include bg;
+    .W-shouye-top{
+        display: none;
     }
     .D-banner{
         @include cube(100%,auto);
@@ -165,9 +164,55 @@ body{
     }
 }
 @media screen and (min-width:768px)and(max-width:1200px){
-    .D-nav{
+    .W-shouye-top {
         @include cube(100%,100px);
-        @include bg;
+        background: #283A86;
+    }
+
+    .W-shouye-neitop {
+        @include cube(80%,100px);
+        overflow: hidden;
+        margin: 0 auto;
+        //      text-align:justify;
+
+        div {
+
+            @include cube(12.5%,100px);
+            float: left;
+
+            a {
+                display: block;
+                float: left;
+                @include cube(150px,100px);
+                text-align: center;
+                line-height: 100px;
+                color: #F6F6F9;
+            }
+
+        }
+
+    }
+
+    .W-shouye-logo {
+
+        img {
+            @include cube(50px,100px);
+            display: block;
+            float: left;
+        }
+
+        span {
+            line-height: 100px;
+            display: block;
+            float: left;
+            color: #F6F6F9;
+        }
+    }
+
+    .W-shouye-neitop > div > a {
+        &:hover {
+            color: #34D9E6;
+        }
     }
     .D-banner{
         @include cube(100%,auto);
@@ -431,6 +476,7 @@ body{
         height: 100%;
         background-image: url(../img/h-footer.png);
         background-size: 100%;
+        background-repeat: no-repeat;
         margin: 0 auto;
     }
     .h-dibu{
@@ -439,9 +485,55 @@ body{
     
 }
 @media screen and (min-width:1200px){
-    .D-nav{
+    .W-shouye-top {
         @include cube(100%,100px);
-        @include bg;
+        background: #283A86;
+    }
+
+    .W-shouye-neitop {
+        @include cube(80%,100px);
+        overflow: hidden;
+        margin: 0 auto;
+        //      text-align:justify;
+
+        div {
+
+            @include cube(12.5%,100px);
+            float: left;
+
+            a {
+                display: block;
+                float: left;
+                @include cube(150px,100px);
+                text-align: center;
+                line-height: 100px;
+                color: #F6F6F9;
+            }
+
+        }
+
+    }
+
+    .W-shouye-logo {
+
+        img {
+            @include cube(50px,100px);
+            display: block;
+            float: left;
+        }
+
+        span {
+            line-height: 100px;
+            display: block;
+            float: left;
+            color: #F6F6F9;
+        }
+    }
+
+    .W-shouye-neitop > div > a {
+        &:hover {
+            color: #34D9E6;
+        }
     }
     .D-banner{
         @include cube(100%,auto);
@@ -452,6 +544,7 @@ body{
             display: none;
         }
     }
+    
     .D-main{
         @include cube(1200px,950px);
         margin:0 auto;
