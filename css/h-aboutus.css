@@ -76,16 +76,24 @@
   height: 360px;
   right: 0px;
   top: 83px;
-  background: #fff;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
   cursor: pointer;
   display: none; }
-
+.h-yingc a{
+	color: #fff;
+text-decoration:none;
+}
 .h-yingc h3 {
   line-height: 60px;
   text-align: center;
   box-sizing: border-box;
+  font-size:16px ;
+  font-family: "Microsoft YaHei";
   border-bottom: 1px solid #0085D0; }
-
+a:hover{
+  color:#34D9E6 ;
+}
 .h-hrights i {
   font-size: 40px;
   line-height: 60px;
