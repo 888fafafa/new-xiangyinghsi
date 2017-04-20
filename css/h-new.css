@@ -1,7 +1,25 @@
-
-
-
-
+@keyframes middle-k{
+		0%{opacity:0;
+		transform:translateX(-200px) rotate(360deg) scale(.2);
+		}
+		100%{opacity: 1;
+		transform:translateX(0px) rotate(0deg) scale(1);
+		}
+	}
+@keyframes middle-c{
+		0%{opacity:0;
+		transform:translateX(200px) rotate(-360deg) scale(0);
+		}
+		100%{opacity: 1;
+		transform:translateX(0px) rotate(0deg) scale(1);
+		}
+	}
+	.middle-a{
+		animation: middle-k 1.5s linear 0s 1 forwards;
+	}
+  .middle-b{
+		animation: middle-c 1.5s linear 0s 1 forwards;
+	}
 .h-header{
 	width:100%;
 	height:84px;
