@@ -1,48 +1,164 @@
 body{
     font-family: "微软雅黑";
+//  overflow: hidden;
 }
 @import "D-mixin";
 @media screen and (max-width:768px){
     .W-shouye-top{
         display: none;
     }
+.h-header {
+  width: 100%;
+  height: 84px;
+  background: #273786;
+  padding-top: 12px;
+  position: relative; }
+
+.h-hleft {
+  width: 50%;
+  height: 60px;
+  margin-left: 10px;
+  position: relative; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.h-hleft i {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+  left: 20px;
+  top: 1px; }
+
+.h-hleft input {
+  width: 100%;
+  height: 60px;
+  margin-left: 15px;
+  color: #fff;
+  background: #273786;
+  border: 1px solid #ccc; }
+
+.h-hright {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 115px;
+  top: 12px;
+  border: 1px solid #fff;
+  text-align: center; }
+
+.h-hright i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff; }
+
+.h-hrights {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  text-align: center; }
+
+.h-yingc {
+  position: absolute;
+  width: 150px;
+  height: 360px;
+  right: 0px;
+  top: 83px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+.h-yingc a{
+    color: #fff;
+text-decoration:none;
+}
+.h-yingc h3 {
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size:16px ;
+  margin:0;
+  font-family: "Microsoft YaHei";
+  border-bottom: 1px solid #0085D0; }
+ .h-yingc h3 a:hover{
+  color:#34D9E6 ;
+  text-decoration:none;
+}
+.h-hrights i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer; }
+
+    
+    
+    
+    
+    
     .D-banner{
-        @include cube(100%,auto);
-        .D-banner-img2{
-            width:100%;
+        @include cube(100%,620px);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
+        background-size:cover;
+        background-position:center;    
+    }
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
         }
-        .D-banner-img1{
-            display: none;
+         100%{
+            top:25%;
+            opacity: 1;
         }
     }
-    .D-main,.D-siren-center,.h-footer{
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
+    
+    .D-main,.h-footer{
         display: none;      
     }
     .D-smallbox{
         padding:0 15px;
         box-sizing: border-box;
-        margin-bottom: 125px;
+        margin-bottom: 65px;
     }
     .D-s-title{
-        @include cube(100%,211px);
+        @include cube(100%,200px);
         background-image: url(../img/D-img/D-siren11.png);
         background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
         margin-top:30px;
         background-position: center;      
     }
     .D-s-tu{
         @include cube(100%,420px);
-        background-image: url(../img/D-img/D-siren12.png);
+        background-image: url(../img/D-img/D-img2.jpg);
         background-size:cover;
         background-position: center;
-        margin-top:150px;      
-    }
-    .D-s-tu1{
-        @include cube(100%,176px);
-        background-image: url(../img/D-img/D-siren13.png);
-        background-size:contain;
-        background-repeat: no-repeat;
-        background-position: center;      
+        margin-top:50px;      
     }
     .D-zibox-title{
         @include cube(100%,80px);
@@ -102,6 +218,7 @@ body{
     }
     .D-s-zi{
         @include cube(100%,auto);
+        margin-top:80px;
     }
     .D-s-1{
         @include cube(100%,40px);
@@ -117,15 +234,180 @@ body{
         margin-left:10px;
     }
     .D-s-2{
-        @include font(20px,#a4a4a4,400);
+        @include font(14px,#666,300);
         margin-top:20px;
+        padding-left:20px;
     }
-    .D-s-3{
-        @include font(20px,#a4a4a4,400);
-        margin-top:20px;
+    .D-siren-center{
+        width:100%;
+        height:510px;
+        background-image:url(../img/D-img/D-siren-center.png);
+        background-size:cover;
+        background-repeat: no-repeat; 
+        position:relative;       
+    }
+    .D-siren-center > p:first-child{
+        @include cube(500px,280px);        
+        @include font(60px,#fff,300);
+        margin-left:55px;
+        line-height: 280px;
+        display: none;
+    }
+    .D-siren-center > p:last-of-type{
+        @include cube(500px,30px);        
+        @include font(24px,#fff,300);
+        margin-left:125px;
+        margin-top:-70px;
+        line-height: 30px;
+        display: none;
+    }
+    .D-inputbox{
+        @include cube(85%,100%);
+        padding-top: 25px;
+        padding:0 10px;
+        padding-top:25px;
+        box-sizing: border-box;
+        margin:0 auto;
+        position:relative;
+    }
+    .D-inputbox > p:first-child{
+        @include font(24px,#fff,normal);
+        text-align: center;
+    }
+    .D-inputbox > p:last-of-type{
+        @include font(14px,rgba(255,255,255,0.6),normal);
+        text-align: center;
+        margin-top:10px;
+    }
+    .D-input1{
+        @include cube(100%,40px);
+        margin-top:30px;
+        border-radius: 5px;
+    }
+    .D-input1 > div{
+        @include cube(30%,40px);
+        background:#fff;
+        margin-right:10px;
+        border-radius: 5px;
+        @include font(14px,#333,normal);
+        float: left;
+        text-align: center;
+        line-height: 40px;
+    }
+    .D-input1 > div:last-child{
+        margin-right:0px;
+    }
+    .D-input1 > div.D-xuan{
+        background:#F56B4D;
+        color:rgba(255,255,255,0.7);
     }
     
+    .D-input2{
+        @include cube(95%,auto);       
+        margin-top:10px;        
+        line-height: 40px;
+    }
+    .D-input2 > div{
+        @include cube(100%,35px);
+        background:#fff;
+        border-radius: 5px;
+        padding-left:15px;
+        margin-top:10px; 
+        box-sizing: border-box;
+        float:left;
+    }
+    .D-input2 > div:last-child{
+        border:0px solid #C2C2C2;
+    }
+    .D-input2 > div > p{
+        @include cube(35px,30px);
+        float:left;
+    }
+    .D-input2 > div > input{
+        @include cube(80%,80%);
+        outline:none;
+        border:0;
+        margin-left:5px;        
+    }
+    .D-input3 > div{
+        @include cube(100%,100%);
+        padding-left:15px;
+        box-sizing: border-box;
+        float:left;
+    }
+    .D-input3 > div > input{
+        @include cube(80%,80%);
+        outline:none;
+        border:0;
+        margin-left:5px;        
+    }
+    .D-input4{
+        @include cube(95%,50px);
+    }
+    .D-input4 > div{
+        @include cube(100%,100%);
+        padding-left:15px;
+        box-sizing: border-box;
+        float:left;
+    }
+    .D-input4 > div > input{
+        @include cube(80%,80%);
+        outline:none;
+        border:0;
+        margin-left:5px;        
+    }
+    input[type=button]{
+        @include cube(155px,40px);
+        background:#65D7DC;
+        border-radius: 5px;
+        margin-left:24%;
+        margin-top:15px;
+        border:0;
+    }
+    .D-input-img1,.D-input-img2{
+        @include cube(56px,56px);
+        background-image: url(../img/D-img/D-tel.png);
+        background-size:100%;
+        position:absolute;
+        right:50px;
+        top:160px;
+        display: none;
+    }
+    .D-input-img2{
+        background-image: url(../img/D-img/D-er.png);
+        top:230px;
+    }
     
+    .D-bottom{
+        @include cube(100%,auto);
+        overflow: hidden;
+        
+    }
+    .D-bottom > div:first-child{
+        @include cube(40%,30px);
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .D-bottom > div:last-child{
+        @include cube(100%,60px);
+        margin:0 auto;
+    }
+    .D-bottom  > div:first-child > p:first-child{
+        @include font(16px,#a5a5a5,600);
+        margin:0 auto;
+        text-align: center;
+        float:left;
+    }
+    .D-bottom  > div:first-child > p:nth-child(2){
+        @include font(16px,#a5a5a5,400);
+        float:left;
+        margin:0 auto;
+        text-align: center;
+    }
+    .D-bottom  > div:last-child > p{
+        @include font(16px,#a5a5a5,400);
+        text-align: center;
+    }
     
 //  底部
     .h-footer{
@@ -161,9 +443,16 @@ body{
     }
     .h-lianxiwom{
         height:98px;
+        margin-top:40px;
+    }
+    .h-lianxiwom > img{
+        margin:0 5px;
     }
 }
 @media screen and (min-width:768px)and(max-width:1200px){
+    .h-header{
+        display: none;
+    }
     .W-shouye-top {
         @include cube(100%,100px);
         background: #283A86;
@@ -215,14 +504,31 @@ body{
         }
     }
     .D-banner{
-        @include cube(100%,auto);
-        .D-banner-img1{
-            width:100%;
+        @include cube(100%,620px);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
+        background-size:cover;
+        background-position:center;    
+    }
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
         }
-        .D-banner-img2{
-            display: none;
+         100%{
+            top:25%;
+            opacity: 1;
         }
     }
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
+    
     .D-smallbox{
         display: none;
     }
@@ -463,6 +769,37 @@ body{
         top:230px;
     }
     
+    
+    .D-bottom{
+        @include cube(100%,auto);
+        overflow: hidden;
+        
+    }
+    .D-bottom > div:first-child{
+        @include cube(20%,30px);
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .D-bottom > div:last-child{
+        @include cube(100%,60px);
+        margin:0 auto;
+    }
+    .D-bottom  > div:first-child > p:first-child{
+        @include font(16px,#a5a5a5,600);
+        margin:0 auto;
+        text-align: center;
+        float:left;
+    }
+    .D-bottom  > div:first-child > p:nth-child(2){
+        @include font(16px,#a5a5a5,400);
+        float:left;
+        margin:0 auto;
+        text-align: center;
+    }
+    .D-bottom  > div:last-child > p{
+        @include font(16px,#a5a5a5,400);
+        text-align: center;
+    }
 
 //  底部
     .h-footer {
@@ -485,9 +822,14 @@ body{
     
 }
 @media screen and (min-width:1200px){
+    .h-header{
+        display: none;
+    }
     .W-shouye-top {
         @include cube(100%,100px);
         background: #283A86;
+        position:relative;
+        z-index:100;
     }
 
     .W-shouye-neitop {
@@ -536,15 +878,31 @@ body{
         }
     }
     .D-banner{
-        @include cube(100%,auto);
-        .D-banner-img1{
-            width:100%;
+        @include cube(100%,620px);
+        background-image: url(../img/D-img/D-siren-banner9.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;    
+    }
+    @keyframes aa{
+        0%{
+            top:-42%;
+            opacity: 0;
         }
-        .D-banner-img2{
-            display: none;
+         100%{
+            top:25%;
+            opacity: 1;
         }
     }
-    
+    .D-banner-zi{
+        @include cube(44px,254px);
+        background-image: url(../img/D-img/D-siren-banner-zi.png);
+        position:absolute;
+        top:-42%;
+        left:50%;
+        opacity: 0;
+        animation: aa 2s forwards;
+    }
     .D-main{
         @include cube(1200px,950px);
         margin:0 auto;
@@ -564,7 +922,7 @@ body{
         background-image: url(../img/D-img/D-title1.png);
         background-size:cover;
         background-position: center;
-        margin-top:70px;      
+        margin-top:20px;      
     }
     .D-siren1{
         width:100%;       
@@ -800,34 +1158,39 @@ body{
     .h-dibu{
         display: none;
     }
-    
-    
-    
-    
-}
-//  底部字
+    //  底部字
     .D-bottom{
         @include cube(100%,auto);
-        margin:50px 0;
+        overflow: hidden;
+        
     }
     .D-bottom > div:first-child{
-        @include cube(580px,30px);
+        @include cube(10%,30px);
         margin:0 auto;
+        margin-top:50px;
     }
     .D-bottom > div:last-child{
-        @include cube(580px,60px);
+        @include cube(100%,60px);
         margin:0 auto;
     }
     .D-bottom  > div:first-child > p:first-child{
         @include font(16px,#a5a5a5,600);
-        margin-left:215px;
+        margin:0 auto;
+        text-align: center;
         float:left;
     }
     .D-bottom  > div:first-child > p:nth-child(2){
         @include font(16px,#a5a5a5,400);
         float:left;
+        margin:0 auto;
+        text-align: center;
     }
     .D-bottom  > div:last-child > p{
         @include font(16px,#a5a5a5,400);
         text-align: center;
     }
+    
+    
+    
+}
+

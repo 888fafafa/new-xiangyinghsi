@@ -6,6 +6,11 @@ $(".h-yingc").show();
 $(".h-yingc").hide();
 }
 });
- 
+ $('.h-hleft input').focus(function(){
+ 	$('.h-hleft>i').css("display","none");
+ })
+  $('.h-hleft input').focusout(function(){
+ 	$('.h-hleft>i').css("display","block");
+ })
  
 })
