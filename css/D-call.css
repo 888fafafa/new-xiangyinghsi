@@ -92,6 +92,19 @@ body {
   .D-big {
     display: none;
   }
+  .h-header {
+    width: 100%;
+    height: 84px;
+    background: #273786;
+    padding-top: 12px;
+    position: relative;
+  }
+  .h-hleft {
+    width: 50%;
+    height: 60px;
+    margin-left: 10px;
+    position: relative;
+  }
   @font-face {
     font-family: 'iconfont';
     src: url("../fonts/iconfont.eot");
@@ -105,39 +118,23 @@ body {
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
   }
-  .h-header {
-    width: 100%;
-    height: 84px;
-    background: #273786;
-    padding-top: 12px;
-    position: relative;
-  }
-  .h-hleft {
-    width: 50%;
-    height: 60px;
-    margin-left: 10px;
-    border: 1px solid #ccc;
-    position: relative;
-  }
   .h-hleft i {
     font-size: 20px;
     line-height: 60px;
     color: #fff;
     margin-left: 10px;
     position: absolute;
+    cursor: pointer;
     left: 20px;
     top: 1px;
   }
   .h-hleft input {
-    position: absolute;
-    left: 40px;
-    top: 1px;
-    width: 80%;
-    height: 56px;
+    width: 100%;
+    height: 60px;
     margin-left: 15px;
-    background: #273786;
-    border: none;
     color: #fff;
+    background: #273786;
+    border: 1px solid #ccc;
   }
   .h-hright {
     width: 60px;
@@ -164,18 +161,30 @@ body {
   .h-yingc {
     position: absolute;
     width: 150px;
-    height: auto;
-    right: -20px;
-    top: 72px;
-    background: #fff;
+    height: 360px;
+    right: 0px;
+    top: 83px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
     cursor: pointer;
     display: none;
+  }
+  .h-yingc a {
+    color: #fff;
+    text-decoration: none;
   }
   .h-yingc h3 {
     line-height: 60px;
     text-align: center;
     box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    font-family: "Microsoft YaHei";
     border-bottom: 1px solid #0085D0;
+  }
+  .h-yingc h3 a:hover {
+    color: #34D9E6;
+    text-decoration: none;
   }
   .h-hrights i {
     font-size: 40px;
@@ -186,7 +195,7 @@ body {
   .banner-m {
     width: 100%;
     height: 1098px;
-    background-image: url(../img/D-img/D-tu1.jpg);
+    background-image: url(../img/D-img/W-shouye-bannerc.jpg);
     background-size: cover;
     background-position: center center;
   }
@@ -531,18 +540,35 @@ body {
     background-position: center;
   }
   .D-fashi {
-    height: auto;
+    height: 200px;
     padding-top: 70px;
+    position: relative;
+    overflow: hidden;
   }
   .D-fashi > p {
     text-align: center;
     font-size: 12px;
     color: #333;
     font-weight: 400;
+    position: absolute;
+  }
+  .D-fashi > p:first-child {
+    top: 50px;
+    left: 50%;
+    margin-left: -10px;
+  }
+  .D-fashi > p:nth-child(2) {
+    top: 120px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .D-fashi > p:nth-child(3) {
+    top: 145px;
+    left: 40px;
   }
   .D-fashi > p:first-child {
     font-family: font;
-    font-size: 36px;
+    font-size: 40px;
     color: #333;
     font-weight: 400;
   }
@@ -551,6 +577,10 @@ body {
   }
   .D-active > p {
     color: #36F6F8;
+  }
+  .D-fashi > .font:hover {
+    top: 50px;
+    font-size: 50px;
   }
   .D-ditu {
     height: 470px;
@@ -671,6 +701,7 @@ body {
     height: 100%;
     background-image: url(../img/h-footer.png);
     background-size: 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     margin: 0 auto;
   }

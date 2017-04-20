@@ -7,100 +7,103 @@ body{
     .W-shouye-top{
         display: none;
     }
-    @font-face {
+.h-header {
+  width: 100%;
+  height: 84px;
+  background: #273786;
+  padding-top: 12px;
+  position: relative; }
+
+.h-hleft {
+  width: 50%;
+  height: 60px;
+  margin-left: 10px;
+  position: relative; }
+
+@font-face {
   font-family: 'iconfont';
-  src: url('../fonts/iconfont.eot');
-  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/iconfont.woff') format('woff'),
-  url('../fonts/iconfont.ttf') format('truetype'),
-  url('../fonts/iconfont.svg#iconfont') format('svg');
-}
-.iconfont{
-  font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-.h-header{
-    width:100%;
-    height:84px;
-    background:#273786;
-    padding-top: 12px;
-    position: relative;
-}
-.h-hleft{
-    width:50%;
-    height:60px;
-    margin-left: 10px;
-    border:1px solid #ccc;
-    position: relative;
-}
-.h-hleft i{
-    font-size: 20px;
-    line-height: 60px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.h-hleft i {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+  left: 20px;
+  top: 1px; }
+
+.h-hleft input {
+  width: 100%;
+  height: 60px;
+  margin-left: 15px;
+  color: #fff;
+  background: #273786;
+  border: 1px solid #ccc; }
+
+.h-hright {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 115px;
+  top: 12px;
+  border: 1px solid #fff;
+  text-align: center; }
+
+.h-hright i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff; }
+
+.h-hrights {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  text-align: center; }
+
+.h-yingc {
+  position: absolute;
+  width: 150px;
+  height: 360px;
+  right: 0px;
+  top: 83px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+.h-yingc a{
     color: #fff;
-    margin-left: 10px;
-    position: absolute;
-    left:20px;
-    top:1px;
+text-decoration:none;
 }
-.h-hleft input{
-    position: absolute;
-    left:40px;
-    top:1px;
-    width:80%;
-    height:56px;
-    margin-left: 15px;
-    background:#273786;
-    border:none;
-    color: #fff;
-//  border-right:1px solid #ccc;
+.h-yingc h3 {
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size:16px ;
+  margin:0;
+  font-family: "Microsoft YaHei";
+  border-bottom: 1px solid #0085D0; }
+ .h-yingc h3 a:hover{
+  color:#34D9E6 ;
+  text-decoration:none;
 }
-.h-hright{
-    width:60px;
-    height:60px;
-    position: absolute;
-    right:115px;
-    top:12px;
-    border: 1px solid #fff;
-    text-align: center;
-}
-.h-hright i{
-    font-size: 40px;
-    line-height: 60px;  
-    color: #fff;
-}
-.h-hrights{
-    width:80px;
-    height:60px;
-    position: absolute;
-    right:20px;
-    top:12px;
-    text-align: center;
-}
-.h-yingc{
-    position: absolute;
-    width:150px;
-    height:360px;
-    right: -20px;
-    top:72px;
-    background: #fff;
-    cursor: pointer;
-    display: none;
-}
-.h-yingc h3{
-    line-height: 60px;
-    text-align: center;
-    box-sizing: border-box;
-    border-bottom: 1px solid #0085D0;
-}
-.h-hrights i{
-    font-size: 40px;
-    line-height: 60px;  
-    color: #fff;
-    cursor: pointer;
-}
+.h-hrights i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer; }
 
     
     
@@ -375,6 +378,36 @@ body{
         top:230px;
     }
     
+    .D-bottom{
+        @include cube(100%,auto);
+        overflow: hidden;
+        
+    }
+    .D-bottom > div:first-child{
+        @include cube(40%,30px);
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .D-bottom > div:last-child{
+        @include cube(100%,60px);
+        margin:0 auto;
+    }
+    .D-bottom  > div:first-child > p:first-child{
+        @include font(16px,#a5a5a5,600);
+        margin:0 auto;
+        text-align: center;
+        float:left;
+    }
+    .D-bottom  > div:first-child > p:nth-child(2){
+        @include font(16px,#a5a5a5,400);
+        float:left;
+        margin:0 auto;
+        text-align: center;
+    }
+    .D-bottom  > div:last-child > p{
+        @include font(16px,#a5a5a5,400);
+        text-align: center;
+    }
     
 //  底部
     .h-footer{
@@ -736,6 +769,37 @@ body{
         top:230px;
     }
     
+    
+    .D-bottom{
+        @include cube(100%,auto);
+        overflow: hidden;
+        
+    }
+    .D-bottom > div:first-child{
+        @include cube(20%,30px);
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .D-bottom > div:last-child{
+        @include cube(100%,60px);
+        margin:0 auto;
+    }
+    .D-bottom  > div:first-child > p:first-child{
+        @include font(16px,#a5a5a5,600);
+        margin:0 auto;
+        text-align: center;
+        float:left;
+    }
+    .D-bottom  > div:first-child > p:nth-child(2){
+        @include font(16px,#a5a5a5,400);
+        float:left;
+        margin:0 auto;
+        text-align: center;
+    }
+    .D-bottom  > div:last-child > p{
+        @include font(16px,#a5a5a5,400);
+        text-align: center;
+    }
 
 //  底部
     .h-footer {
@@ -1094,19 +1158,14 @@ body{
     .h-dibu{
         display: none;
     }
-    
-    
-    
-    
-}
-//  底部字
+    //  底部字
     .D-bottom{
         @include cube(100%,auto);
         overflow: hidden;
         
     }
     .D-bottom > div:first-child{
-        @include cube(40%,30px);
+        @include cube(10%,30px);
         margin:0 auto;
         margin-top:50px;
     }
@@ -1130,3 +1189,8 @@ body{
         @include font(16px,#a5a5a5,400);
         text-align: center;
     }
+    
+    
+    
+}
+

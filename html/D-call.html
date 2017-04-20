@@ -54,17 +54,17 @@
 				<div class="col-lg-12 D-title1"></div>
 			</div>
 			<div class="row row1">
-				<div class="col-lg-4 D-fashi D-active">
+				<div class="col-lg-4 col-md-4 col-sm-4 D-fashi D-active">
 					<p class='font'>&#xe600;</p>
 					<p>大好时光国际旅游社</p>
 					<p>In my mind, everyone shall have his own dream that having a dre</p>
 				</div>
-				<div class="col-lg-4 D-fashi">
+				<div class="col-lg-4 col-md-4 col-sm-4 D-fashi">
 					<p class='font'>&#xe620;</p>
 					<p>大好时光国际旅游社</p>
 					<p>In my mind, everyone shall have his own dream that having a dre</p>
 				</div>
-				<div class="col-lg-4 D-fashi">
+				<div class="col-lg-4 col-md-4 col-sm-4 D-fashi">
 					<p class='font'>&#xe697;</p>
 					<p>大好时光国际旅游社</p>
 					<p>In my mind, everyone shall have his own dream that having a dre</p>
@@ -119,27 +119,22 @@
 		
 		<div class="D-small">
 			<div class="h-header">
-				<div class="h-hleft">
-					<i class="iconfont">&#xe606;</i>
-					<input type="text" />
-				</div>
-				<div class="h-hright">
-					<i class="iconfont">&#xe604;</i>						
-				</div>
-				<div class="h-hrights">
-					<i class="iconfont">&#xe625;</i>	
+					<div class="h-hleft">
+						<i class="iconfont">&#xe606;</i>
+						<input type="text" />
+					</div>
+					<div class="h-hrights">
+						<i class="iconfont">&#xe625;</i>	
+					</div>
 					<ul class="h-yingc">
-					<h3><a href="W-shouye.html">网站首页</a></h3>
-					<h3><a href="x-serve.html">服务项目</a></h3>
-					<h3><a href="h-aboutus.html">精英团队</a></h3>
-					<h3><a href="D-siren.html">特色定制</a></h3>
-					<h3><a href="javascript:;">配套设施</a></h3>
-					<h3><a href="D-call.html">联系我们</a></h3>
-				</ul>
+						<h3><a href="W-shouye.html">网站首页</a></h3>
+						<h3><a href="x-serve.html">服务项目</a></h3>
+						<h3><a href="h-aboutus.html">精英团队</a></h3>
+						<h3><a href="D-siren.html">特色定制</a></h3>
+						<h3><a href="h-new.html">新闻资讯</a></h3>
+						<h3><a href="D-call.html">联系我们</a></h3>
+					</ul>
 				</div>
-				<div class="h-sbanner">
-				</div>
-			</div>
 			<div class="banner-m super"></div>
 			<section>
 			<img  class="center" src="../img/x-add_03.png"/>
@@ -237,12 +232,10 @@
 	</body>
 </html>
 <script>
-	console.log($(".D-fashi"))
 	$(".D-fashi").click(function(){
 		$(".D-fashi").removeClass("D-active");
 		$(this).addClass("D-active")
 	})
-	console.log($("form"))
 	$(document).ready(function(){
 		$("form").each(function(){
 			$(this).validate({
