@@ -36,6 +36,7 @@
   color: #fff;
   margin-left: 10px;
   position: absolute;
+  cursor: pointer;
   left: 20px;
   top: 1px; }
 
@@ -43,6 +44,7 @@
   width: 100%;
   height: 60px;
   margin-left: 15px;
+  color: #fff;
   background: #273786;
   border: 1px solid #ccc; }
 
