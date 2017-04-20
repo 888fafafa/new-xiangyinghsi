@@ -70,8 +70,14 @@
 .pic:hover {
   box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.09);
   transform: translateY(-7px); }
-
+a{
+	text-decoration: none;
+}
+.pic:hover{
+	text-decoration: none;
+}
 .pic {
+	display: block;	
   padding: 20px;
   transition: all 1s;
   position: relative; }
@@ -86,11 +92,13 @@
   background: rgba(0, 0, 0, 0.1); }
 
 .pic > p:nth-child(2) {
+	text-decoration: none;
   font-size: 18px;
   color: #494949;
   margin: 15px 0; }
 
 .pic > p:nth-child(3) {
+	text-decoration: none;
   font-size: 14px;
   color: #494949; }
 
@@ -164,6 +172,116 @@
   line-height: 28px;
   border-radius: 14px;
   background: #FFFFFF; }
+  .blue{
+		width: 100%;
+		margin-top: 63px;
+		height: 64px;
+		background: #273786;
+		overflow: hidden;}	
+	.h-footers {
+	    height: 63px;
+	    color: #fff;
+	    margin: 0 auto; }
+  .h-footers .imgsone {
+    margin-top: 17px;
+    float: left; }
+  .h-footers h4 {
+  	overflow: hidden;text-overflow: ellipsis;
+    float: left;
+    height: 63px;
+    line-height: 63px;
+    margin-left: 10px; }
+  .h-footers h5 {
+  	overflow: hidden;text-overflow: ellipsis;
+  	height:63px;
+    float: left;
+    /*height: 60px;*/
+    line-height: 63px; }
+  .imgsphone {
+    /*width: 63px;*/
+    height: 63px;
+    background-image: url(../img/h-phone.png);
+    float: left;
+    margin-top: 12px;
+    /*margin-left: 100px;*/
+    background-repeat: no-repeat;
+    background-size: 80%; }
+  .imgscity {
+    /*width: 63px;*/
+    height: 63px;
+    background-image: url(../img/h-youjian.png);
+    float: left;
+    margin-top: 12px;
+    /*margin-left: 10px;*/
+    background-repeat: no-repeat;
+    background-size: 80%; }
+  .imgsemail {
+    /*width: 63px;*/
+    height: 63px;
+    background-image: url(../img/h-weizhi.png);
+    float: left;
+    margin-top: 12px;
+    /*margin-left: 10px;*/
+    background-size: 80%;
+    background-repeat: no-repeat; }
+    .W-shouye-top {
+    width: 100%;
+    height: 100px;
+    background: #283A86;
+    display: block; }
+  .W-shouye-neitop {
+    width: 80%;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto; }
+  .W-shouye-neitop div {
+    width: 12.5%;
+    height: 100px;
+    float: left; }
+  .W-shouye-neitop div a {
+    display: block;
+    float: left;
+    /*width: 150px;*/
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #F6F6F9; }
+  .W-shouye-logo img {
+    width: 50px;
+    height: 100px;
+    display: block;
+    float: left; }
+  .W-shouye-logo span {
+    line-height: 100px;
+    display: block;
+    float: left;
+    color: #F6F6F9; }
+  .W-shouye-neitop > div > a:hover {
+  	text-decoration: none;
+    color: #34D9E6; }
+  .W-shouye-banner {
+    width: 100%;
+    height: 620px;
+    display: block; }
+  .W-shouye-bannerbox {
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0; }
+  .W-shouye-bannerbox .W-shouye-bannerli {
+    width: 100%;
+    height: 620px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/W-shouye-banner2.png");
+    background-size: cover;
+    background-position: center center; }
+  #self{
+  	color: #30A9C5;
+  }
 
 @media screen and (max-width: 770px) {
   .large {
@@ -292,3 +410,4 @@
 @media screen and (min-width: 770px) {
   .super {
     display: none; } }
+  
