@@ -19,100 +19,103 @@ body{
     .D-big{
         display: none;
     }
-    @font-face {
-      font-family: 'iconfont';
-      src: url('../fonts/iconfont.eot');
-      src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/iconfont.woff') format('woff'),
-      url('../fonts/iconfont.ttf') format('truetype'),
-      url('../fonts/iconfont.svg#iconfont') format('svg');
-    }
-    .iconfont{
-      font-family:"iconfont" !important;
-      font-size:16px;font-style:normal;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-stroke-width: 0.2px;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    .h-header{
-        width:100%;
-        height:84px;
-        background:#273786;
-        padding-top: 12px;
-        position: relative;
-    }
-    .h-hleft{
-        width:50%;
-        height:60px;
-        margin-left: 10px;
-        border:1px solid #ccc;
-        position: relative;
-    }
-    .h-hleft i{
-        font-size: 20px;
-        line-height: 60px;
-        color: #fff;
-        margin-left: 10px;
-        position: absolute;
-        left:20px;
-        top:1px;
-    }
-    .h-hleft input{
-        position: absolute;
-        left:40px;
-        top:1px;
-        width:80%;
-        height:56px;
-        margin-left: 15px;
-        background:#273786;
-        border:none;
-        color: #fff;
-    //  border-right:1px solid #ccc;
-    }
-    .h-hright{
-        width:60px;
-        height:60px;
-        position: absolute;
-        right:115px;
-        top:12px;
-        border: 1px solid #fff;
-        text-align: center;
-    }
-    .h-hright i{
-        font-size: 40px;
-        line-height: 60px;  
-        color: #fff;
-    }
-    .h-hrights{
-        width:80px;
-        height:60px;
-        position: absolute;
-        right:20px;
-        top:12px;
-        text-align: center;
-    }
-    .h-yingc{
-        position: absolute;
-        width:150px;
-        height:360px;
-        right: -20px;
-        top:72px;
-        background: #fff;
-        cursor: pointer;
-        display: none;
-    }
-    .h-yingc h3{
-        line-height: 60px;
-        text-align: center;
-        box-sizing: border-box;
-        border-bottom: 1px solid #0085D0;
-    }
-    .h-hrights i{
-        font-size: 40px;
-        line-height: 60px;  
-        color: #fff;
-        cursor: pointer;
-    }
+.h-header {
+  width: 100%;
+  height: 84px;
+  background: #273786;
+  padding-top: 12px;
+  position: relative; }
+
+.h-hleft {
+  width: 50%;
+  height: 60px;
+  margin-left: 10px;
+  position: relative; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.h-hleft i {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+  left: 20px;
+  top: 1px; }
+
+.h-hleft input {
+  width: 100%;
+  height: 60px;
+  margin-left: 15px;
+  color: #fff;
+  background: #273786;
+  border: 1px solid #ccc; }
+
+.h-hright {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 115px;
+  top: 12px;
+  border: 1px solid #fff;
+  text-align: center; }
+
+.h-hright i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff; }
+
+.h-hrights {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  text-align: center; }
+
+.h-yingc {
+  position: absolute;
+  width: 150px;
+  height: 360px;
+  right: 0px;
+  top: 83px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+.h-yingc a{
+    color: #fff;
+text-decoration:none;
+}
+.h-yingc h3 {
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size:16px ;
+  margin:0;
+  font-family: "Microsoft YaHei";
+  border-bottom: 1px solid #0085D0; }
+ .h-yingc h3 a:hover{
+  color:#34D9E6 ;
+  text-decoration:none;
+}
+.h-hrights i {
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer; }
     
     
     
@@ -120,11 +123,12 @@ body{
     .banner-m{
         width: 100%;
         height: 1098px;
-        background-image: url(../img/x-add1_02.png);
+        background-image: url(../img/D-img/W-shouye-bannerc.jpg);
         background-size: cover;
         background-position: center center;
     }
     .center{
+        width:60%;
         margin: 47px auto 0 auto;
         display: block;
     }
@@ -135,29 +139,32 @@ body{
         text-align: center;
         text-transform: uppercase;
     }*/
+   .D-active > p{
+       color:#12BEF0;
+   }
    .tit-tu{
        font-family: font;
        text-align: center;
        margin-bottom: -20px;
        margin-top: 30px;
-       @include font(36px,#999,400);
+       @include font(36px,#333,400);
    }
    .tit-tu1{
        margin-top:65px;
    }
     .tit{
         width: 80%;
-        margin: 26px auto 0 auto;
-        font-size: 25px;
-        color: #817E7E;
+        margin: 40px auto 0 auto;
+        font-size: 22px;
+        color: #333;
         text-align: center;
         text-transform: uppercase;
     }
     .tit-one{
         width: 80%;
-        margin: 20px auto 0 auto;
+        margin: 10px auto 0 auto;
         color: #959393;
-        font-size: 20px;
+        font-size: 14px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -166,9 +173,9 @@ body{
         display: block;
     }
     .map{
-        background-image: url(../img/x-add_18.png);     
+        background-image: url(../img/D-img/D-ditu1.png);     
         width: 100%;
-        height: 647px;
+        height: 470px;
         background-size: cover;
         background-position: center center;
         margin-top: 130px;
@@ -191,18 +198,19 @@ body{
         text-align: center;
         color: #C3C3C3;
         font-size: 16px;
-        margin-top: 33px;
+        margin-top: 50px;
     }
     .look-j > p:first-child{
-        font-size: 20px;
-        color: #BABABA;
-        margin-bottom: 8px;
+        font-size: 24px;
+        color: #333;
+        margin: 8px 0;
         
     }
     .look-j > p:nth-child(2),.look-j > p:nth-child(3){
         width:95%;
         height:auto;
         padding:0 10px;
+        color:#333;
         box-sizing: border-box;
     }
     .look-j > p:first-child > span{
@@ -249,6 +257,7 @@ body{
         width: 100%;
         height: auto;
         padding: 0 24px;
+        box-sizing: border-box;
     }
     .before{
         width: 20%;
@@ -340,10 +349,11 @@ body{
     }
     .look > p:first-child{
         font-size: 24px;
-        color: #BABABA;
+        color: #333;
     }
     .look > p:nth-child(2),.look > p:nth-child(3){
         width:90%;
+        color: #333;
         height:auto;
         padding:0 10px;
         box-sizing: border-box;
@@ -380,7 +390,7 @@ body{
         width:95%;
     }
     footer > div{
-        margin-top: 40px;
+        margin-top: 20px;
     }
     footer > div >img:nth-child(2){
        margin: 0 20px 0 20px;
@@ -442,8 +452,9 @@ body{
     }
     .D-call-banner{
         @include cube(100%,620px);
-        background-image: url(../img/D-img/D-call-banner.png);
+        background-image: url(../img/D-img/W-shouye-bannerc.jpg);
         background-size:cover;
+        background-repeat: no-repeat;
         background-position:center;
     }
     .D-lujin{
@@ -458,27 +469,50 @@ body{
         background-position:center;     
     }
     .D-fashi{
-        height:auto;
+        height:200px;
         padding-top:70px;
+        position:relative;
+        overflow: hidden;
+        
     }
-    
     .D-fashi > p{
         text-align: center;
         @include font(12px,#333,400);
+        position:absolute;
+        
+    }
+    .D-fashi > p:first-child{
+        top:50px;
+        left:50%;
+        margin-left:-10px;
+    }
+    .D-fashi > p:nth-child(2){
+        top:120px;
+        left:50%;
+        margin-left:-50px;
+    }
+    .D-fashi > p:nth-child(3){
+        top:145px;
+        left:40px;
     }
     .D-fashi > p:first-child{
         font-family: font;
-        @include font(36px,#333,400);
+        @include font(40px,#333,400);
     }
+    
     .D-active  > p:first-child{
         color:#36F6F8;
     }
     .D-active  > p{
         color:#36F6F8;
     }
+    .D-fashi > .font:hover{
+        top:50px;
+        font-size:50px;
+    }
     .D-ditu{
-        height:388px;
-        background-image: url(../img/D-img/D-call-tu.png);
+        height:470px;
+        background-image: url(../img/D-img/D-ditu1.png);
         background-size:cover; 
         margin-top:60px;
     }
@@ -575,10 +609,12 @@ body{
         display: block;
     }
     .h-footers {
-        width: 1200px;
+        width: 100%;
         height: 100%;
         background-image: url(../img/h-footer.png);
         background-size: 100%;
+        background-position:center center;
+        background-repeat:no-repeat;
         margin: 0 auto;
     }
     

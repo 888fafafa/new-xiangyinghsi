@@ -25,12 +25,12 @@ $(function(){
 		img[n].classList.add('first');
 		cir[n].classList.add("first");
 	}
-	let t=setInterval(move,2000)//move没括号，运行才有
+	let t=setInterval(move,5000)//move没括号，运行才有
 	div.onmouseover=function(){
 		 clearInterval(t);
 	}
 	div.onmouseout=function(){
-		t=setInterval(move,2000)
+		t=setInterval(move,5000)
 	}
 	
 	

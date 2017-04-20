@@ -103,7 +103,8 @@ a{
   color: #494949; }
 
 .danger {
-  margin-top: 40px; }
+  margin-top: 40px;
+  opacity: 0; }
 
 .jump {
   width: 650px;
