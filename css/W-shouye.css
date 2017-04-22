@@ -49,7 +49,7 @@ a {
     top: 1px; }
   .h-hleft input {
     width: 100%;
-    height: 38px;
+    height: 37px;
     margin-left: 15px;
     background: #273786;
     border: none; }
@@ -73,7 +73,7 @@ a {
     position: absolute;
     width: 150px;
     height: 366px;
-    right: -20px;
+    right: 0;
     top: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;

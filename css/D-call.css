@@ -1,19 +1,16 @@
 @charset "UTF-8";
 body {
-  font-family: "微软雅黑";
-}
+  font-family: "微软雅黑"; }
 
 @font-face {
   font-family: 'font';
   src: url("../fonts/D-font/iconfont.eot");
-  src: url("../fonts/D-font/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/D-font/iconfont.woff") format("woff"), url("../fonts/D-font/iconfont.ttf") format("truetype"), url("../fonts/D-font/iconfont.svg#iconfont") format("svg");
-}
+  src: url("../fonts/D-font/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/D-font/iconfont.woff") format("woff"), url("../fonts/D-font/iconfont.ttf") format("truetype"), url("../fonts/D-font/iconfont.svg#iconfont") format("svg"); }
 
 .error {
   color: red;
   padding-top: 5px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*函数*/
 /*@function bg(){
@@ -26,184 +23,142 @@ body {
 }*/
 @media screen and (min-width: 320px) {
   html {
-    font-size: 42.66667px;
-  }
-}
+    font-size: 42.66667px; } }
 
 @media screen and (min-width: 360px) {
   html {
-    font-size: 48px;
-  }
-}
+    font-size: 48px; } }
 
 @media screen and (min-width: 365px) {
   html {
-    font-size: 48.66667px;
-  }
-}
+    font-size: 48.66667px; } }
 
 @media screen and (min-width: 375px) {
   html {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 @media screen and (min-width: 384px) {
   html {
-    font-size: 51.2px;
-  }
-}
+    font-size: 51.2px; } }
 
 @media screen and (min-width: 412px) {
   html {
-    font-size: 54.93333px;
-  }
-}
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
-    font-size: 55.2px;
-  }
-}
+    font-size: 55.2px; } }
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 80px;
-  }
-}
+    font-size: 80px; } }
 
 @media screen and (min-width: 750px) {
   html {
-    font-size: 100px;
-  }
-}
+    font-size: 100px; } }
 
 @media screen and (min-width: 933px) {
   html {
-    font-size: 124.4px;
-  }
-}
+    font-size: 124.4px; } }
 
 body {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 @media screen and (max-width: 768px) {
   .D-big {
-    display: none;
-  }
+    display: none; }
   .h-header {
     width: 100%;
-    height: 84px;
+    height: 50px;
     background: #273786;
     padding-top: 12px;
-    position: relative;
-  }
+    position: relative; }
   .h-hleft {
     width: 50%;
-    height: 60px;
+    height: 38px;
     margin-left: 10px;
-    position: relative;
-  }
+    position: relative; }
   @font-face {
     font-family: 'iconfont';
     src: url("../fonts/iconfont.eot");
-    src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
-  }
+    src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
   .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    -moz-osx-font-smoothing: grayscale; }
   .h-hleft i {
     font-size: 20px;
-    line-height: 60px;
+    line-height: 25px;
     color: #fff;
     margin-left: 10px;
     position: absolute;
-    cursor: pointer;
     left: 20px;
-    top: 1px;
-  }
+    top: 1px; }
   .h-hleft input {
     width: 100%;
-    height: 60px;
+    height: 37px;
     margin-left: 15px;
-    color: #fff;
     background: #273786;
-    border: 1px solid #ccc;
-  }
+    border: none; }
   .h-hright {
     width: 60px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 115px;
     top: 12px;
     border: 1px solid #fff;
-    text-align: center;
-  }
-  .h-hright i {
-    font-size: 40px;
-    line-height: 60px;
-    color: #fff;
-  }
+    text-align: center; }
   .h-hrights {
     width: 80px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 20px;
     top: 12px;
-    text-align: center;
-  }
+    text-align: center; }
   .h-yingc {
+    z-index: 40;
     position: absolute;
     width: 150px;
-    height: 360px;
-    right: 0px;
-    top: 83px;
+    height: 366px;
+    right: 0;
+    top: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
-    display: none;
-  }
+    display: none; }
+  .h-yingc h3 {
+    color: #fff;
+    width: 150px;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0085D0;
+    margin: 0;
+    padding: 0; }
   .h-yingc a {
     color: #fff;
     text-decoration: none;
-  }
-  .h-yingc h3 {
-    line-height: 60px;
-    text-align: center;
-    box-sizing: border-box;
     font-size: 16px;
-    margin: 0;
-    font-family: "Microsoft YaHei";
-    border-bottom: 1px solid #0085D0;
-  }
-  .h-yingc h3 a:hover {
-    color: #34D9E6;
-    text-decoration: none;
-  }
+    text-align: center; }
   .h-hrights i {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 25px;
     color: #fff;
-    cursor: pointer;
-  }
+    cursor: pointer; }
   .banner-m {
     width: 100%;
-    height: 1098px;
+    height: 270px;
     background-image: url(../img/D-img/W-shouye-bannerc.jpg);
     background-size: cover;
-    background-position: center center;
-  }
+    background-position: center center; }
   .center {
     width: 60%;
     margin: 47px auto 0 auto;
-    display: block;
-  }
+    display: block; }
   /*p{
         font-size: 24px;
         width: 80%;
@@ -212,8 +167,7 @@ body {
         text-transform: uppercase;
     }*/
   .D-active > p {
-    color: #12BEF0;
-  }
+    color: #12BEF0; }
   .tit-tu {
     font-family: font;
     text-align: center;
@@ -221,31 +175,26 @@ body {
     margin-top: 30px;
     font-size: 36px;
     color: #333;
-    font-weight: 400;
-  }
+    font-weight: 400; }
   .tit-tu1 {
-    margin-top: 65px;
-  }
+    margin-top: 65px; }
   .tit {
     width: 80%;
     margin: 40px auto 0 auto;
     font-size: 22px;
     color: #333;
     text-align: center;
-    text-transform: uppercase;
-  }
+    text-transform: uppercase; }
   .tit-one {
     width: 80%;
     margin: 10px auto 0 auto;
     color: #959393;
     font-size: 14px;
     text-align: center;
-    text-transform: uppercase;
-  }
+    text-transform: uppercase; }
   .small {
     margin: 50px auto 0 auto;
-    display: block;
-  }
+    display: block; }
   .map {
     background-image: url(../img/D-img/D-ditu1.png);
     width: 100%;
@@ -254,8 +203,7 @@ body {
     background-position: center center;
     margin-top: 130px;
     padding-top: 20px;
-    /*overflow: hidden;*/
-  }
+    /*overflow: hidden;*/ }
   .map > div {
     width: 236px;
     height: 44px;
@@ -265,86 +213,71 @@ body {
     font-size: 30px;
     margin: -30px auto 0 auto;
     text-align: center;
-    line-height: 44px;
-  }
+    line-height: 44px; }
   .look-j {
     width: 100%;
     text-align: center;
     color: #C3C3C3;
     font-size: 16px;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .look-j > p:first-child {
     font-size: 24px;
     color: #333;
-    margin: 8px 0;
-  }
+    margin: 8px 0; }
   .look-j > p:nth-child(2), .look-j > p:nth-child(3) {
     width: 95%;
     height: auto;
     padding: 0 10px;
     color: #333;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .look-j > p:first-child > span {
     color: #6DDCE6;
-    font-weight: bold;
-  }
+    font-weight: bold; }
   .word {
     width: 100%;
     color: #51F8FA;
     font-size: 30px;
     margin: 88px auto 0 auto;
     text-align: center;
-    text-transform: uppercase;
-  }
+    text-transform: uppercase; }
   .word span {
-    color: #797979;
-  }
+    color: #797979; }
   .line {
-    width: 100%;
-  }
+    width: 100%; }
   .line > img {
     width: 75%;
-    height: 7px;
-  }
+    height: 7px; }
   .line > p {
     width: 25%;
     float: right;
     font-size: 20px;
     color: #BABABA;
-    text-align: right;
-  }
+    text-align: right; }
   .word + p {
     color: #646363;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 4px;
-    margin-bottom: 55px;
-  }
+    margin-bottom: 55px; }
   .word + p > span {
-    letter-spacing: 0px;
-  }
+    letter-spacing: 0px; }
   .talk {
     width: 100%;
     height: auto;
     padding: 0 24px;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .before {
     width: 20%;
     height: 70px;
     font-size: 24px;
     color: #20b1f6;
     text-align: right;
-    display: inline-block;
-  }
+    display: inline-block; }
   .talk > input {
     width: 77%;
     height: 70px;
-    border: 1 solid #EAEAEA;
-  }
+    border: 1 solid #EAEAEA; }
   .before-o {
     width: 20%;
     height: 70px;
@@ -354,12 +287,10 @@ body {
     display: block;
     float: left;
     line-height: 70px;
-    margin-right: 5px;
-  }
+    margin-right: 5px; }
   .D-liuyan1 {
     height: auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-liuyan1 > div {
     width: 80%;
     height: 40px;
@@ -367,46 +298,39 @@ body {
     padding-left: 10px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
   .D-liuyan1 > div > input {
     margin-left: 5px;
     width: 79%;
     height: 35px;
     outline: none;
-    border: 0;
-  }
+    border: 0; }
   .D-liuyan2 {
     margin: 0 auto;
     margin-top: 30px;
     width: 77%;
     height: 180px;
     border: 1px solid #666;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .D-liuyan2 > textarea {
     display: block;
     margin-left: 20px;
     width: 80%;
     height: 100%;
     outline: none;
-    border: 0;
-  }
+    border: 0; }
   .D-2 {
-    text-align: center;
-  }
+    text-align: center; }
   .D-ti {
     margin: 40px 0;
     width: 250px;
     height: 45px;
     background: #65D7DC;
-    color: #fff;
-  }
+    color: #fff; }
   textarea {
     width: 77%;
     height: 200px;
-    border: 1 solid #EAEAEA;
-  }
+    border: 1 solid #EAEAEA; }
   input[type=submit] {
     width: 80%;
     height: 54px;
@@ -416,30 +340,25 @@ body {
     font-size: 24px;
     color: #FFFFFF;
     margin: 10px auto;
-    display: block;
-  }
+    display: block; }
   .look {
     width: 100%;
     text-align: center;
     color: #C3C3C3;
     font-size: 18px;
-    margin-top: 90px;
-  }
+    margin-top: 90px; }
   .look > p:first-child {
     font-size: 24px;
-    color: #333;
-  }
+    color: #333; }
   .look > p:nth-child(2), .look > p:nth-child(3) {
     width: 90%;
     color: #333;
     height: auto;
     padding: 0 10px;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .look > p:first-child > span {
     color: #A5A5A5;
-    font-weight: bold;
-  }
+    font-weight: bold; }
   footer {
     width: 100%;
     height: 334px;
@@ -449,206 +368,166 @@ body {
     overflow: hidden;
     text-transform: uppercase;
     color: #8A8EA7;
-    font-size: 18px;
-  }
+    font-size: 18px; }
   footer > p:nth-child(1) span {
-    color: #76e0ed;
-  }
+    color: #76e0ed; }
   footer > p:nth-child(1) {
     color: #c9c9c9;
     font-size: 30px;
-    margin-top: 40px;
-  }
+    margin-top: 40px; }
   footer > p:nth-of-type(2) {
     font-size: 24px;
-    margin-bottom: 14px;
-  }
+    margin-bottom: 14px; }
   footer > p:nth-of-type(3) {
-    width: 95%;
-  }
+    width: 95%; }
   footer > div {
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   footer > div > img:nth-child(2) {
-    margin: 0 20px 0 20px;
-  }
-}
+    margin: 0 20px 0 20px; } }
 
 @media screen and (min-width: 768px) {
   .D-small {
-    display: none;
-  }
+    display: none; }
   .W-shouye-top {
     width: 100%;
     height: 100px;
-    background: #283A86;
-  }
+    background: #283A86; }
   .W-shouye-neitop {
     width: 80%;
     height: 100px;
     overflow: hidden;
-    margin: 0 auto;
-  }
-  .W-shouye-neitop div {
-    width: 12.5%;
-    height: 100px;
-    float: left;
-  }
-  .W-shouye-neitop div a {
-    display: block;
-    float: left;
-    width: 150px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    color: #F6F6F9;
-  }
+    margin: 0 auto; }
+    .W-shouye-neitop div {
+      width: 12.5%;
+      height: 100px;
+      float: left; }
+      .W-shouye-neitop div a {
+        display: block;
+        float: left;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #F6F6F9; }
   .W-shouye-logo img {
     width: 50px;
     height: 100px;
     display: block;
-    float: left;
-  }
+    float: left; }
   .W-shouye-logo span {
     line-height: 100px;
     display: block;
     float: left;
-    color: #F6F6F9;
-  }
+    color: #F6F6F9; }
   .W-shouye-neitop > div > a:hover {
-    color: #34D9E6;
-  }
+    color: #34D9E6; }
   .D-call-banner {
     width: 100%;
     height: 620px;
     background-image: url(../img/D-img/W-shouye-bannerc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-  }
+    background-position: center; }
   .D-lujin {
     font-size: 14px;
     color: #393939;
     font-weight: 400;
     margin-left: 5px;
-    line-height: 100px;
-  }
+    line-height: 100px; }
   .D-title1 {
     height: 146px;
     background-image: url(../img/D-img/D-call-title.png);
     background-size: cover;
-    background-position: center;
-  }
+    background-position: center; }
   .D-fashi {
     height: 200px;
     padding-top: 70px;
     position: relative;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-fashi > p {
     text-align: center;
     font-size: 12px;
     color: #333;
     font-weight: 400;
-    position: absolute;
-  }
+    position: absolute; }
   .D-fashi > p:first-child {
     top: 50px;
     left: 50%;
-    margin-left: -10px;
-  }
+    margin-left: -10px; }
   .D-fashi > p:nth-child(2) {
     top: 120px;
     left: 50%;
-    margin-left: -50px;
-  }
+    margin-left: -50px; }
   .D-fashi > p:nth-child(3) {
     top: 145px;
-    left: 40px;
-  }
+    left: 40px; }
   .D-fashi > p:first-child {
     font-family: font;
     font-size: 40px;
     color: #333;
-    font-weight: 400;
-  }
+    font-weight: 400; }
   .D-active > p:first-child {
-    color: #36F6F8;
-  }
+    color: #36F6F8; }
   .D-active > p {
-    color: #36F6F8;
-  }
+    color: #36F6F8; }
   .D-fashi > .font:hover {
     top: 50px;
-    font-size: 50px;
-  }
+    font-size: 50px; }
   .D-ditu {
     height: 470px;
     background-image: url(../img/D-img/D-ditu1.png);
     background-size: cover;
-    margin-top: 60px;
-  }
+    margin-top: 60px; }
   .D-bottom {
-    margin: 50px 0;
-  }
+    margin: 50px 0; }
   .D-bottom > div:first-child {
     width: 580px;
     height: 30px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .D-bottom > div:last-child {
     width: 580px;
     height: 60px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .D-bottom > div:first-child > p:first-child {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 600;
     margin-left: 215px;
-    float: left;
-  }
+    float: left; }
   .D-bottom > div:first-child > p:nth-child(2) {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
-    float: left;
-  }
+    float: left; }
   .D-bottom > div:last-child {
     margin-top: 10px;
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
-    text-align: center;
-  }
+    text-align: center; }
   .D-title2 {
     text-align: center;
     line-height: 100px;
     font-size: 26px;
     color: #4BF7F9;
-    font-weight: 300;
-  }
+    font-weight: 300; }
   .D-title2 > span:nth-child(2) {
-    color: #6D6D6D;
-  }
+    color: #6D6D6D; }
   .D-title3 {
     margin-top: -25px;
     text-align: center;
     font-size: 18px;
     color: #6D6D6D;
-    font-weight: 300;
-  }
+    font-weight: 300; }
   .D-title3 > span.D-1 {
     display: inline-block;
     width: 90px;
     height: 1px;
     background: #6D6D6D;
-    margin-bottom: 6px;
-  }
+    margin-bottom: 6px; }
   .D-liuyan1 {
     height: auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-liuyan1 > div {
     width: 80%;
     height: 40px;
@@ -656,46 +535,39 @@ body {
     padding-left: 10px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
   .D-liuyan1 > div > input {
     margin-left: 5px;
     width: 80%;
     height: 35px;
     outline: none;
-    border: 0;
-  }
+    border: 0; }
   .D-liuyan2 {
     margin: 0 auto;
     margin-top: 80px;
     width: 80%;
     height: 180px;
     border: 1px solid #666;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .D-liuyan2 > textarea {
     margin-left: 20px;
     width: 80%;
     height: 100%;
     outline: none;
-    border: 0;
-  }
+    border: 0; }
   .D-2 {
-    text-align: center;
-  }
+    text-align: center; }
   .D-ti {
     margin: 40px 0;
     width: 250px;
     height: 45px;
     background: #65D7DC;
-    color: #fff;
-  }
+    color: #fff; }
   .h-footer {
     width: 100%;
     height: 63px;
     background: #273786;
-    display: block;
-  }
+    display: block; }
   .h-footers {
     width: 100%;
     height: 100%;
@@ -703,6 +575,4 @@ body {
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }

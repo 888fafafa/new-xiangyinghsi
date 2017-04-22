@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "微软雅黑";
-}
+  font-family: "微软雅黑"; }
 
 /*函数*/
 /*@function bg(){
@@ -14,190 +13,148 @@ body {
 }*/
 @media screen and (min-width: 320px) {
   html {
-    font-size: 42.66667px;
-  }
-}
+    font-size: 42.66667px; } }
 
 @media screen and (min-width: 360px) {
   html {
-    font-size: 48px;
-  }
-}
+    font-size: 48px; } }
 
 @media screen and (min-width: 365px) {
   html {
-    font-size: 48.66667px;
-  }
-}
+    font-size: 48.66667px; } }
 
 @media screen and (min-width: 375px) {
   html {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 @media screen and (min-width: 384px) {
   html {
-    font-size: 51.2px;
-  }
-}
+    font-size: 51.2px; } }
 
 @media screen and (min-width: 412px) {
   html {
-    font-size: 54.93333px;
-  }
-}
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
-    font-size: 55.2px;
-  }
-}
+    font-size: 55.2px; } }
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 80px;
-  }
-}
+    font-size: 80px; } }
 
 @media screen and (min-width: 750px) {
   html {
-    font-size: 100px;
-  }
-}
+    font-size: 100px; } }
 
 @media screen and (min-width: 933px) {
   html {
-    font-size: 124.4px;
-  }
-}
+    font-size: 124.4px; } }
 
 body {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 @media screen and (max-width: 768px) {
   .W-shouye-top {
-    display: none;
-  }
+    display: none; }
   .h-header {
     width: 100%;
-    height: 84px;
+    height: 50px;
     background: #273786;
-    padding-top: 12px;
-    position: relative;
-  }
+    position: relative; }
   .h-hleft {
     width: 50%;
-    height: 60px;
+    height: 38px;
     margin-left: 10px;
-    position: relative;
-  }
+    position: relative; }
   @font-face {
     font-family: 'iconfont';
     src: url("../fonts/iconfont.eot");
-    src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
-  }
+    src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
   .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    -moz-osx-font-smoothing: grayscale; }
   .h-hleft i {
     font-size: 20px;
-    line-height: 60px;
+    line-height: 25px;
     color: #fff;
     margin-left: 10px;
     position: absolute;
-    cursor: pointer;
     left: 20px;
     top: 1px;
-  }
+    margin-top: 12px; }
   .h-hleft input {
     width: 100%;
-    height: 60px;
+    height: 37px;
     margin-left: 15px;
-    color: #fff;
     background: #273786;
-    border: 1px solid #ccc;
-  }
+    border: none;
+    margin-top: 12px; }
   .h-hright {
     width: 60px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 115px;
     top: 12px;
     border: 1px solid #fff;
-    text-align: center;
-  }
-  .h-hright i {
-    font-size: 40px;
-    line-height: 60px;
-    color: #fff;
-  }
+    text-align: center; }
   .h-hrights {
     width: 80px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 20px;
     top: 12px;
-    text-align: center;
-  }
+    text-align: center; }
   .h-yingc {
+    z-index: 40;
     position: absolute;
     width: 150px;
-    height: 360px;
-    right: 0px;
-    top: 83px;
+    height: 366px;
+    right: 0;
+    top: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
-    display: none;
-  }
+    display: none; }
+  .h-yingc h3 {
+    color: #fff;
+    width: 150px;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0085D0;
+    margin: 0;
+    padding: 0; }
   .h-yingc a {
     color: #fff;
     text-decoration: none;
-  }
-  .h-yingc h3 {
-    line-height: 60px;
-    text-align: center;
-    box-sizing: border-box;
     font-size: 16px;
-    margin: 0;
-    font-family: "Microsoft YaHei";
-    border-bottom: 1px solid #0085D0;
-  }
-  .h-yingc h3 a:hover {
-    color: #34D9E6;
-    text-decoration: none;
-  }
+    text-align: center; }
   .h-hrights i {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 25px;
     color: #fff;
-    cursor: pointer;
-  }
+    cursor: pointer; }
   .D-banner {
     width: 100%;
-    height: 620px;
+    height: 270px;
     background-image: url(../img/D-img/D-siren-banner9.jpg);
     background-size: cover;
-    background-position: center;
-  }
+    background-position: center; }
   @keyframes aa {
     0% {
       top: -42%;
-      opacity: 0;
-    }
+      opacity: 0; }
     100% {
       top: 25%;
-      opacity: 1;
-    }
-  }
+      opacity: 1; } }
   .D-banner-zi {
+    display: none;
     width: 44px;
     height: 254px;
     background-image: url(../img/D-img/D-siren-banner-zi.png);
@@ -205,16 +162,13 @@ body {
     top: -42%;
     left: 50%;
     opacity: 0;
-    animation: aa 2s forwards;
-  }
+    animation: aa 2s forwards; }
   .D-main, .h-footer {
-    display: none;
-  }
+    display: none; }
   .D-smallbox {
     padding: 0 15px;
     box-sizing: border-box;
-    margin-bottom: 65px;
-  }
+    margin-bottom: 65px; }
   .D-s-title {
     width: 100%;
     height: 200px;
@@ -223,16 +177,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 30px;
-    background-position: center;
-  }
+    background-position: center; }
   .D-s-tu {
     width: 100%;
     height: 420px;
     background-image: url(../img/D-img/D-img2.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-zibox-title {
     width: 100%;
     height: 80px;
@@ -240,34 +192,31 @@ body {
     float: left;
     margin-top: 30px;
     position: relative;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-zi-title1 {
     width: 160px;
     height: 30px;
-    font-size: 30px;
+    font-size: 25px;
     color: #1EB0F4;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     text-transform: uppercase;
     margin: 0;
-    float: left;
-  }
+    float: left; }
   .D-zi-title2 {
-    width: 160px;
+    width: 150px;
     height: 30px;
-    font-size: 30px;
+    font-size: 25px;
     color: #B0ADAD;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     text-transform: uppercase;
     margin: 0;
     float: left;
     z-index: 100;
     position: absolute;
     top: 0;
-    left: 160px;
-  }
+    left: 160px; }
   .D-zi-circle {
     width: 20px;
     height: 20px;
@@ -275,16 +224,14 @@ body {
     background: #1EB0F4;
     position: absolute;
     top: 0;
-    left: 203px;
-  }
+    left: 203px; }
   .D-zi-title3 {
     font-size: 20px;
     color: #6bc9f9;
     font-weight: 400;
     position: absolute;
     top: 30px;
-    left: 0;
-  }
+    left: 0; }
   .D-zi-title4 {
     width: 225px;
     height: 60px;
@@ -294,8 +241,7 @@ body {
     text-align: right;
     position: absolute;
     top: 0px;
-    right: 0;
-  }
+    right: 0; }
   .D-zi-title5 {
     font-size: 20px;
     color: #b1b1b1;
@@ -303,46 +249,39 @@ body {
     background: #fff;
     position: absolute;
     top: 678px;
-    right: 15px;
-  }
+    right: 15px; }
   .D-s-zi {
     width: 100%;
     height: auto;
-    margin-top: 80px;
-  }
+    margin-top: 80px; }
   .D-s-1 {
     width: 100%;
-    height: 40px;
-  }
+    height: 40px; }
   .D-s-1 > p:first-child {
     font-size: 30px;
     color: #1ab0f6;
     font-weight: 600;
-    float: left;
-  }
+    float: left; }
   .D-s-1 > p:last-child {
     font-size: 24px;
     color: #a4a4a4;
     font-weight: 400;
     float: left;
     line-height: 40px;
-    margin-left: 10px;
-  }
+    margin-left: 10px; }
   .D-s-2 {
     font-size: 14px;
     color: #666;
     font-weight: 300;
     margin-top: 20px;
-    padding-left: 20px;
-  }
+    padding-left: 20px; }
   .D-siren-center {
     width: 100%;
     height: 510px;
     background-image: url(../img/D-img/D-siren-center.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-  }
+    position: relative; }
   .D-siren-center > p:first-child {
     width: 500px;
     height: 280px;
@@ -351,8 +290,7 @@ body {
     font-weight: 300;
     margin-left: 55px;
     line-height: 280px;
-    display: none;
-  }
+    display: none; }
   .D-siren-center > p:last-of-type {
     width: 500px;
     height: 30px;
@@ -362,8 +300,7 @@ body {
     margin-left: 125px;
     margin-top: -70px;
     line-height: 30px;
-    display: none;
-  }
+    display: none; }
   .D-inputbox {
     width: 85%;
     height: 100%;
@@ -372,27 +309,23 @@ body {
     padding-top: 25px;
     box-sizing: border-box;
     margin: 0 auto;
-    position: relative;
-  }
+    position: relative; }
   .D-inputbox > p:first-child {
     font-size: 24px;
     color: #fff;
     font-weight: normal;
-    text-align: center;
-  }
+    text-align: center; }
   .D-inputbox > p:last-of-type {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: normal;
     text-align: center;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
   .D-input1 {
     width: 100%;
     height: 40px;
     margin-top: 30px;
-    border-radius: 5px;
-  }
+    border-radius: 5px; }
   .D-input1 > div {
     width: 30%;
     height: 40px;
@@ -404,21 +337,17 @@ body {
     font-weight: normal;
     float: left;
     text-align: center;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input1 > div:last-child {
-    margin-right: 0px;
-  }
+    margin-right: 0px; }
   .D-input1 > div.D-xuan {
     background: #F56B4D;
-    color: rgba(255, 255, 255, 0.7);
-  }
+    color: rgba(255, 255, 255, 0.7); }
   .D-input2 {
     width: 95%;
     height: auto;
     margin-top: 10px;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input2 > div {
     width: 100%;
     height: 35px;
@@ -427,55 +356,46 @@ body {
     padding-left: 15px;
     margin-top: 10px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input2 > div:last-child {
-    border: 0px solid #C2C2C2;
-  }
+    border: 0px solid #C2C2C2; }
   .D-input2 > div > p {
     width: 35px;
     height: 30px;
-    float: left;
-  }
+    float: left; }
   .D-input2 > div > input {
     width: 80%;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input3 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input3 > div > input {
     width: 80%;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input4 {
     width: 95%;
-    height: 50px;
-  }
+    height: 50px; }
   .D-input4 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input4 > div > input {
     width: 80%;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   input[type=button] {
     width: 155px;
     height: 40px;
@@ -483,8 +403,7 @@ body {
     border-radius: 5px;
     margin-left: 24%;
     margin-top: 15px;
-    border: 0;
-  }
+    border: 0; }
   .D-input-img1, .D-input-img2 {
     width: 56px;
     height: 56px;
@@ -493,53 +412,44 @@ body {
     position: absolute;
     right: 50px;
     top: 160px;
-    display: none;
-  }
+    display: none; }
   .D-input-img2 {
     background-image: url(../img/D-img/D-er.png);
-    top: 230px;
-  }
+    top: 230px; }
   .D-bottom {
     width: 100%;
     height: auto;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-bottom > div:first-child {
     width: 40%;
     height: 30px;
     margin: 0 auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-bottom > div:last-child {
     width: 100%;
     height: 60px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .D-bottom > div:first-child > p:first-child {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 600;
     margin: 0 auto;
     text-align: center;
-    float: left;
-  }
+    float: left; }
   .D-bottom > div:first-child > p:nth-child(2) {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
     float: left;
     margin: 0 auto;
-    text-align: center;
-  }
+    text-align: center; }
   .D-bottom > div:last-child > p {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
-    text-align: center;
-  }
+    text-align: center; }
   .h-footer {
-    display: none;
-  }
+    display: none; }
   .h-dibu {
     width: 100%;
     height: 330px;
@@ -547,97 +457,77 @@ body {
     margin-top: 50px;
     text-align: center;
     padding-top: 40px;
-    display: block;
-  }
+    display: block; }
   .h-dibu h2 {
     color: #76e0ed;
     font-size: 30px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
   .h-dibu h2 > span {
     color: #c9c9c9;
-    font-size: 30px;
-  }
+    font-size: 30px; }
   .h-dibu h3 {
     color: #b9b9b9;
-    font-size: 24px;
-  }
+    font-size: 24px; }
   .h-dibu h4 {
     color: #FFFFFF;
     font-size: 18px;
     margin-top: 10px;
-    line-height: 24px;
-  }
+    line-height: 24px; }
   .h-lianxiwom {
     height: 98px;
-    margin-top: 40px;
-  }
+    margin-top: 40px; }
   .h-lianxiwom > img {
-    margin: 0 5px;
-  }
-}
+    margin: 0 5px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .h-header {
-    display: none;
-  }
+    display: none; }
   .W-shouye-top {
     width: 100%;
     height: 100px;
-    background: #283A86;
-  }
+    background: #283A86; }
   .W-shouye-neitop {
     width: 80%;
     height: 100px;
     overflow: hidden;
-    margin: 0 auto;
-  }
-  .W-shouye-neitop div {
-    width: 12.5%;
-    height: 100px;
-    float: left;
-  }
-  .W-shouye-neitop div a {
-    display: block;
-    float: left;
-    width: 150px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    color: #F6F6F9;
-  }
+    margin: 0 auto; }
+    .W-shouye-neitop div {
+      width: 12.5%;
+      height: 100px;
+      float: left; }
+      .W-shouye-neitop div a {
+        display: block;
+        float: left;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #F6F6F9; }
   .W-shouye-logo img {
     width: 50px;
     height: 100px;
     display: block;
-    float: left;
-  }
+    float: left; }
   .W-shouye-logo span {
     line-height: 100px;
     display: block;
     float: left;
-    color: #F6F6F9;
-  }
+    color: #F6F6F9; }
   .W-shouye-neitop > div > a:hover {
-    color: #34D9E6;
-  }
+    color: #34D9E6; }
   .D-banner {
     width: 100%;
     height: 620px;
     background-image: url(../img/D-img/D-siren-banner9.jpg);
     background-size: cover;
-    background-position: center;
-  }
+    background-position: center; }
   @keyframes aa {
     0% {
       top: -42%;
-      opacity: 0;
-    }
+      opacity: 0; }
     100% {
       top: 25%;
-      opacity: 1;
-    }
-  }
+      opacity: 1; } }
   .D-banner-zi {
     width: 44px;
     height: 254px;
@@ -646,41 +536,34 @@ body {
     top: -42%;
     left: 50%;
     opacity: 0;
-    animation: aa 2s forwards;
-  }
+    animation: aa 2s forwards; }
   .D-smallbox {
-    display: none;
-  }
+    display: none; }
   .D-main {
     width: 80%;
     height: 950px;
     margin: 0 auto;
     padding-top: 20px;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .D-lujin {
     font-size: 14px;
     color: #393939;
     font-weight: 400;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-title1 {
     width: 100%;
     height: 201px;
     background-image: url(../img/D-img/D-title1.png);
     background-size: cover;
     background-position: center;
-    margin-top: 70px;
-  }
+    margin-top: 70px; }
   .D-siren1 {
-    width: 100%;
-  }
+    width: 100%; }
   .D-zibox {
     width: 100%;
     height: auto;
     padding-top: 20px;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-circle {
     width: 55px;
     height: 55px;
@@ -693,16 +576,14 @@ body {
     color: #12bef0;
     font-weight: 600;
     float: left;
-    display: none;
-  }
+    display: none; }
   .D-zibox-title {
     width: 880px;
     height: 60px;
     border-bottom: 1px dashed #727272;
     float: left;
     margin-left: 20px;
-    position: relative;
-  }
+    position: relative; }
   .D-zi-title1 {
     width: 160px;
     height: 30px;
@@ -712,8 +593,7 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     margin: 0;
-    float: left;
-  }
+    float: left; }
   .D-zi-title2 {
     width: 160px;
     height: 30px;
@@ -727,8 +607,7 @@ body {
     z-index: 100;
     position: absolute;
     top: 0;
-    left: 160px;
-  }
+    left: 160px; }
   .D-zi-circle {
     width: 20px;
     height: 20px;
@@ -736,16 +615,14 @@ body {
     background: #1EB0F4;
     position: absolute;
     top: 0;
-    left: 203px;
-  }
+    left: 203px; }
   .D-zi-title3 {
     font-size: 20px;
     color: #6bc9f9;
     font-weight: 400;
     position: absolute;
     top: 30px;
-    left: 0;
-  }
+    left: 0; }
   .D-zi-more {
     width: 128px;
     height: 40px;
@@ -757,8 +634,7 @@ body {
     line-height: 40px;
     position: absolute;
     top: 0;
-    left: 330px;
-  }
+    left: 330px; }
   .D-zibox-main {
     width: 100%;
     height: 90px;
@@ -767,8 +643,7 @@ body {
     font-weight: 400;
     margin-left: 20px;
     margin-top: 10px;
-    line-height: 30px;
-  }
+    line-height: 30px; }
   .D-zibox-main1 {
     width: 100%;
     height: 90px;
@@ -778,16 +653,14 @@ body {
     text-align: center;
     margin-left: 20px;
     margin-top: 20px;
-    line-height: 30px;
-  }
+    line-height: 30px; }
   .D-siren-center {
     width: 100%;
     height: 458px;
     background-image: url(../img/D-img/D-siren-center.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-  }
+    position: relative; }
   .D-siren-center > p:first-child {
     width: 500px;
     height: 280px;
@@ -796,8 +669,7 @@ body {
     font-weight: 300;
     margin-left: 55px;
     line-height: 280px;
-    display: none;
-  }
+    display: none; }
   .D-siren-center > p:last-of-type {
     width: 500px;
     height: 30px;
@@ -807,8 +679,7 @@ body {
     margin-left: 125px;
     margin-top: -70px;
     line-height: 30px;
-    display: none;
-  }
+    display: none; }
   .D-inputbox {
     width: 610px;
     height: 395px;
@@ -817,27 +688,23 @@ body {
     padding-left: 45px;
     box-sizing: border-box;
     margin: 0 auto;
-    position: relative;
-  }
+    position: relative; }
   .D-inputbox > p:first-child {
     font-size: 30px;
     color: #fff;
     font-weight: normal;
-    margin-left: 85px;
-  }
+    margin-left: 85px; }
   .D-inputbox > p:last-of-type {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: normal;
     margin-left: 105px;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
   .D-input1 {
     width: 400px;
     height: 40px;
     margin-top: 30px;
-    border-radius: 5px;
-  }
+    border-radius: 5px; }
   .D-input1 > div {
     width: 120px;
     height: 40px;
@@ -849,15 +716,12 @@ body {
     font-weight: normal;
     float: left;
     text-align: center;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input1 > div:last-child {
-    margin-right: 0px;
-  }
+    margin-right: 0px; }
   .D-input1 > div.D-xuan {
     background: #F56B4D;
-    color: rgba(255, 255, 255, 0.7);
-  }
+    color: rgba(255, 255, 255, 0.7); }
   .D-input2 {
     width: 400px;
     height: 35px;
@@ -865,58 +729,49 @@ body {
     margin-top: 10px;
     border-radius: 5px;
     text-align: center;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input2 > div {
     width: 33%;
     height: 35px;
     border-right: 1px solid #C2C2C2;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input2 > div:last-child {
-    border: 0px solid #C2C2C2;
-  }
+    border: 0px solid #C2C2C2; }
   .D-input2 > div > input {
     width: 75px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input3 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input3 > div > input {
     width: 300px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input4 {
     width: 400px;
-    height: 50px;
-  }
+    height: 50px; }
   .D-input4 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input4 > div > input {
     width: 300px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   input[type=button] {
     width: 155px;
     height: 40px;
@@ -924,8 +779,7 @@ body {
     border-radius: 5px;
     margin-left: 130px;
     margin-top: 20px;
-    border: 0;
-  }
+    border: 0; }
   .D-input-img1, .D-input-img2 {
     width: 56px;
     height: 56px;
@@ -933,133 +787,109 @@ body {
     background-size: 100%;
     position: absolute;
     right: 50px;
-    top: 160px;
-  }
+    top: 160px; }
   .D-input-img2 {
     background-image: url(../img/D-img/D-er.png);
-    top: 230px;
-  }
+    top: 230px; }
   .D-bottom {
     width: 100%;
     height: auto;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-bottom > div:first-child {
     width: 20%;
     height: 30px;
     margin: 0 auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-bottom > div:last-child {
     width: 100%;
     height: 60px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .D-bottom > div:first-child > p:first-child {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 600;
     margin: 0 auto;
     text-align: center;
-    float: left;
-  }
+    float: left; }
   .D-bottom > div:first-child > p:nth-child(2) {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
     float: left;
     margin: 0 auto;
-    text-align: center;
-  }
+    text-align: center; }
   .D-bottom > div:last-child > p {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
-    text-align: center;
-  }
+    text-align: center; }
   .h-footer {
     width: 100%;
     height: 63px;
     background: #273786;
-    display: block;
-  }
+    display: block; }
   .h-footers {
     width: 90%;
     height: 100%;
     background-image: url(../img/h-footer.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .h-dibu {
-    display: none;
-  }
-}
+    display: none; } }
 
 @media screen and (min-width: 1200px) {
   .h-header {
-    display: none;
-  }
+    display: none; }
   .W-shouye-top {
     width: 100%;
     height: 100px;
     background: #283A86;
     position: relative;
-    z-index: 100;
-  }
+    z-index: 100; }
   .W-shouye-neitop {
     width: 80%;
     height: 100px;
     overflow: hidden;
-    margin: 0 auto;
-  }
-  .W-shouye-neitop div {
-    width: 12.5%;
-    height: 100px;
-    float: left;
-  }
-  .W-shouye-neitop div a {
-    display: block;
-    float: left;
-    width: 150px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    color: #F6F6F9;
-  }
+    margin: 0 auto; }
+    .W-shouye-neitop div {
+      width: 12.5%;
+      height: 100px;
+      float: left; }
+      .W-shouye-neitop div a {
+        display: block;
+        float: left;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #F6F6F9; }
   .W-shouye-logo img {
     width: 50px;
     height: 100px;
     display: block;
-    float: left;
-  }
+    float: left; }
   .W-shouye-logo span {
     line-height: 100px;
     display: block;
     float: left;
-    color: #F6F6F9;
-  }
+    color: #F6F6F9; }
   .W-shouye-neitop > div > a:hover {
-    color: #34D9E6;
-  }
+    color: #34D9E6; }
   .D-banner {
     width: 100%;
     height: 620px;
     background-image: url(../img/D-img/D-siren-banner9.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-  }
+    position: relative; }
   @keyframes aa {
     0% {
       top: -42%;
-      opacity: 0;
-    }
+      opacity: 0; }
     100% {
       top: 25%;
-      opacity: 1;
-    }
-  }
+      opacity: 1; } }
   .D-banner-zi {
     width: 44px;
     height: 254px;
@@ -1068,41 +898,34 @@ body {
     top: -42%;
     left: 50%;
     opacity: 0;
-    animation: aa 2s forwards;
-  }
+    animation: aa 2s forwards; }
   .D-main {
     width: 1200px;
     height: 950px;
     margin: 0 auto;
     padding-top: 20px;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .D-smallbox {
-    display: none;
-  }
+    display: none; }
   .D-lujin {
     font-size: 14px;
     color: #393939;
     font-weight: 400;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-title1 {
     width: 100%;
     height: 201px;
     background-image: url(../img/D-img/D-title1.png);
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   .D-siren1 {
-    width: 100%;
-  }
+    width: 100%; }
   .D-zibox {
     width: 100%;
     height: auto;
     padding-top: 20px;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-circle {
     width: 55px;
     height: 55px;
@@ -1114,16 +937,14 @@ body {
     font-size: 30px;
     color: #12bef0;
     font-weight: 600;
-    float: left;
-  }
+    float: left; }
   .D-zibox-title {
     width: 880px;
     height: 60px;
     border-bottom: 1px dashed #727272;
     float: left;
     margin-left: 20px;
-    position: relative;
-  }
+    position: relative; }
   .D-zi-title1 {
     width: 160px;
     height: 30px;
@@ -1133,8 +954,7 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     margin: 0;
-    float: left;
-  }
+    float: left; }
   .D-zi-title2 {
     width: 160px;
     height: 30px;
@@ -1148,8 +968,7 @@ body {
     z-index: 100;
     position: absolute;
     top: 0;
-    left: 160px;
-  }
+    left: 160px; }
   .D-zi-circle {
     width: 20px;
     height: 20px;
@@ -1157,16 +976,14 @@ body {
     background: #1EB0F4;
     position: absolute;
     top: 0;
-    left: 203px;
-  }
+    left: 203px; }
   .D-zi-title3 {
     font-size: 20px;
     color: #6bc9f9;
     font-weight: 400;
     position: absolute;
     top: 30px;
-    left: 0;
-  }
+    left: 0; }
   .D-zi-more {
     width: 128px;
     height: 40px;
@@ -1178,8 +995,7 @@ body {
     line-height: 40px;
     position: absolute;
     top: 0;
-    left: 330px;
-  }
+    left: 330px; }
   .D-zibox-main {
     width: 860px;
     height: 90px;
@@ -1188,8 +1004,7 @@ body {
     font-weight: 400;
     margin-left: 210px;
     margin-top: 10px;
-    line-height: 30px;
-  }
+    line-height: 30px; }
   .D-zibox-main1 {
     width: 860px;
     height: 90px;
@@ -1199,16 +1014,14 @@ body {
     text-align: center;
     margin-left: 210px;
     margin-top: 20px;
-    line-height: 30px;
-  }
+    line-height: 30px; }
   .D-siren-center {
     width: 100%;
     height: 458px;
     background-image: url(../img/D-img/D-siren-center.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-  }
+    position: relative; }
   .D-siren-center > p:first-child {
     width: 500px;
     height: 280px;
@@ -1216,8 +1029,7 @@ body {
     color: #fff;
     font-weight: 300;
     margin-left: 55px;
-    line-height: 280px;
-  }
+    line-height: 280px; }
   .D-siren-center > p:last-of-type {
     width: 500px;
     height: 30px;
@@ -1226,8 +1038,7 @@ body {
     font-weight: 300;
     margin-left: 125px;
     margin-top: -70px;
-    line-height: 30px;
-  }
+    line-height: 30px; }
   .D-inputbox {
     width: 610px;
     height: 395px;
@@ -1237,27 +1048,23 @@ body {
     box-sizing: border-box;
     position: absolute;
     top: 25px;
-    right: 85px;
-  }
+    right: 85px; }
   .D-inputbox > p:first-child {
     font-size: 30px;
     color: #fff;
     font-weight: normal;
-    margin-left: 85px;
-  }
+    margin-left: 85px; }
   .D-inputbox > p:last-of-type {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: normal;
     margin-left: 105px;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
   .D-input1 {
     width: 400px;
     height: 40px;
     margin-top: 30px;
-    border-radius: 5px;
-  }
+    border-radius: 5px; }
   .D-input1 > div {
     width: 120px;
     height: 40px;
@@ -1269,15 +1076,12 @@ body {
     font-weight: normal;
     float: left;
     text-align: center;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input1 > div:last-child {
-    margin-right: 0px;
-  }
+    margin-right: 0px; }
   .D-input1 > div.D-xuan {
     background: #F56B4D;
-    color: rgba(255, 255, 255, 0.7);
-  }
+    color: rgba(255, 255, 255, 0.7); }
   .D-input2 {
     width: 400px;
     height: 35px;
@@ -1285,58 +1089,49 @@ body {
     margin-top: 10px;
     border-radius: 5px;
     text-align: center;
-    line-height: 40px;
-  }
+    line-height: 40px; }
   .D-input2 > div {
     width: 33%;
     height: 35px;
     border-right: 1px solid #C2C2C2;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input2 > div:last-child {
-    border: 0px solid #C2C2C2;
-  }
+    border: 0px solid #C2C2C2; }
   .D-input2 > div > input {
     width: 75px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input3 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input3 > div > input {
     width: 300px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   .D-input4 {
     width: 400px;
-    height: 50px;
-  }
+    height: 50px; }
   .D-input4 > div {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     box-sizing: border-box;
-    float: left;
-  }
+    float: left; }
   .D-input4 > div > input {
     width: 300px;
     height: 80%;
     outline: none;
     border: 0;
-    margin-left: 5px;
-  }
+    margin-left: 5px; }
   input[type=button] {
     width: 155px;
     height: 40px;
@@ -1344,8 +1139,7 @@ body {
     border-radius: 5px;
     margin-left: 130px;
     margin-top: 20px;
-    border: 0;
-  }
+    border: 0; }
   .D-input-img1, .D-input-img2 {
     width: 56px;
     height: 56px;
@@ -1353,64 +1147,52 @@ body {
     background-size: 100%;
     position: absolute;
     right: 50px;
-    top: 160px;
-  }
+    top: 160px; }
   .D-input-img2 {
     background-image: url(../img/D-img/D-er.png);
-    top: 230px;
-  }
+    top: 230px; }
   .h-footer {
     width: 100%;
     height: 63px;
     background: #273786;
-    display: block;
-  }
+    display: block; }
   .h-footers {
     width: 1200px;
     height: 100%;
     background-image: url(../img/h-footer.png);
     background-size: 100%;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .h-dibu {
-    display: none;
-  }
+    display: none; }
   .D-bottom {
     width: 100%;
     height: auto;
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .D-bottom > div:first-child {
     width: 10%;
     height: 30px;
     margin: 0 auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .D-bottom > div:last-child {
     width: 100%;
     height: 60px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
   .D-bottom > div:first-child > p:first-child {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 600;
     margin: 0 auto;
     text-align: center;
-    float: left;
-  }
+    float: left; }
   .D-bottom > div:first-child > p:nth-child(2) {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
     float: left;
     margin: 0 auto;
-    text-align: center;
-  }
+    text-align: center; }
   .D-bottom > div:last-child > p {
     font-size: 16px;
     color: #a5a5a5;
     font-weight: 400;
-    text-align: center;
-  }
-}
+    text-align: center; } }
