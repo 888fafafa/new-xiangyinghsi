@@ -19,13 +19,13 @@ a {
     list-style: none; }
   .h-header {
     width: 100%;
-    height: 84px;
+    height: 50px;
     background: #273786;
     padding-top: 12px;
     position: relative; }
   .h-hleft {
     width: 50%;
-    height: 60px;
+    height: 38px;
     margin-left: 10px;
     position: relative; }
   @font-face {
@@ -41,7 +41,7 @@ a {
     -moz-osx-font-smoothing: grayscale; }
   .h-hleft i {
     font-size: 20px;
-    line-height: 60px;
+    line-height: 25px;
     color: #fff;
     margin-left: 10px;
     position: absolute;
@@ -49,25 +49,21 @@ a {
     top: 1px; }
   .h-hleft input {
     width: 100%;
-    height: 60px;
+    height: 38px;
     margin-left: 15px;
     background: #273786;
-    border: 1px solid #ccc; }
+    border: none; }
   .h-hright {
     width: 60px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 115px;
     top: 12px;
     border: 1px solid #fff;
     text-align: center; }
-  .h-hright i {
-    font-size: 40px;
-    line-height: 60px;
-    color: #fff; }
   .h-hrights {
     width: 80px;
-    height: 60px;
+    height: 38px;
     position: absolute;
     right: 20px;
     top: 12px;
@@ -77,8 +73,8 @@ a {
     position: absolute;
     width: 150px;
     height: 366px;
-    right: 0;
-    top: 83px;
+    right: -20px;
+    top: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
@@ -96,10 +92,11 @@ a {
   .h-yingc a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: center; }
   .h-hrights i {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 25px;
     color: #fff;
     cursor: pointer; }
   .W-shouye-top {
@@ -138,17 +135,17 @@ a {
     color: #34D9E6; }
   .W-shouye-banner {
     width: 100%;
-    height: 620px; }
+    height: 270px; }
   .W-shouye-bannerbox {
     width: 100%;
-    height: 620px;
+    height: 270px;
     overflow: hidden;
     position: relative;
     top: 0;
     left: 0; }
     .W-shouye-bannerbox .W-shouye-bannerli {
       width: 100%;
-      height: 620px;
+      height: 270px;
       position: absolute;
       top: 0;
       left: 0;
@@ -164,7 +161,7 @@ a {
   .W-shouye-bannerbox > li:nth-child(2) {
     background-image: url("../img/W-banner-xiao2.jpg"); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url("../img/W-banner-xiao4.jpg"); }
+    background-image: url("../img/W-banner-xiao3.jpg"); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
@@ -189,8 +186,8 @@ a {
     font-size: 50px;
     font-weight: 600;
     position: absolute;
-    left: 5;
-    top: 50%;
+    left: 5px;
+    top: 22%;
     color: #ccc; }
   .W-shouye-right {
     width: 20px;
@@ -200,7 +197,7 @@ a {
     font-weight: 600;
     position: absolute;
     right: 15px;
-    top: 50%;
+    top: 22%;
     color: #ccc; }
   @keyframes zi1 {
     0% {

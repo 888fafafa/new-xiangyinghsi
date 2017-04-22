@@ -1,221 +1,7 @@
-@keyframes middle-k{
-		0%{opacity:0;
-		transform:translateX(-200px) rotate(360deg) scale(.2);
-		}
-		100%{opacity: 1;
-		transform:translateX(0px) rotate(0deg) scale(1);
-		}
-	}
-@keyframes middle-c{
-		0%{opacity:0;
-		transform:translateX(200px) rotate(-360deg) scale(0);
-		}
-		100%{opacity: 1;
-		transform:translateX(0px) rotate(0deg) scale(1);
-		}
-	}
-	.middle-a{
-		animation: middle-k 1.5s linear 0s 1 forwards;
-	}
-  .middle-b{
-		animation: middle-c 1.5s linear 0s 1 forwards;
-	}
-/*.h-header{
-	width:100%;
-	height:84px;
-	background:#273786;
-	padding-top: 12px;
-	position: relative;
-}
-.h-hleft{
-	width:50%;
-	height:60px;
-	margin-left: 10px;
-	border:1px solid #ccc;
-	position: relative;
-}
-.h-hleft i{
-	font-size: 20px;
-	line-height: 60px;
-	color: #fff;
-	margin-left: 10px;
-	position: absolute;
-	left:20px;
-	top:1px;
-}
-.h-hleft input{
-	position: absolute;
-	left:40px;
-	top:1px;
-	width:60%;
-	height:56px;
-	margin-left: 15px;
-	background:#273786;
-	border:none;
-	color: #fff;
-	border:none;
-}
-.h-hright{
-	width:60px;
-	height:60px;
-	position: absolute;
-	right:115px;
-	top:12px;
-	border: 1px solid #fff;
-	text-align: center;
-}
-.h-hright i{
-	font-size: 40px;
-	line-height: 60px;	
-	color: #fff;
-}
-.h-hrights{
-	width:80px;
-	height:60px;
-	position: absolute;
-	right:20px;
-	top:12px;
-	text-align: center;
-}
-.h-yingc{
-	position: absolute;
-	width:150px;
-	height:360px;
-	right: -20px;
-	top:72px;
-	background: rgba(0,0,0,0.5);
-    color: #fff;
-	cursor: pointer;
-	display: none;
-	z-index: 100;
-}
-.h-yingc a{
-	color: #fff;
-	text-decoration:none;
-}
-a:hover{
-  color:#34D9E6 ;
-}
-.h-yingc h3{
-	line-height: 60px;
-	text-align: center;
-	 font-size:16px ;
-  font-family: "Microsoft YaHei";
-	box-sizing: border-box;
-	border-bottom: 1px solid #0085D0;
-}
-.h-hrights i{
-	font-size: 40px;
-	line-height: 60px;	
-	color: #fff;
-	cursor: pointer;
-}*/
- .h-header {
-        width: 100%;
-        height: 50px;
-        background: #273786;
-        padding-top: 12px;
-        position: relative;
-    }
-    .h-hleft {
-        width: 50%;
-        height: 38px;
-        margin-left: 10px;
-        position: relative;
-    }
-    @font-face {
-        font-family: 'iconfont';
-        src: url("../fonts/iconfont.eot");
-        src: url("../fonts/iconfont.eot?#iefix") format('embedded-opentype'), url("../fonts/iconfont.woff") format('woff'), url("../fonts/iconfont.ttf") format('truetype'), url("../fonts/iconfont.svg#iconfont") format('svg');
-    }
-    .iconfont {
-        font-family: "iconfont" !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .h-hleft i {
-        font-size: 20px;
-        line-height: 25px;
-        color: #fff;
-        margin-left: 10px;
-        position: absolute;
-        left: 20px;
-        top: 1px;
-    }
-    .h-hleft input {
-        width: 100%;
-        height: 38px;
-        margin-left: 15px;
-        background: #273786;
-        border:none;
-        
-    }
-    .h-hright {
-        width: 60px;
-        height: 38px;
-        position: absolute;
-        right: 115px;
-        top: 12px;
-        border: 1px solid #fff;
-        text-align: center;
-    }
-//  .h-hrights i {
-//      font-size: 25px;
-//      line-height: 25px;
-//      color: #fff;
-//  }
-    .h-hrights {
-        width: 80px;
-        height: 38px;
-        position: absolute;
-        right: 20px;
-        top: 12px;
-        text-align: center;
-    }
-    .h-yingc {
-        z-index: 40;
-        position: absolute;
-        width: 150px;
-        height: 366px;
-        right: -20px;
-        top:38px;
-        background: rgba(0,0,0,0.5);
-        color: #fff;
-        cursor: pointer;
-        display: none;
-    }
-    .h-yingc h3 {
-        color: #fff;
-        width: 150px;
-        height: 61px;
-        line-height: 61px;
-        text-align: center;
-        box-sizing: border-box;
-        border-bottom: 1px solid #0085D0;
-        margin: 0;
-        padding: 0;
-
-    }
-    .h-yingc a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-
-    }
-    .h-hrights i {
-        font-size:25px;
-        line-height: 25px;
-        color: #fff;
-        cursor: pointer;
-    }
-
 @media screen and (max-width: 768px) {
   .W-shouye-top {
     width: 100%;
-    height: 50px;
+    height: 100px;
     background: #283A86; }
   .W-shouye-neitop {
     width: 80%;
@@ -244,7 +30,6 @@ a:hover{
     display: block;
     float: left;
     color: #F6F6F9; }
-    
   .W-shouye-neitop > div > a:hover {
     color: #34D9E6; }
   .W-shouye-banner {
@@ -263,14 +48,14 @@ a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background-image:url(../img/W-banner-xinde4.jpg);
+    background-image: url("../img/W-shouye-banner2.png");
     background-size: cover;
     background-position: center center; } }
 
 @media screen and (min-width: 768px) {
   .W-shouye-top {
     width: 100%;
-    height: 84px;
+    height: 100px;
     background: #283A86; }
   .W-shouye-neitop {
     width: 80%;
@@ -317,9 +102,22 @@ a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background-image:url(../img/D-img/D-siren-banner9.jpg);
+    background-image: url("../img/W-shouye-banner2.png");
     background-size: cover;
     background-position: center center; } }
+
+.h-header {
+  width: 100%;
+  height: 50px;
+  background: #273786;
+  padding-top: 12px;
+  position: relative; }
+
+.h-hleft {
+  width: 50%;
+  height: 38px;
+  margin-left: 10px;
+  position: relative; }
 
 @font-face {
   font-family: 'iconfont';
@@ -334,6 +132,72 @@ a:hover{
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale; }
 
+.h-hleft i {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  margin-left: 10px;
+  position: absolute;
+  left: 20px;
+  top: 1px; }
+
+.h-hleft input {
+  width: 100%;
+  height: 38px;
+  margin-left: 15px;
+  background: #273786;
+  border: none; }
+
+.h-hright {
+  width: 60px;
+  height: 38px;
+  position: absolute;
+  right: 115px;
+  top: 12px;
+  border: 1px solid #fff;
+  text-align: center; }
+
+.h-hrights {
+  width: 80px;
+  height: 38px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  text-align: center; }
+
+.h-yingc {
+  z-index: 40;
+  position: absolute;
+  width: 150px;
+  height: 366px;
+  right: 0;
+  top: 83px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+
+.h-yingc h3 {
+  color: #fff;
+  width: 150px;
+  height: 61px;
+  line-height: 61px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #0085D0;
+  margin: 0;
+  padding: 0; }
+
+.h-yingc a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; }
+
+.h-hrights i {
+  font-size: 25px;
+  line-height: 25px;
+  color: #fff;
+  cursor: pointer; }
 
 .h-fenye {
   display: none; }
@@ -347,22 +211,20 @@ a:hover{
 .h-dongtais {
   width: 359px;
   height: 174px;
-  position: relative;  
+  background-image: url(../img/h-aboutus.png);
+  background-size: 100%;
   margin: 20px auto; }
 
-.h-dongtais h6:nth-child(3) {
-  position: absolute;
-  left:154px;
-  top:115px; }
+.h-dongtais h6:nth-child(1) {
+  padding-top: 25px; }
 
 .h-dongtais h6:nth-child(2) {
-  position: absolute;
-  left:154px;
-  top:23px; }
+  padding-top: 61px; }
 
 .h-dongtais h6 {
   color: #000;
-  font-size: 26px; }
+  font-size: 26px;
+  margin-left: 152px; }
 
 .h-dibu {
   width: 100%;
@@ -398,8 +260,7 @@ a:hover{
   display: none; }
 
 .h-news1 {
-  display: block; 
-  width: 100%;}
+  display: block; }
 
 .new1 {
   display: none; }
@@ -461,21 +322,26 @@ a:hover{
   margin-top: 50px; }
 
 @media screen and (max-width: 768px) {
-	.W-shouye-neitop{
-   	display: none;
-   }
-   .h-header {
-    display: block; }
+  .h-dongtais {
+    width: 359px;
+    height: 174px;
+    background-image: url(../img/h-aboutus.png);
+    background-size: 100%;
+    margin: 20px auto; }
+  .h-dongtais h6:nth-child(1) {
+    padding-top: 25px; }
+  .h-dongtais h6:nth-child(2) {
+    padding-top: 61px; }
+  .h-dongtais h6 {
+    color: #000;
+    font-size: 26px;
+    margin-left: 152px; } }
 
-}
 @media screen and (min-width: 1200px) {
   .h-dongtais {
     display: none; }
-.h-header {
+  .h-header {
     display: none; }
-   .W-shouye-neitop{
-   	display: block;
-   }
   .h-dongtai {
     width: 100%;
     height: 189px;
@@ -563,5 +429,4 @@ a:hover{
     z-index: 20;
     background: #fff;
     text-align: center;
-    line-height: 27px; } 
-    }
+    line-height: 27px; } }
