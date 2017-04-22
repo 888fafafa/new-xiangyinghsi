@@ -327,21 +327,21 @@ a{
 
 .h-header {
   width: 100%;
-  height: 84px;
+  height: 50px;
   background: #273786;
   padding-top: 12px;
   position: relative; }
 
 .h-hleft {
   width: 50%;
-  height: 60px;
+  height:40px;
   margin-left: 10px;
-  border: 1px solid #ccc;
+  border: none;
   position: relative; }
 
 .h-hleft i {
   font-size: 20px;
-  line-height: 60px;
+  line-height: 30px;
   color: #fff;
   margin-left: 10px;
   position: absolute;
@@ -353,7 +353,7 @@ a{
   left: 40px;
   top: 1px;
   width: 80%;
-  height: 56px;
+  height: 30px;
   margin-left: 15px;
   background: #273786;
   border: none;
@@ -386,7 +386,7 @@ a{
   width: 150px;
   height: 360px;
   right: -20px;
-  top: 72px;
+  top: 38px;
   background: rgba(0,0,0,.5);
   color: #FFFFFF;
   box-shadow: 0 2px 30px 10px rgba(0,0,0,.1);
@@ -395,6 +395,7 @@ a{
 
 .h-yingc h3 {
   line-height: 60px;
+  font-size: 16px;
   color: #FFFFFF;
   text-align: center;
   box-sizing: border-box;
@@ -406,13 +407,13 @@ a.text-a{
 	border: none;
 }
 .h-hrights i {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 30px;
   color: #fff;
   cursor: pointer; }
   .banner-m {
     width: 100%;
-    height: 1106px;
+    height: 270px;
     background-image: url(../img/x-sem_02.png);
     background-size: cover;
     background-position: center center; }
@@ -422,25 +423,25 @@ a.text-a{
   article > img {
     display: block;
     width: 50%;
-    margin: 50px auto 50px auto; }
+    margin: 10px auto 20px auto; }
   section:first-of-type {
     color: #646464;
-    font-size: 24px; }
+    font-size: 16px; }
   section:nth-of-type(2) {
     width: 100%; }
   .tit {
     color: #37B9F7;
-    font-size: 24px;
+    font-size: 16px;
     float: left; }
   .tit span {
     color: #BCBABA;
-    font-size: 24px; }
+    font-size: 16px; }
   .tit > p:nth-child(2) {
     color: #737373; }
   .tit + div {
     float: right; }
   .tit + div p {
-    font-size: 20px;
+    font-size: 14px;
     color: #E5E5E5;
     text-align: right; }
   .tit + div p:nth-child(2) {
@@ -452,9 +453,9 @@ a.text-a{
     height: 7px; }
   .line > p {
     width: 25%;
-    height: 27px;
+    height: 18px;
     float: right;
-    font-size: 20px;
+    font-size: 14px;
     color: #BABABA;
     text-align: right;
     overflow: hidden; }
@@ -467,29 +468,30 @@ a.text-a{
   .photo > img {
     width: 100%; }
   .photo > p:first-of-type {
-    font-size: 24px;
+    font-size: 14px;
     color: #4B4B4B;
-    margin: 24px 0 14px 0; }
+    margin: 6px 0 6px 0; }
   .photo p:nth-of-type(2) {
-    font-size: 20px;
+    font-size: 12px;
     color: #4B4B4B;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
   .photo > p:nth-of-type(3) {
-    font-size: 18px;
+    font-size: 12px;
     color: #B5B5B5; }
   .no {
     width: 100%;
     height: 10px; }
   .banner-m_c {
     width: 100%;
-    height: 775px;
+    height: 250px;
     background-image: url(../img/x-se_052_02.png);
     background-size: cover;
     background-position: center center;
     float: left;
     margin-top: 40px;
+    margin-bottom: 100px;
     z-index: 10; }
   .over {
     margin-top: -60px; }
@@ -497,37 +499,39 @@ a.text-a{
     width: 100%;
     text-align: center;
     color: #C3C3C3;
-    font-size: 18px;
+    font-size: 12px;
     float: left;
     margin-top: 56px; }
   .look > p:first-child {
-    font-size: 24px;
+    font-size: 16px;
     color: #BABABA; }
   .look > p:first-child > span {
     color: #A5A5A5;
     font-weight: bold; }
   footer {
     width: 100%;
-    height: 334px;
+    height: 200px;
     background: #283A86;
     margin-top: 53px;
     text-align: center;
     overflow: hidden;
     text-transform: uppercase;
     color: #8A8EA7;
-    font-size: 18px;
+    font-size: 12px;
     float: left; }
   footer > p:nth-child(1) span {
     color: #76e0ed; }
   footer > p:nth-child(1) {
     color: #c9c9c9;
-    font-size: 30px;
-    margin-top: 40px; }
+    font-size: 16px;
+    margin-top: 20px; }
   footer > p:nth-of-type(2) {
-    font-size: 24px;
+    font-size: 12px;
     margin-bottom: 14px; }
   footer > div {
-    margin-top: 40px; }
+    margin-top: 20px; }
+  footer > div > img{
+    width: 40px; } 
   footer > div > img:nth-child(2) {
     margin: 0 20px 0 20px; } }
 
