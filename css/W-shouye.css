@@ -188,7 +188,8 @@ a {
     position: absolute;
     left: 5px;
     top: 22%;
-    color: #ccc; }
+    color: #ccc;
+    font-weight: 200; }
   .W-shouye-right {
     width: 20px;
     height: 30px;
@@ -198,7 +199,8 @@ a {
     position: absolute;
     right: 15px;
     top: 22%;
-    color: #ccc; }
+    color: #ccc;
+    font-weight: 200; }
   @keyframes zi1 {
     0% {
       top: 40px;

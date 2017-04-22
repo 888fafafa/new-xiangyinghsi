@@ -247,6 +247,7 @@ a {
         left: 5px;
         top: 22%;
         color: #ccc;
+        font-weight: 200;
     }
     .W-shouye-right {
         @include cube(20px,30px);
@@ -257,6 +258,8 @@ a {
         right: 15px;
         top: 22%;
         color: #ccc;
+        font-weight: 200;
+        
     }
     //zi
     @keyframes zi1 {
