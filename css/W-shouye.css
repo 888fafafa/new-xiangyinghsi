@@ -77,7 +77,7 @@ a {
     position: absolute;
     width: 150px;
     height: 366px;
-    right: 0px;
+    right: 0;
     top: 83px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -160,11 +160,11 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url(../img/W-banner-xiao1.jpg); }
+    background-image: url("../img/W-banner-xiao1.jpg"); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url(../img/W-banner-xiao2.jpg); }
+    background-image: url("../img/W-banner-xiao2.jpg"); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url(../img/W-banner-xiao4.jpg); }
+    background-image: url("../img/W-banner-xiao4.jpg"); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
@@ -180,6 +180,8 @@ a {
       background: #CCCCCC; }
     .W-shouye-circlebox .first {
       background: #6C645A; }
+  .W-shouye-bannerli > img {
+    display: none; }
   .W-shouye-left {
     width: 20px;
     height: 30px;
@@ -236,6 +238,15 @@ a {
     margin: 70px auto;
     height: 109px;
     display: block; }
+  .W-shouye-we {
+    animation: lingxian 5s infinite; }
+  @keyframes lingxian {
+    0% {
+      transform: rotateY(0); }
+    60% {
+      transform: rotateY(0); }
+    100% {
+      transform: rotateY(360deg); } }
   .W-shouye-wexia {
     width: 100%;
     margin: 0 auto;
@@ -285,7 +296,8 @@ a {
     float: left; }
   .W-shouye-fuwu {
     margin: 70px auto;
-    display: block; }
+    display: block;
+    animation: lingxian 5s infinite; }
   .W-sigebox {
     margin-bottom: 100px;
     position: relative;
@@ -307,7 +319,7 @@ a {
         height: auto;
         margin: 0 auto;
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 63%;
         display: none; }
         .W-sigebox li .W-xiala .W-xiala-p1 {
@@ -325,7 +337,8 @@ a {
     margin-bottom: 70px; }
   .W-shouye-tuandui {
     margin: 70px auto;
-    display: block; }
+    display: block;
+    animation: lingxian 5s infinite; }
   .W-shouye-shejibox2 {
     display: none; }
   .W-shouye-shejibox {
@@ -355,11 +368,14 @@ a {
     left: 12px; }
   .W-shouye-mingzi1 {
     color: #A3928D;
-    bottom: 14px;
-    margin-top: -60px; }
+    bottom: 5vw;
+    font-size: 3vw;
+    margin-top: -60px;
+    margin-bottom: 0; }
   .W-shouye-mingzi2 {
     color: #ccc;
-    bottom: -4px; }
+    bottom: -2vw;
+    font-size: 1vw; }
   .W-shouye-mingzi3 {
     color: #ccc;
     bottom: -11px;
@@ -372,10 +388,12 @@ a {
     margin-bottom: 40px; }
   .W-shouye-siren {
     margin: 95px auto;
-    display: block; }
+    display: block;
+    animation: lingxian 5s infinite; }
   .W-shouye-lianxi {
     margin: 105px auto;
-    display: block; }
+    display: block;
+    animation: lingxian 5s infinite; }
   .W-shouye-dahao {
     width: 80%;
     height: auto;
@@ -406,7 +424,8 @@ a {
   .W-shouye-bottom {
     width: 70%;
     height: auto;
-    margin: 95px auto; }
+    margin: 95px auto;
+    overflow: hidden; }
     .W-shouye-bottom li {
       width: 100%;
       height: auto;
@@ -421,7 +440,8 @@ a {
         height: auto; }
         .W-shouye-bottom li a img {
           width: 100%;
-          height: auto; }
+          height: auto;
+          transition: width .3s linear .2s; }
   .W-shouye-zhezhao {
     width: 100%;
     height: 100%;
@@ -446,6 +466,8 @@ a {
     text-align: center;
     opacity: 0;
     margin-left: -160%; }
+  .W-shouye-bottombox:hover img {
+    width: 120%; }
   .W-shouye-bottombox:hover .W-shouye-zhezhao {
     opacity: 0.5; }
   @keyframes one {
@@ -559,11 +581,11 @@ a {
       opacity: 1;
       transition: opacity 0.1s; }
   .W-shouye-bannerbox > li:nth-child(1) {
-    background-image: url(../img/W-banner-xinde1.jpg); }
+    background-image: url("../img/W-banner-xinde1.jpg"); }
   .W-shouye-bannerbox > li:nth-child(2) {
-    background-image: url(../img/W-banner-xinde2.jpg); }
+    background-image: url("../img/W-banner-xinde2.jpg"); }
   .W-shouye-bannerbox > li:nth-child(3) {
-    background-image: url(../img/W-banner-xinde4.jpg); }
+    background-image: url("../img/W-banner-xinde4.jpg"); }
   .W-shouye-circlebox {
     width: 60px;
     height: 10px;
@@ -601,7 +623,7 @@ a {
     color: #ccc; }
   @keyframes zi1 {
     0% {
-      top: 00px;
+      top: 0;
       opacity: 0; }
     100% {
       top: 70px;
@@ -635,6 +657,15 @@ a {
     margin: 140px auto;
     height: 109px;
     display: block; }
+  .W-shouye-we {
+    animation: lingxian 5s infinite; }
+  @keyframes lingxian {
+    0% {
+      transform: rotateY(0); }
+    60% {
+      transform: rotateY(0); }
+    100% {
+      transform: rotateY(360deg); } }
   .W-shouye-wexia {
     width: 70%;
     margin: 0 auto;
@@ -642,7 +673,7 @@ a {
     transition: all 0.2s linear; }
     .W-shouye-wexia:hover {
       transform: translate3d(0, -5px, 0);
-      box-shadow: 0 4px 7px 0px #ccc; }
+      box-shadow: 0 4px 7px 0 #ccc; }
   .W-shouye-font {
     text-align: center; }
     .W-shouye-font h4 {
@@ -687,6 +718,15 @@ a {
   .W-shouye-fuwu {
     margin: 70px auto;
     display: block; }
+  .W-shouye-fuwu {
+    animation: lingxian 5s infinite; }
+  @keyframes lingxian {
+    0% {
+      transform: rotateY(0); }
+    60% {
+      transform: rotateY(0); }
+    100% {
+      transform: rotateY(360deg); } }
   .W-sigebox {
     margin-bottom: 100px;
     position: relative;
@@ -728,6 +768,15 @@ a {
   .W-shouye-tuandui {
     margin: 95px auto;
     display: block; }
+  .W-shouye-tuandui {
+    animation: lingxian 5s infinite; }
+  @keyframes lingxian {
+    0% {
+      transform: rotateY(0); }
+    60% {
+      transform: rotateY(0); }
+    100% {
+      transform: rotateY(360deg); } }
   .W-shouye-shejibox2 {
     display: none; }
   .W-shouye-shejibox {
@@ -757,22 +806,50 @@ a {
   .W-shouye-mingzi1 {
     color: #A3928D;
     bottom: 25px;
+    font-size: 1.8vw;
     margin-top: -60px; }
   .W-shouye-mingzi2 {
     color: #ccc;
-    bottom: 7px; }
+    bottom: 7px;
+    font-size: 0.8vw; }
   .W-shouye-mingzi3 {
     color: #ccc;
     bottom: -11px;
-    font-size: 5px; }
+    font-size: 5px;
+    font-size: 0.8vw; }
   .W-shouye-changtiao3 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .W-changtiao3 {
     width: 100%; }
+  @keyframes haha {
+    0% {
+      right: -20%; }
+    100% {
+      right: -5%; } }
+  .W-shouye-beibao {
+    width: 17%;
+    position: absolute;
+    bottom: 0;
+    right: -20%; }
+  .W-shouye-changtiao3:hover .W-shouye-beibao {
+    animation-name: haha;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    animation-iteration: 1;
+    animation-fill-mode: forwards; }
   .W-shouye-xiaoping-b {
     display: none; }
   .W-shouye-siren {
     margin: 95px auto;
     display: block; }
+  .W-shouye-siren {
+    animation: lingxian 5s infinite; }
   .W-shouye-lianxi {
+    animation: lingxian 5s infinite;
     margin: 105px auto;
     display: block; }
   .W-shouye-dahao {
@@ -805,6 +882,7 @@ a {
   .W-shouye-bottom {
     width: 70%;
     height: 217px;
+    overflow: hidden;
     margin: 0 auto 65px; }
     .W-shouye-bottom li {
       width: 33.33%;
@@ -822,7 +900,8 @@ a {
         height: auto; }
         .W-shouye-bottom li a img {
           width: 100%;
-          height: auto; }
+          height: auto;
+          transition: width .3s linear .2s; }
   .W-shouye-zhezhao {
     width: 100%;
     height: 100%;
@@ -873,6 +952,8 @@ a {
     animation-iteration: 1;
     animation-fill-mode: forwards;
     opacity: 1; }
+  .W-shouye-bottombox:hover img {
+    width: 120%; }
   .h-dibu {
     display: none; }
   .h-footer {
