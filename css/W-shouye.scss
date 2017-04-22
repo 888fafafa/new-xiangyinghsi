@@ -8,112 +8,120 @@ a {
     text-decoration: none;
 }
 @font-face {
-  font-family: 'W-iconfont';
-  src: url('../fonts/w-font/iconfont.eot');
-  src: url('../fonts/w-font/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/w-font/iconfont.woff') format('woff'),
-  url('../fonts/w-font/iconfont.ttf') format('truetype'),
-  url('../fonts/w-font/iconfont.svg#iconfont') format('svg');
+    font-family: 'W-iconfont';
+    src: url("../fonts/w-font/iconfont.eot");
+    src: url("../fonts/w-font/iconfont.eot?#iefix") format('embedded-opentype'), url("../fonts/w-font/iconfont.woff") format('woff'), url("../fonts/w-font/iconfont.ttf") format('truetype'), url("../fonts/w-font/iconfont.svg#iconfont") format('svg');
 }
 @media screen and(max-width:768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 
+    .h-header {
+        width: 100%;
+        height: 50px;
+        background: #273786;
+        padding-top: 12px;
+        position: relative;
+    }
+    .h-hleft {
+        width: 50%;
+        height: 38px;
+        margin-left: 10px;
+        position: relative;
+    }
+    @font-face {
+        font-family: 'iconfont';
+        src: url("../fonts/iconfont.eot");
+        src: url("../fonts/iconfont.eot?#iefix") format('embedded-opentype'), url("../fonts/iconfont.woff") format('woff'), url("../fonts/iconfont.ttf") format('truetype'), url("../fonts/iconfont.svg#iconfont") format('svg');
+    }
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .h-hleft i {
+        font-size: 20px;
+        line-height: 25px;
+        color: #fff;
+        margin-left: 10px;
+        position: absolute;
+        left: 20px;
+        top: 1px;
+    }
+    .h-hleft input {
+        width: 100%;
+        height: 38px;
+        margin-left: 15px;
+        background: #273786;
+        border:none;
+        
+    }
+    .h-hright {
+        width: 60px;
+        height: 38px;
+        position: absolute;
+        right: 115px;
+        top: 12px;
+        border: 1px solid #fff;
+        text-align: center;
+    }
+//  .h-hrights i {
+//      font-size: 25px;
+//      line-height: 25px;
+//      color: #fff;
+//  }
+    .h-hrights {
+        width: 80px;
+        height: 38px;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        text-align: center;
+    }
+    .h-yingc {
+        z-index: 40;
+        position: absolute;
+        width: 150px;
+        height: 366px;
+        right: -20px;
+        
+        top:50px;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+    .h-yingc h3 {
+        color: #fff;
+        width: 150px;
+        height: 61px;
+        line-height: 61px;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom: 1px solid #0085D0;
+        margin: 0;
+        padding: 0 ;
 
-.h-header{
-    width:100%;
-    height:84px;
-    background:#273786;
-    padding-top: 12px;
-    position: relative;
-}
-.h-hleft{
-    width:50%;
-    height:60px;
-    margin-left: 10px;
-    position: relative;
-}
-@font-face {
-  font-family: 'iconfont';
-  src: url('../fonts/iconfont.eot');
-  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/iconfont.woff') format('woff'),
-  url('../fonts/iconfont.ttf') format('truetype'),
-  url('../fonts/iconfont.svg#iconfont') format('svg');
-}
-.iconfont{
-  font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-.h-hleft i{
-    font-size: 20px;
-    line-height: 60px;
-    color: #fff;
-    margin-left: 10px;
-    position: absolute;
-    left:20px;
-    top:1px;
-}
-.h-hleft input{
-    width:100%;
-    height:60px;
-    margin-left: 15px;
-    background:#273786;
-    border:1px solid #ccc;
-}
-.h-hright{
-    width:60px;
-    height:60px;
-    position: absolute;
-    right:115px;
-    top:12px;
-    border: 1px solid #fff;
-    text-align: center;
-}
-.h-hright i{
-    font-size: 40px;
-    line-height: 60px;  
-    color: #fff;
-}
-.h-hrights{
-    width:80px;
-    height:60px;
-    position: absolute;
-    right:20px;
-    top:12px;
-    text-align: center;
-}
-.h-yingc{
-    position: absolute;
-    width:150px;
-    height:auto;
-    right: 0px;
-    top:84px;
-    background: #fff;
-    cursor: pointer;
-    display: none;
-    z-index: 40;
-}
-.h-yingc h3{
-    line-height: 60px;
-    text-align: center;
-    box-sizing: border-box;
-    border-bottom: 1px solid #0085D0;
-}
-.h-hrights i{
-    font-size: 40px;
-    line-height: 60px;  
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
+    }
+    .h-yingc a {
+        color: #fff;
+//      margin: 0 auto;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+    }
+    .h-hrights i {
+        font-size:25px;
+        line-height: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
 
     .W-shouye-top {
         @include cube(100%,100px);
@@ -169,18 +177,18 @@ a {
     }
 
     .W-shouye-banner {
-        @include cube(100%,620px);
+        @include cube(100%,270px);
 
     }
     .W-shouye-bannerbox {
-        @include cube(100%,620px);
+        @include cube(100%,270px);
         overflow: hidden;
 
         position: relative;
         top: 0;
         left: 0;
         .W-shouye-bannerli {
-            @include cube(100%,620px);
+            @include cube(100%,270px);
             position: absolute;
             top: 0;
             left: 0;
@@ -197,13 +205,13 @@ a {
         }
     }
     .W-shouye-bannerbox > li:nth-child(1) {
-        background-image: url(../img/W-banner-xiao1.jpg);
+        background-image: url("../img/W-banner-xiao1.jpg");
     }
     .W-shouye-bannerbox > li:nth-child(2) {
-        background-image: url(../img/W-banner-xiao2.jpg);
+        background-image: url("../img/W-banner-xiao2.jpg");
     }
     .W-shouye-bannerbox > li:nth-child(3) {
-        background-image: url(../img/W-banner-xiao4.jpg);
+        background-image: url("../img/W-banner-xiao3.jpg");
     }
     .W-shouye-circlebox {
         @include cube(60px,10px);
@@ -214,7 +222,7 @@ a {
         .W-shouye-circle {
             @include cube(10px,10px);
 
-            float: left;
+            float:left;
             margin-left: 5px;
             border-radius: 50%;
             background: #CCCCCC;
@@ -223,9 +231,11 @@ a {
             background: #6C645A;
         }
     }
-    
-    .W-shouye-bannerli>img{
-//      width:80%
+
+    .W-shouye-bannerli > img {
+        //      width:80%
+
+        display: none;
     }
     .W-shouye-left {
         @include cube(20px,30px);
@@ -233,8 +243,8 @@ a {
         font-size: 50px;
         font-weight: 600;
         position: absolute;
-        left: 5;
-        top: 50%;
+        left: 5px;
+        top: 22%;
         color: #ccc;
     }
     .W-shouye-right {
@@ -244,87 +254,84 @@ a {
         font-weight: 600;
         position: absolute;
         right: 15px;
-        top: 50%;
+        top: 22%;
         color: #ccc;
     }
-//zi
-@keyframes zi1{
-    0%{
-        top:40px;
-        opacity: 0;
-        
-    }
-   
-    100%{
-       top:70px; 
-         opacity:1;
-    }
-    
-}
+    //zi
+    @keyframes zi1 {
+        0% {
+            top: 40px;
+            opacity: 0;
 
-    .first>.W-zhui1{
-//      margin: 0 auto;
+        }
+
+        100% {
+            top: 70px;
+            opacity: 1;
+        }
+
+    }
+
+    .first > .W-zhui1 {
+        //      margin: 0 auto;
         position: absolute;
-        left:15%;
-        animation-name:zi1;
+        left: 15%;
+        animation-name: zi1;
         animation-duration: 1.9s;
         animation-delay: 0.1s;
         animation-iteration: 1;
         animation-fill-mode: forwards;
-        opacity:0;    
-    }
-  @keyframes zi2{
-    0%{
-        top:40px;
         opacity: 0;
-        
     }
-   
-    100%{
-       top:110px; 
-         opacity:1;
+    @keyframes zi2 {
+        0% {
+            top: 40px;
+            opacity: 0;
+
+        }
+
+        100% {
+            top: 110px;
+            opacity: 1;
+        }
+
     }
-    
-}  
-   
-    .first>.W-zhui2{
+
+    .first > .W-zhui2 {
         position: absolute;
         left: 60%;
-        animation-name:zi1;
+        animation-name: zi1;
         animation-duration: 0.9s;
         animation-delay: 0.1s;
         animation-iteration: 1;
         animation-fill-mode: forwards;
-        opacity:0;    
-    } 
-    //  .W-shouye-banner {
-    //      @include cube(100%,620px);
-    //
-    //  }
-    //  .W-shouye-bannerbox {
-    //      @include cube(100%,620px);
-    //      overflow: hidden;
-    //
-    //      position: relative;
-    //      top: 0;
-    //      left: 0;
-    //      .W-shouye-bannerli {
-    //          @include cube(100%,620px);
-    //          position: absolute;
-    //          top: 0;
-    //          left: 0;
-    //          background-image: url("../img/W-shouye-banner2.png");
-    //          background-size: cover;
-    //          background-position: center center;
-    //
-    //      }
-    //  }
+        opacity: 0;
+    }
+
     .W-shouye-we {
         margin: 70px auto;
         height: 109px;
         display: block;
 
     }
+
+    //  xiaoguo
+
+    .W-shouye-we {
+        animation: lingxian 5s infinite;
+    }
+    @keyframes lingxian {
+        0% {
+            transform: rotateY(0);
+        }
+        60% {
+            transform: rotateY(0);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
     .W-shouye-wexia {
         width: 100%;
         //      margin-left:40%;
@@ -359,6 +366,11 @@ a {
         }
 
     }
+    .W-shouye-morea {
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+    }
     .W-shouye-more {
         margin: 35px auto;
         display: block;
@@ -388,63 +400,59 @@ a {
     .W-shouye-fuwu {
         margin: 70px auto;
         display: block;
-
+     animation: lingxian 5s infinite;
     }
-    
-    
-    .W-sigebox{
+
+    .W-sigebox {
         margin-bottom: 100px;
         position: relative;
-                top:0;
-                left:0;
-        li{
+        top: 0;
+        left: 0;
+        li {
             text-align: center;
-//          overflow: hidden;
-//          height:50px;
-            
-            &:hover a{
-                    color: #00B7EE;
-                }
+            //          overflow: hidden;
+            //          height:50px;
+            &:hover a {
+                color: #00B7EE;
+            }
 
-            a{
-                font-family:"W-iconfont";
+            a {
+                font-family: "W-iconfont";
                 color: #000;
                 font-size: 40px;
                 text-decoration: none;
-                
+
             }
-            .W-xiala{
-                height:50px;
+            .W-xiala {
+                height: 50px;
                 width: auto;
                 text-align: left;
-                height:auto;
+                height: auto;
                 margin: 0 auto;
                 position: absolute;
-                top:0px;
-                left:63%;
+                top: 0;
+                left: 63%;
                 display: none;
-                
-                .W-xiala-p1{
-                color: #FC8484;
-                float:left;
+
+                .W-xiala-p1 {
+                    color: #FC8484;
+                    float: left;
                 }
-                .W-xiala-p2{
-                float:left;
+                .W-xiala-p2 {
+                    float: left;
                 }
-                .W-xiala-p3{
+                .W-xiala-p3 {
                     display: none;
                 }
             }
-            
-            
+
         }
     }
-//  效果
-.W-sigebox>li:hover .W-xiala{
-    display: block;
-}
-    
-    
+    //  效果
+    .W-sigebox > li:hover .W-xiala {
+        display: block;
+    }
+
     .W-shouye-changtiao {
         display: none;
     }
@@ -454,34 +462,30 @@ a {
     .W-shouye-tuandui {
         margin: 70px auto;
         display: block;
+         animation: lingxian 5s infinite;
     }
-    
-    
-    
-    
-    
-    
-        .W-shouye-shejibox2 {
+
+    .W-shouye-shejibox2 {
         display: none;
     }
     .W-shouye-shejibox {
         @include cube(100%,auto);
         margin: 93px auto;
         overflow: hidden;
-//
+        //
         li {
             float: left;
             margin-top: 20px;
             box-sizing: border-box;
             transition: all 0.2s linear;
 
-            a{
+            a {
                 display: block;
-                position:relative;
-                top:0;
-                left:0;
-                img{
-                    width:80%;
+                position: relative;
+                top: 0;
+                left: 0;
+                img {
+                    width: 80%;
                     display: block;
                 }
             }
@@ -502,29 +506,28 @@ a {
     .W-shouye-shejibox > li > a > p {
         position: absolute;
         left: 12px;
-//      
+        //      
     }
-    .W-shouye-mingzi1{
+    .W-shouye-mingzi1 {
         color: #A3928D;
-        bottom:14px;
-//      left: 0;
-        margin-top:-60px;
+        bottom: 5vw;
+        font-size: 3vw;
+        //      left: 0;
+        margin-top: -60px;
+        margin-bottom: 0;
     }
     .W-shouye-mingzi2 {
         color: #ccc;
-        bottom:-4px;
-//      left: 0;
+        bottom: -2vw;
+        font-size: 1vw;
+        //      left: 0;
     }
     .W-shouye-mingzi3 {
         color: #ccc;
-        bottom:-11px;
+        bottom: -11px;
         font-size: 5px;
         display: none;
     }
-    
-    
-    
-    
 
     .W-shouye-changtiao3 {
         width: 100%;
@@ -536,10 +539,12 @@ a {
     .W-shouye-siren {
         margin: 95px auto;
         display: block;
+         animation: lingxian 5s infinite;
     }
     .W-shouye-lianxi {
         margin: 105px auto;
         display: block;
+         animation: lingxian 5s infinite;
     }
 
     //  大好时光
@@ -569,12 +574,14 @@ a {
     .W-shouye-lianxixia {
         margin: 0 auto;
         display: block;
+        
     }
 
     //  bottom
     .W-shouye-bottom {
         @include cube(70%,auto);
         margin: 95px auto;
+        overflow: hidden;
         li {
             @include cube(100%,auto);
             margin-top: 20px;
@@ -587,7 +594,7 @@ a {
                 @include cube(100%,auto);
                 img {
                     @include cube(100%,auto);
-
+                    transition: width .3s linear .2s;
                 }
             }
         }
@@ -613,7 +620,7 @@ a {
         font-size: 20px;
         margin-top: 24%;
         margin-right: -160%;
-        line-height:350%;
+        line-height: 350%;
 
     }
     .W-shouye-zhezhao > p {
@@ -622,6 +629,10 @@ a {
         opacity: 0;
         margin-left: -160%;
     }
+     .W-shouye-bottombox:hover img{
+          width: 120%;
+            
+        }
     .W-shouye-bottombox:hover .W-shouye-zhezhao {
         opacity: 0.5;
     }
@@ -699,7 +710,7 @@ a {
 //大屏
 @media screen and(min-width:768px) {
     .h-smallping {
-        display:none;
+        display: none;
     }
 
     .W-shouye-top {
@@ -783,13 +794,13 @@ a {
         }
     }
     .W-shouye-bannerbox > li:nth-child(1) {
-        background-image: url(../img/W-banner-xinde1.jpg);
+        background-image: url("../img/W-banner-xinde1.jpg");
     }
     .W-shouye-bannerbox > li:nth-child(2) {
-        background-image: url(../img/W-banner-xinde2.jpg);
+        background-image: url("../img/W-banner-xinde2.jpg");
     }
     .W-shouye-bannerbox > li:nth-child(3) {
-        background-image: url(../img/W-banner-xinde4.jpg);
+        background-image: url("../img/W-banner-xinde4.jpg");
     }
     .W-shouye-circlebox {
         @include cube(60px,10px);
@@ -808,7 +819,7 @@ a {
             background: #6C645A;
         }
     }
-   
+
     .W-shouye-left {
         @include cube(20px,30px);
         font-family: "宋体";
@@ -829,70 +840,86 @@ a {
         top: 50%;
         color: #ccc;
     }
-//zi
-@keyframes zi1{
-    0%{
-        top:00px;
-        opacity: 0;
-        
-    }
-   
-    100%{
-       top:70px; 
-         opacity:1;
-    }
-    
-}
+    //zi
+    @keyframes zi1 {
+        0% {
+            top: 0;
+            opacity: 0;
 
-    .first>.W-zhui1{
+        }
+
+        100% {
+            top: 70px;
+            opacity: 1;
+        }
+
+    }
+
+    .first > .W-zhui1 {
         position: absolute;
         left: 35%;
-        animation-name:zi1;
+        animation-name: zi1;
         animation-duration: 1.9s;
         animation-delay: 0.1s;
         animation-iteration: 1;
         animation-fill-mode: forwards;
-        opacity:0;    
-    }
-  @keyframes zi2{
-    0%{
-        top:40px;
         opacity: 0;
-        
     }
-   
-    100%{
-       top:110px; 
-         opacity:1;
+    @keyframes zi2 {
+        0% {
+            top: 40px;
+            opacity: 0;
+
+        }
+
+        100% {
+            top: 110px;
+            opacity: 1;
+        }
+
     }
-    
-}  
-   
-    .first>.W-zhui2{
+
+    .first > .W-zhui2 {
         position: absolute;
         left: 60%;
-        animation-name:zi1;
+        animation-name: zi1;
         animation-duration: 0.9s;
         animation-delay: 0.1s;
         animation-iteration: 1;
         animation-fill-mode: forwards;
-        opacity:0;    
-    } 
+        opacity: 0;
+    }
     .W-shouye-we {
         margin: 140px auto;
         height: 109px;
         display: block;
 
     }
+    //  xiaoguo
+    .W-shouye-we {
+        animation: lingxian 5s infinite;
+    }
+    @keyframes lingxian {
+        0% {
+            transform: rotateY(0);
+        }
+        60% {
+            transform: rotateY(0);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
     .W-shouye-wexia {
         width: 70%;
         //      margin-left:40%;
         margin: 0 auto;
         display: block;
-         transition: all 0.2s linear;
-        &:hover{
+        transition: all 0.2s linear;
+        &:hover {
             transform: translate3d(0,-5px,0);
-            box-shadow: 0 4px 7px 0px #ccc;
+            box-shadow: 0 4px 7px 0 #ccc;
         }
     }
     .W-shouye-font {
@@ -950,65 +977,77 @@ a {
         text-align: center;
 
     }
+
     .W-shouye-fuwu {
         margin: 70px auto;
         display: block;
 
     }
-//  <!--服务下面-->
-    .W-sigebox{
+
+    //  xiaoguo
+    .W-shouye-fuwu {
+        animation: lingxian 5s infinite;
+    }
+    @keyframes lingxian {
+        0% {
+            transform: rotateY(0);
+        }
+        60% {
+            transform: rotateY(0);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    //  <!--服务下面-->
+    .W-sigebox {
         margin-bottom: 100px;
         position: relative;
-                top:0;
-                left:0;
-        li{
+        top: 0;
+        left: 0;
+        li {
             text-align: center;
-//          overflow: hidden;
-//          height:50px;
-            
-            &:hover a{
-                    color: #00B7EE;
-                }
+            //          overflow: hidden;
+            //          height:50px;
+            &:hover a {
+                color: #00B7EE;
+            }
 
-            a{
-                font-family:"W-iconfont";
+            a {
+                font-family: "W-iconfont";
                 color: #000;
                 font-size: 40px;
                 text-decoration: none;
-                
+
             }
-            .W-xiala{
-                width:100px;
+            .W-xiala {
+                width: 100px;
                 text-align: left;
-                height:auto;
+                height: auto;
                 margin: 0 auto;
                 position: absolute;
-                top:50px;
-                left:40%;
-                
+                top: 50px;
+                left: 40%;
+
                 display: none;
-                
-                .W-xiala-p1{
-                color: #FC8484;
-                float:left;
+
+                .W-xiala-p1 {
+                    color: #FC8484;
+                    float: left;
                 }
-                .W-xiala-p2{
-                float:left;
+                .W-xiala-p2 {
+                    float: left;
                 }
-                
+
             }
-            
-            
+
         }
     }
-//  效果
-.W-sigebox>li:hover .W-xiala{
-    display: block;
-}
-    
-    
-    
-    
+    //  效果
+    .W-sigebox > li:hover .W-xiala {
+        display: block;
+    }
+
     .W-shouye-changtiao {
         width: 100%;
         //      height:532px;
@@ -1018,6 +1057,9 @@ a {
         background-repeat: no-repeat;
 
     }
+
+    //  ceshi
+
     .W-shouye-xiaoping-a {
         display: none;
     }
@@ -1026,6 +1068,22 @@ a {
         display: block;
 
     }
+
+    //  xiaoguo
+    .W-shouye-tuandui {
+        animation: lingxian 5s infinite;
+    }
+    @keyframes lingxian {
+        0% {
+            transform: rotateY(0);
+        }
+        60% {
+            transform: rotateY(0);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
     .W-shouye-shejibox2 {
         display: none;
     }
@@ -1033,19 +1091,19 @@ a {
         @include cube(100%,auto);
         margin: 93px auto;
         overflow: hidden;
-//
+        //
         li {
             float: left;
             box-sizing: border-box;
             transition: all 0.2s linear;
 
-            a{
+            a {
                 display: block;
-                position:relative;
-                top:0;
-                left:0;
-                img{
-                    width:80%;
+                position: relative;
+                top: 0;
+                left: 0;
+                img {
+                    width: 80%;
                     display: block;
                 }
             }
@@ -1066,28 +1124,69 @@ a {
     .W-shouye-shejibox > li > a > p {
         position: absolute;
         left: 10px;
-//      
+        //      
     }
-    .W-shouye-mingzi1{
+    .W-shouye-mingzi1 {
         color: #A3928D;
-        bottom:25px;
-//      left: 0;
-        margin-top:-60px;
+        bottom: 25px;
+        font-size: 1.8vw;
+        //      left: 0;
+        margin-top: -60px;
+        //      margin-bottom:0;
     }
     .W-shouye-mingzi2 {
         color: #ccc;
-        bottom:7px;
-//      left: 0;
+        bottom: 7px;
+        font-size: 0.8vw;
+        //      left: 0;
     }
     .W-shouye-mingzi3 {
         color: #ccc;
-        bottom:-11px;
+        bottom: -11px;
         font-size: 5px;
+        font-size: 0.8vw;
 
     }
 
     .W-shouye-changtiao3 {
         width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .W-changtiao3 {
+        width: 100%;
+        //      position: absolute;
+        //      top:0;
+        //      left: 0;
+
+    }
+
+    @keyframes haha {
+        0% {
+            right: -20%;
+
+        }
+        100% {
+            right: -5%;
+
+        }
+
+    }
+    .W-shouye-beibao {
+        width: 17%;
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+
+    }
+    .W-shouye-changtiao3:hover .W-shouye-beibao {
+        animation-name: haha;
+        animation-duration: 1.2s;
+        animation-delay: 0.2s;
+        animation-iteration: 1;
+        animation-fill-mode: forwards;
 
     }
     .W-shouye-xiaoping-b {
@@ -1097,150 +1196,163 @@ a {
         margin: 95px auto;
         display: block;
     }
-    .W-shouye-lianxi {
-        margin: 105px auto;
-        display: block;
+    //  xiaoguo
+    .W-shouye-siren {
+        animation: lingxian 5s infinite;
     }
 
-    //  大好时光
-    .W-shouye-dahao {
-        @include cube(80%,auto);
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 75px;
-        h4 {
-            @include font(24px,#343535,500);
+        .W-shouye-lianxi {
+             animation: lingxian 5s infinite;
+            margin: 105px auto;
+            display: block;
         }
-        h5 {
-            @include font(18px,#212121,200);
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        p {
-            @include cube(70%,auto);
+
+        //  大好时光
+        .W-shouye-dahao {
+            @include cube(80%,auto);
             margin: 0 auto;
-            color: #808080;
-            font-size: 14px;
-            margin-top: 28px;
-            line-height: 25px;
+            text-align: center;
+            margin-bottom: 75px;
+            h4 {
+                @include font(24px,#343535,500);
+            }
+            h5 {
+                @include font(18px,#212121,200);
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            p {
+                @include cube(70%,auto);
+                margin: 0 auto;
+                color: #808080;
+                font-size: 14px;
+                margin-top: 28px;
+                line-height: 25px;
+            }
         }
-    }
 
-    .W-shouye-lianxixia {
-        margin: 0 auto;
-        display: block;
-    }
+        .W-shouye-lianxixia {
+            margin: 0 auto;
+            display: block;
+        }
 
-    //  bottom
-    .W-shouye-bottom {
-        @include cube(70%,217px);
-        margin: 0 auto 65px;
-        li {
-            @include cube(33.33%,auto);
-            float: left;
-            //          padding-left: 5px;
-            //          padding-right: 5px;
-            border: 10px solid #fff;
-            box-sizing: border-box;
+        //  bottom
+        .W-shouye-bottom {
+            @include cube(70%,217px);
             overflow: hidden;
-            position: relative;
-            top: 0;
-            left: 0;
-            a {
-                display: block;
-                @include cube(100%,auto);
-                img {
+            margin: 0 auto 65px;
+            li {
+                @include cube(33.33%,auto);
+                float: left;
+                //          padding-left: 5px;
+                //          padding-right: 5px;
+                border: 10px solid #fff;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+                top: 0;
+                left: 0;
+                a {
+                    display: block;
                     @include cube(100%,auto);
-
+                    
+                    img {
+                        @include cube(100%,auto);
+                        transition: width .3s linear .2s;
+                    }
                 }
             }
         }
-    }
 
-    .W-shouye-zhezhao {
-        width: 100%;
-        height: 100%;
-        /*background: red;*/
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2D2A27;
-        opacity: 0.8;
-        transition: all 0.2s linear;
+        .W-shouye-zhezhao {
+            width: 100%;
+            height: 100%;
+            /*background: red;*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #2D2A27;
+            opacity: 0.8;
+            transition: all 0.2s linear;
 
-    }
-    .W-shouye-zhezhao > h2 {
-        color: #fff;
-        text-align: center;
-//      background: #000;
-        opacity: 0;
-        font-size: 20px;
-        margin-top: 34%;
-        margin-bottom: 0;
-        margin-right: -160%;
-        line-height: 150%;
+        }
+        .W-shouye-zhezhao > h2 {
+            color: #fff;
+            text-align: center;
+            //      background: #000;
+            opacity: 0;
+            font-size: 20px;
+            margin-top: 34%;
+            margin-bottom: 0;
+            margin-right: -160%;
+            line-height: 150%;
 
-    }
-    .W-shouye-zhezhao > p {
-        color: #fff;
-        text-align: center;
-        opacity: 0;
-        margin-left: -160%;
-    }
-    .W-shouye-bottombox:hover .W-shouye-zhezhao {
-        opacity: 0.5;
-    }
+        }
+        .W-shouye-zhezhao > p {
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            margin-left: -160%;
+        }
+        .W-shouye-bottombox:hover .W-shouye-zhezhao {
+            opacity: 0.5;
+        }
 
-    @keyframes one {
-        0% {
-            margin-right: -100%;
+        @keyframes one {
+            0% {
+                margin-right: -100%;
+            }
+            100% {
+                margin-right: 0;
+            }
         }
-        100% {
-            margin-right: 0;
+        @keyframes two {
+            0% {
+                margin-left: -100%;
+            }
+            100% {
+                margin-left: 0;
+            }
         }
-    }
-    @keyframes two {
-        0% {
-            margin-left: -100%;
+        .W-shouye-bottombox:hover .W-shouye-h2 {
+            animation-name: one;
+            animation-duration: 0.2s;
+            animation-delay: 0.2s;
+
+            animation-iteration: 1;
+            animation-fill-mode: forwards;
+            opacity: 1;
         }
-        100% {
-            margin-left: 0;
+        .W-shouye-bottombox:hover .W-shouye-p {
+            animation-name: two;
+            animation-duration: 0.2s;
+            animation-delay: 0.2s;
+            animation-iteration: 1;
+            animation-fill-mode: forwards;
+            opacity: 1;
+
         }
-    }
-    .W-shouye-bottombox:hover .W-shouye-h2 {
-        animation-name: one;
-        animation-duration: 0.2s;
-        animation-delay: 0.2s;
+        .W-shouye-bottombox:hover img{
+          width: 120%;
+            
+        }
         
-        animation-iteration: 1;
-        animation-fill-mode: forwards;
-        opacity: 1;
+        .h-dibu {
+            display: none;
+        }
+        .h-footer {
+            width: 100%;
+            height: 63px;
+            background: #273786;
+            display: block;
+        }
+        .h-footers {
+            width: 90%;
+            height: 100%;
+            background-image: url("../img/h-footer.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            margin: 0 auto;
+        }
     }
-    .W-shouye-bottombox:hover .W-shouye-p {
-        animation-name: two;
-        animation-duration: 0.2s;
-        animation-delay: 0.2s;
-        animation-iteration: 1;
-        animation-fill-mode: forwards;
-        opacity: 1;
-
-    }
-    .h-dibu {
-        display: none;
-    }
-    .h-footer {
-        width: 100%;
-        height: 63px;
-        background: #273786;
-        display: block;
-    }
-    .h-footers {
-        width: 90%;
-        height: 100%;
-        background-image: url("../img/h-footer.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        margin: 0 auto;
-    }
-}
