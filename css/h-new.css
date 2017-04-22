@@ -213,6 +213,11 @@ a:hover{
     }
 
 @media screen and (max-width: 768px) {
+  .imgone{
+  	display: block;
+  	width: 50%;
+  	margin: 0 auto;
+  }
   .W-shouye-top {
     width: 100%;
     height: 50px;
@@ -249,17 +254,17 @@ a:hover{
     color: #34D9E6; }
   .W-shouye-banner {
     width: 100%;
-    height: 620px; }
+    height: 280px; }
   .W-shouye-bannerbox {
     width: 100%;
-    height: 620px;
+    height: 270px;
     overflow: hidden;
     position: relative;
     top: 0;
     left: 0; }
   .W-shouye-bannerbox .W-shouye-bannerli {
     width: 100%;
-    height: 620px;
+    height: 270px;
     position: absolute;
     top: 0;
     left: 0;
@@ -341,58 +346,59 @@ a:hover{
 .h-gengduo {
   display: block;
   margin: 50px auto;
-  text-align: center;
-  font-size: 30px; }
+  text-align: center; }
 
 .h-dongtais {
   width: 359px;
-  height: 174px;
+  height: 50px;
   position: relative;  
   margin: 20px auto; }
 
 .h-dongtais h6:nth-child(3) {
   position: absolute;
-  left:154px;
-  top:115px; }
+  left:164px;
+  top:60px; }
 
 .h-dongtais h6:nth-child(2) {
   position: absolute;
-  left:154px;
-  top:23px; }
+  left:164px;
+  top:11px; }
 
 .h-dongtais h6 {
   color: #000;
-  font-size: 26px; }
+  font-size: 14px; }
 
 .h-dibu {
   width: 100%;
-  height: 330px;
+  height: 170px;
   background: #273786;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 20px; }
 
 .h-dibu h2 {
   color: #76e0ed;
-  font-size: 30px;
+  font-size: 16px;
   margin-bottom: 10px; }
 
 .h-dibu h2 > span {
   color: #c9c9c9;
-  font-size: 30px; }
+  font-size: 16px; }
 
 .h-dibu h3 {
   color: #b9b9b9;
-  font-size: 24px; }
+  font-size: 14px; }
 
 .h-dibu h4 {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 10px;
-  line-height: 24px; }
-
+  line-height: 14px; }
+.h-lianxiwom > img{
+	width: 40px;
+}
 .h-lianxiwom {
-  height: 98px; }
+  /*height: 98px;*/ }
 
 .h-footer {
   display: none; }

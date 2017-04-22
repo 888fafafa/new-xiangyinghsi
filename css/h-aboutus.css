@@ -69,7 +69,7 @@
   width: 150px;
   height: 366px;
   right: 0;
-  top: 83px;
+  top: 50px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -120,12 +120,12 @@ section:nth-of-type(2) {
 
 .tit {
   color: #37B9F7;
-  font-size: 24px;
+  font-size: 14px;
   float: left; }
 
 .tit span {
   color: #BCBABA;
-  font-size: 24px; }
+  font-size: 14px; }
 
 .tit > p:nth-child(2) {
   color: #737373; }
@@ -134,7 +134,7 @@ section:nth-of-type(2) {
   float: right; }
 
 .tit + div p {
-  font-size: 20px;
+  font-size: 14px;
   color: #E5E5E5;
   text-align: right; }
 
@@ -211,31 +211,33 @@ section:nth-of-type(2) {
 
 .h-dibus {
   width: 100%;
-  height: 330px;
+  height: 190px;
   background: #273786;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 20px; }
 
 .h-dibus h2 {
   color: #76e0ed;
-  font-size: 30px;
+  font-size: 16px;
   margin-bottom: 10px; }
 
 .h-dibus h2 > span {
   color: #c9c9c9;
-  font-size: 30px; }
+  font-size: 16px; }
 
 .h-dibus h3 {
   color: #b9b9b9;
-  font-size: 24px; }
+  font-size: 14px; }
 
 .h-dibus h4 {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 10px;
   line-height: 24px; }
-
+.h-lianxiwom > img{
+	width: 40px;
+}
 .h-lianxiwom {
   height: 98px; }
 

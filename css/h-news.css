@@ -50,7 +50,13 @@
     left: 0;
     background-image: url("../img/W-shouye-banner2.png");
     background-size: cover;
-    background-position: center center; } }
+    background-position: center center; }
+  .imgone{
+  	width: 50%;
+  	margin: 0 auto;
+  	display: block;
+  } 
+     }
 
 @media screen and (min-width: 768px) {
   .W-shouye-top {
